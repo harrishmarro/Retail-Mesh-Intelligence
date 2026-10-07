@@ -58,4 +58,10 @@ Overall, the system creates a unified ecosystem for **vehicle commerce, services
               │ Anomaly Detection       │
               │ Knowledge Retrieval     │
               └─────────────────────────┘
+              
+## Conceptual ER Diagram
+
+The following diagram represents the core data relationships implied . It is a initial conceptual model, not a finalized database schema.
+
+![Retail platform conceptual ER diagram](Models/Conceptual/ER-diagram.png)
 
