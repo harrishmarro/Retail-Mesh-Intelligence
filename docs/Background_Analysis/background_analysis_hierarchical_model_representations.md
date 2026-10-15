@@ -159,27 +159,15 @@ Therefore, Retail-Mesh builds on useful existing vehicle and commerce
 concepts while adding an **event, performance, and incentive layer for
 cross-provider analysis**.
 
-## 6. Summary
+## 6. Comparative Summary
 
-  -----------------------------------------------------------------------
-  Model                   Main Focus              Relevance to
-                                                  Retail-Mesh
-  ----------------------- ----------------------- -----------------------
-  VSO                     Vehicle description     Vehicle concepts
-
-  Schema.org Automotive   Web/product/vehicle     Vehicle and offer
-                          description             concepts
-
-  GoodRelations           Commercial offers       Provider and offer
-                                                  concepts
-
-  Catena-X                Automotive              Cross-organization
-                          interoperability        semantics
-
-  **Retail-Mesh**         **Transactions +        **Cross-provider retail
-                          performance +           intelligence**
-                          incentives**            
-  -----------------------------------------------------------------------
+| Model | Focus | Concepts | Strength | Relevant gap for Retail-Mesh |
+| --- | --- | --- | --- | --- |
+| VSO | Vehicle data | Vehicle, model, features | Automotive-specific vehicle terms | Transaction events and award evidence are not central |
+| Schema.org Automotive | Web data | Product, vehicle, offer | Reusable web vocabulary | Explicit retail incentive rules are not central |
+| GoodRelations | Commerce | Business, offering, price | Represents offer conditions | An offer differs from a completed event; provider-performance incentives are not central |
+| Catena-X | Data exchange | Assets, digital twins, semantic aspects | Shared cross-organization semantics | Broader exchange objectives than retail-provider evaluation |
+| **Retail-Mesh** | **Retail events** | **Provider, event, metric, award** | **Supports incentive eligibility evidence** | **Needs explicit evaluation policy and measurable shared metrics** |
 
 ### Key Takeaway
 
