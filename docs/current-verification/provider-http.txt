@@ -1,0 +1,1 @@
+PASS: separate public signup; private tracking; operator changes/acceptance; validated activation; own dashboard/claims/status/resubmission; chatbot/concerns/workspace requests; provider and operator workspace-creation denial; graph limited to operator/admin/analyst; tenant isolation; password revocation; no award/payment side effect.
