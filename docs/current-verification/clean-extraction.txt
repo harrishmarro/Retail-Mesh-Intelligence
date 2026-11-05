@@ -1,0 +1,3 @@
+PASS: clean extracted build; first administrator uses both supplied companies without duplicate company creation; 17/18 scoped activities; manual awards; knowledge available without demo runs; original packaged DB remains untouched.
+PASS: React shell, CSP, JavaScript/CSS/font MIME types, missing assets and encoded path traversal
+PASS: separate public signup; private tracking; operator changes/acceptance; validated activation; own dashboard/claims/status/resubmission; chatbot/concerns/workspace requests; provider and operator workspace-creation denial; graph limited to operator/admin/analyst; tenant isolation; password revocation; no award/payment side effect.

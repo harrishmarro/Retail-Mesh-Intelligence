@@ -1,0 +1,1 @@
+PASS: clean extracted build; first administrator uses both supplied companies without duplicate company creation; 17/18 scoped activities; manual awards; knowledge available without demo runs; original packaged DB remains untouched.
