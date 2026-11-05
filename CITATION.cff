@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite the repository and replace team-author metadata with verified final submission authors."
+title: "Retail-Mesh Intelligence"
+type: software
+version: "coursework-provider-workflows-2.0"
+url: "https://github.com/harrishmarro/Retail-Mesh-Intelligence"
+authors:
+  - name: "Retail-Mesh Intelligence contributors"
+license: MIT
+abstract: "Vehicle retail, rental and service coursework implementation with provider review, incentive claims and company-scoped knowledge exports. MIT applies to the added implementation; bundled reference assets retain their original terms."

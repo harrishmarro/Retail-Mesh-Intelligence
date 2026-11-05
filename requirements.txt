@@ -1,0 +1,3 @@
+# Complete application and knowledge-export requirements.
+-r requirements-knowledge.txt
+tzdata==2026.6
