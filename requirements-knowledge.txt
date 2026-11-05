@@ -1,0 +1,4 @@
+# Optional RDF export, SHACL validation and graph-query explanations.
+rdflib==7.6.0
+pyshacl==0.40.2
+jsonschema==4.26.0
