@@ -1,0 +1,15 @@
+file:///workspace/scratch/2e2656f5c895/design-resources/taste-skill/skills/taste-skill/scripts/lib/cdp.mjs:110
+      proc.on('exit', (code) => { clearTimeout(t); reject(new Error('Chrome exited early, code ' + code + '\n' + buf.slice(-600))); });
+                                                          ^
+
+Error: Chrome exited early, code null
+[1104/015259.349395:WARNING:chrome/app/chrome_main_linux.cc:84] Read channel stable from /tmp/retail-chrome/opt/google/chrome/CHROME_VERSION_EXTRA
+[15:15:1104/015259.472922:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)
+[1104/015259.474648:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)
+[1104/015259.474946:ERROR:third_party/crashpad/crashpad/util/file/directory_reader_posix.cc:43] opendir /proc/15/task: No such file or directory (2)
+
+    at ChildProcess.<anonymous> (file:///workspace/scratch/2e2656f5c895/design-resources/taste-skill/skills/taste-skill/scripts/lib/cdp.mjs:110:59)
+    at ChildProcess.emit (node:events:514:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:324:12)
+
+Node.js v24.22.1

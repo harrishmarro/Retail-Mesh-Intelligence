@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> retail-mesh-frontend@0.5.0 test
+> vitest run --run
+
+
+ RUN  v3.2.7 /workspace/scratch/2e2656f5c895/repo/src/ui/react
+
+ ✓ src/app/store.test.ts (17 tests) 18ms
+ ✓ src/features/ui.test.tsx (10 tests) 885ms
+ ✓ src/features/provider-flows.test.tsx (11 tests) 1184ms
+   ✓ public provider and operator workflow > submits business details and keeps the private tracking token outside Redux  514ms
+ ✓ src/features/operations.test.tsx (13 tests) 1386ms
+
+ Test Files  4 passed (4)
+      Tests  51 passed (51)
+   Start at  23:50:55
+   Duration  3.09s (transform 1.01s, setup 248ms, collect 2.86s, tests 3.47s, environment 1.45s, prepare 502ms)
+
