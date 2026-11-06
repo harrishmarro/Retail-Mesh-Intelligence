@@ -1,0 +1,5 @@
+PREFIX rm: <https://example.org/retail-mesh/vocab#>
+SELECT ?checkName ?passed ?description WHERE {
+ ?evaluation a rm:IncentiveEvaluation; rm:hasCheck ?check.
+ ?check rm:name ?checkName; rm:passed ?passed; rm:description ?description.
+} ORDER BY ?checkName

@@ -1,0 +1,15 @@
+﻿Id,VehicleActivityId,ServiceType,Outcome,CompletedAt
+1,11,Scheduled maintenance,Inspection completed; fluids and filters replaced,2026-03-24T00:00:00Z
+2,12,Brake service,Front brake pads replaced; road test passed,2026-04-04T00:00:00Z
+3,13,Hybrid battery diagnostic,Hybrid battery condition checked; no repair required in this synthetic inspection,2026-04-20T00:00:00Z
+4,14,Warranty repair,Warranty repair completed and verified,2026-06-05T00:00:00Z
+5,15,Cooling system inspection,Coolant system inspected; no further repair required,2026-07-17T00:00:00Z
+6,16,Transmission service,Fluid service completed; diagnostic clear,2026-07-31T00:00:00Z
+7,17,Recall campaign,Manufacturer recall work completed,2026-08-04T00:00:00Z
+8,18,Fleet safety inspection,Inspection passed; minor wear noted,2026-08-23T00:00:00Z
+9,19,Scheduled maintenance,Oil and filter service completed,2026-09-06T00:00:00Z
+10,20,Electrical system diagnostic,Battery and low-voltage charging circuit checked; no fault found in this synthetic inspection,2026-09-25T00:00:00Z
+11,21,Tire and alignment service,Alignment adjusted; tire condition documented,2026-10-17T00:00:00Z
+12,22,Software and battery check,Software updated; battery report issued,2026-10-19T00:00:00Z
+13,23,Annual inspection,Annual inspection completed,2026-10-22T00:00:00Z
+14,24,Fleet maintenance,Fleet maintenance checklist completed,2026-10-28T00:00:00Z

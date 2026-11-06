@@ -1,0 +1,21 @@
+@prefix rm: <https://example.org/retail-mesh/vocab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+rm: a owl:Ontology ; owl:versionInfo "0.1.0-demo" ; rdfs:comment "Fictional acceptance-scenario ontology. Reserved example namespace; not a full production ontology." .
+rm:VehicleActivity a owl:Class .
+rm:Sale a owl:Class ; rdfs:subClassOf rm:VehicleActivity ; owl:disjointWith rm:Rental, rm:Service .
+rm:Rental a owl:Class ; rdfs:subClassOf rm:VehicleActivity ; owl:disjointWith rm:Service .
+rm:Service a owl:Class ; rdfs:subClassOf rm:VehicleActivity .
+rm:Vehicle a owl:Class . rm:Provider a owl:Class . rm:Fleet a owl:Class .
+rm:IncentiveEvaluation a owl:Class ; rdfs:subClassOf prov:Activity .
+rm:ProviderAward a owl:Class . rm:RuleVersion a owl:Class . rm:EvidenceSnapshot a owl:Class .
+rm:Check a owl:Class .
+rm:performedBy a owl:ObjectProperty . rm:involvesVehicle a owl:ObjectProperty .
+rm:replacementFor a owl:ObjectProperty . rm:beneficiary a owl:ObjectProperty .
+rm:appliedRuleVersion a owl:ObjectProperty . rm:hasCheck a owl:ObjectProperty .
+rm:sourceReference a owl:DatatypeProperty . rm:amountMinor a owl:DatatypeProperty .
+rm:currency a owl:DatatypeProperty . rm:passed a owl:DatatypeProperty .
+
+rm:FleetMembershipEvidence a owl:Class . rm:IdentityEvidence a owl:Class . rm:EnrollmentEvidence a owl:Class .
+rm:citesMembership a owl:ObjectProperty . rm:citesIdentity a owl:ObjectProperty . rm:citesEnrollment a owl:ObjectProperty .

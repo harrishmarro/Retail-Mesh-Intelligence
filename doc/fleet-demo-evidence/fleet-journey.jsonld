@@ -1,0 +1,914 @@
+[
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/6",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:8"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/8"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/5",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#IdentityEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#accountAId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 4
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#accountBId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 6
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:identity:4:6"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#verificationStatus": [
+      {
+        "@value": "Verified"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#verifiedAt": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-09-01T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/8",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:10"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/10"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/12",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/3",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/7",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:9"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/9"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/3",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:5"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/5"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/2",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Check"
+    ],
+    "https://example.org/retail-mesh/vocab#description": [
+      {
+        "@value": "Sale provider enrolled at sale completion"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "program_enrollment"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#passed": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/12",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:14"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/14"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/15",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/14",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#IdentityEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#accountAId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 4
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#accountBId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 5
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:identity:4:5"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#verificationStatus": [
+      {
+        "@value": "Verified"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#verifiedAt": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-09-01T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/5",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/5",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Check"
+    ],
+    "https://example.org/retail-mesh/vocab#description": [
+      {
+        "@value": "Completed service within window, different replacement vehicle during service, verified direct accounts and authorized providers"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "verified_service_and_replacement"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#passed": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/activity/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Sale"
+    ],
+    "https://example.org/retail-mesh/vocab#involvesVehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/15"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#performedBy": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/provider/4"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo.northstar:NS-SALE-001"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/2",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:4"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/4"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/8",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/enrollment/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#EnrollmentEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "ProgramEnrollment:4"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFromDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/activity/6",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Rental"
+    ],
+    "https://example.org/retail-mesh/vocab#involvesVehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/16"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#performedBy": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/provider/5"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#replacementFor": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/activity/5"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo.northstar:NS-RENTAL-001"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/provider/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Provider"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Maple Motors (fictional)"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/10",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:12"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/12"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/16",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/award/2",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#ProviderAward"
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#amountMinor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 15000
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#beneficiary": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/provider/4"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#currency": [
+      {
+        "@value": "CAD"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Check"
+    ],
+    "https://example.org/retail-mesh/vocab#description": [
+      {
+        "@value": "12 existing same-manufacturer vehicles; minimum 10"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "pre_sale_fleet"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#passed": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/10",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:6"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/6"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/provider/6",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Provider"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/13",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Fleet"
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "Cedar Logistics (fictional)"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/1",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Check"
+    ],
+    "https://example.org/retail-mesh/vocab#description": [
+      {
+        "@value": "Program active at sale completion"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "program_active"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#passed": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#EvidenceSnapshot"
+    ],
+    "https://example.org/retail-mesh/vocab#citesActivity": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/activity/4"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/activity/5"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/activity/6"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#citesEnrollment": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/enrollment/4"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#citesFleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#citesIdentity": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/5"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/4"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#citesMembership": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/1"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/2"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/3"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/4"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/5"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/6"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/7"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/8"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/9"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/10"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/11"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/12"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "urn:retail-mesh:snapshot:sha256:de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/5",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:7"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/7"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/activity/5",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Service"
+    ],
+    "https://example.org/retail-mesh/vocab#involvesVehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/15"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#performedBy": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/provider/6"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo.northstar:NS-SERVICE-001"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/1",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:3"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/3"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/11",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/3",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Check"
+    ],
+    "https://example.org/retail-mesh/vocab#description": [
+      {
+        "@value": "Authorized issuing outlet and sale capability"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "sale_authorization"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#passed": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/6",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/0",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Check"
+    ],
+    "https://example.org/retail-mesh/vocab#description": [
+      {
+        "@value": "Completed sale at or before evaluation cutoff"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#name": [
+      {
+        "@value": "completed_sale"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#passed": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/rule-version/3",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#RuleVersion"
+    ],
+    "https://example.org/retail-mesh/vocab#conditionsJson": [
+      {
+        "@value": "{\"operation\": \"fleet_journey_v1\", \"minimum_fleet_vehicles\": 10, \"service_window_days\": 30}"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#effectiveFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-01-01"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#rewardJson": [
+      {
+        "@value": "{\"amount_minor\": 15000, \"currency\": \"CAD\"}"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/4",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/11",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:13"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/13"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/9",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#FleetMembershipEvidence"
+    ],
+    "https://example.org/retail-mesh/vocab#fleet": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/fleet/1"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#sourceReference": [
+      {
+        "@value": "demo:northstar:preexisting:11"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#validFrom": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#vehicle": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/11"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/provider/5",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Provider"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/run/1",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#IncentiveEvaluation"
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#appliedRuleVersion": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/rule-version/3"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#evaluatedAt": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-11-04T08:45:38+00:00"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#fleetCountBeforeSale": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 12
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#hasCheck": [
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/0"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/1"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/2"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/3"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/4"
+      },
+      {
+        "@id": "https://example.org/retail-mesh/demo/company/2/run/1/check/5"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#inputHash": [
+      {
+        "@value": "de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc"
+      }
+    ],
+    "https://example.org/retail-mesh/vocab#result": [
+      {
+        "@value": "Qualified"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/7",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  },
+  {
+    "@id": "https://example.org/retail-mesh/demo/company/2/vehicle/9",
+    "@type": [
+      "https://example.org/retail-mesh/vocab#Vehicle"
+    ]
+  }
+]

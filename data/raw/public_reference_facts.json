@@ -1,0 +1,34 @@
+[
+  {
+    "source_id": "toyota-corolla-2026",
+    "category": "public_reference",
+    "fact": "Toyota Canada published launch MSRP for 2026 Corolla LE",
+    "value": 25700,
+    "currency": "CAD",
+    "source_url": "https://media.toyota.ca/en/releases/2025/what-s-new--the-2026-toyota-corolla.html",
+    "observed_date": "2026-11-03",
+    "qualification": "Published launch MSRP, not current quote or completed sale price."
+  },
+  {
+    "source_id": "toyota-victoria-outlet",
+    "category": "public_reference",
+    "fact": "Jim Pattison Toyota Victoria outlet address",
+    "value": "3050 Douglas Street, Victoria, BC V8T 4N4",
+    "source_url": "https://www.jpautogroup.com/toyota/",
+    "observed_date": "2026-11-03",
+    "qualification": "Public trading name and location, not a verified legal registration number."
+  },
+  {
+    "source_id": "toyota-ecp-rental",
+    "category": "public_reference",
+    "fact": "Toyota ECP vehicle rental assistance published limits",
+    "value": {
+      "daily_limit_CAD": 50,
+      "initial_max_days": 5,
+      "additional_parts_backorder_days": 5
+    },
+    "source_url": "https://www.toyota.ca/en/owners/warranty-and-coverage/supplementary/",
+    "observed_date": "2026-11-03",
+    "qualification": "Specified covered repair, overnight stay and repair-duration conditions apply; customer benefit, not a dealer incentive."
+  }
+]

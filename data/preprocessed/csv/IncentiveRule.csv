@@ -1,0 +1,5 @@
+﻿Id,IncentiveProgramId,OfficialRuleCode,RuleName,AssessmentBasis
+1,1,EVENT-JOURNEY-01,Connected Journey Event Review,Event
+2,1,PERIOD-PERFORMANCE-01,Quarterly Provider Performance Review,Period
+3,2,EVENT-JOURNEY-01,Connected Journey Event Review,Event
+4,2,PERIOD-PERFORMANCE-01,Quarterly Provider Performance Review,Period

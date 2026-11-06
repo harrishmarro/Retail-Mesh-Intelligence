@@ -1,0 +1,9 @@
+﻿Id,PeriodAwardId,RewardType,UnitScheme,UnitCode,BenefitValue,Currency,ValidFrom,ValidTo
+1,1,Cash,ISO4217,CAD,250,CAD,2026-10-29,
+2,2,Cash,ISO4217,CAD,250,CAD,2026-10-29,
+3,3,Points,retail-mesh:points,POINT,500,,2026-10-29,
+4,4,Points,retail-mesh:points,POINT,500,,2026-10-29,
+5,5,Points,retail-mesh:points,POINT,500,,2026-10-29,
+6,1,Points,retail-mesh:points,POINT,500,,2026-10-29,
+7,2,Points,retail-mesh:points,POINT,500,,2026-10-29,
+8,6,Points,retail-mesh:points,POINT,500,,2026-10-29,

@@ -1,0 +1,57 @@
+{
+  "answer": "Maple Motors (fictional) received CAD 150.00 because all 6 recorded policy checks passed. The pre-sale fleet contained 12 qualifying vehicles. The exact rule version and evidence snapshot are linked below.",
+  "mode": "deterministic_graph_query",
+  "run_id": 1,
+  "checks": [
+    {
+      "name": "completed_sale",
+      "passed": true,
+      "detail": "Completed sale at or before evaluation cutoff"
+    },
+    {
+      "name": "program_active",
+      "passed": true,
+      "detail": "Program active at sale completion"
+    },
+    {
+      "name": "program_enrollment",
+      "passed": true,
+      "detail": "Sale provider enrolled at sale completion"
+    },
+    {
+      "name": "sale_authorization",
+      "passed": true,
+      "detail": "Authorized issuing outlet and sale capability"
+    },
+    {
+      "name": "pre_sale_fleet",
+      "passed": true,
+      "detail": "12 existing same-manufacturer vehicles; minimum 10"
+    },
+    {
+      "name": "verified_service_and_replacement",
+      "passed": true,
+      "detail": "Completed service within window, different replacement vehicle during service, verified direct accounts and authorized providers"
+    }
+  ],
+  "sources": [
+    {
+      "type": "IncentiveRun",
+      "id": 1
+    },
+    {
+      "type": "RuleVersion",
+      "id": 3
+    },
+    {
+      "type": "EvidenceSnapshot",
+      "sha256": "de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc"
+    }
+  ],
+  "graph_validation": {
+    "conforms": true,
+    "report": "Validation Report\nConforms: True\n",
+    "triples": 175
+  },
+  "live_llm": false
+}

@@ -1,0 +1,15 @@
+﻿Id,ProviderAuthorizationId,OutletId,CapabilityId,ValidFrom,ValidTo,AuthorizationStatus
+1,1,1,1,2026-01-01,,Active
+2,1,2,1,2026-01-01,,Active
+3,2,3,1,2026-01-01,,Active
+4,3,4,2,2026-01-01,,Active
+5,3,5,2,2026-01-01,,Active
+6,4,6,2,2026-01-01,,Active
+7,5,7,3,2026-01-01,,Active
+8,5,7,4,2026-01-01,,Active
+9,5,8,3,2026-01-01,,Active
+10,5,8,4,2026-01-01,,Active
+11,6,9,3,2026-01-01,,Active
+12,6,9,4,2026-01-01,,Active
+13,7,10,3,2026-01-01,,Active
+14,7,10,5,2026-01-01,,Active

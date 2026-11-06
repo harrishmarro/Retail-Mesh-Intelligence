@@ -1,0 +1,46 @@
+test_accepted_evidence_immutable (test_relational.RelationalTests.test_accepted_evidence_immutable) ... ok
+test_activity_failure_rolls_back (test_relational.RelationalTests.test_activity_failure_rolls_back) ... ok
+test_all_34_relations_seeded (test_relational.RelationalTests.test_all_34_relations_seeded) ... ok
+test_atomic_activity (test_relational.RelationalTests.test_atomic_activity) ... ok
+test_atomic_award (test_relational.RelationalTests.test_atomic_award) ... ok
+test_audit (test_relational.RelationalTests.test_audit) ... ok
+test_award_wrong_beneficiary (test_relational.RelationalTests.test_award_wrong_beneficiary) ... ok
+test_awards_units_and_beneficiary (test_relational.RelationalTests.test_awards_units_and_beneficiary) ... ok
+test_bad_interval (test_relational.RelationalTests.test_bad_interval) ... ok
+test_business_identity_immutable (test_relational.RelationalTests.test_business_identity_immutable) ... ok
+test_candidate_key (test_relational.RelationalTests.test_candidate_key) ... ok
+test_cash_units_consistent (test_relational.RelationalTests.test_cash_units_consistent) ... ok
+test_component_minimum (test_relational.RelationalTests.test_component_minimum) ... ok
+test_contribution_immutable (test_relational.RelationalTests.test_contribution_immutable) ... ok
+test_crud (test_relational.RelationalTests.test_crud) ... ok
+test_empty_key (test_relational.RelationalTests.test_empty_key) ... ok
+test_event_award_wrong_rule (test_relational.RelationalTests.test_event_award_wrong_rule) ... ok
+test_extra_wrong_subtype_rejected (test_relational.RelationalTests.test_extra_wrong_subtype_rejected) ... ok
+test_final_evaluation_immutable (test_relational.RelationalTests.test_final_evaluation_immutable) ... ok
+test_foreign_keys (test_relational.RelationalTests.test_foreign_keys) ... ok
+test_identity_reverse_duplicate (test_relational.RelationalTests.test_identity_reverse_duplicate) ... ok
+test_identity_self (test_relational.RelationalTests.test_identity_self) ... ok
+test_identity_verified_requires_timestamp (test_relational.RelationalTests.test_identity_verified_requires_timestamp) ... ok
+test_integrity (test_relational.RelationalTests.test_integrity) ... ok
+test_invalid_reference (test_relational.RelationalTests.test_invalid_reference) ... ok
+test_invalid_sql_date (test_relational.RelationalTests.test_invalid_sql_date) ... ok
+test_invalid_sql_timestamp (test_relational.RelationalTests.test_invalid_sql_timestamp) ... ok
+test_invalid_timestamp (test_relational.RelationalTests.test_invalid_timestamp) ... ok
+test_journey_query (test_relational.RelationalTests.test_journey_query) ... ok
+test_metric_definition_immutable (test_relational.RelationalTests.test_metric_definition_immutable) ... ok
+test_metric_query (test_relational.RelationalTests.test_metric_query) ... ok
+test_no_overwrite (test_relational.RelationalTests.test_no_overwrite) ... ok
+test_nonfinite_number (test_relational.RelationalTests.test_nonfinite_number) ... ok
+test_null_key (test_relational.RelationalTests.test_null_key) ... ok
+test_outlet_cannot_redirect_beneficiary (test_relational.RelationalTests.test_outlet_cannot_redirect_beneficiary) ... ok
+test_restrict_parent_deletion (test_relational.RelationalTests.test_restrict_parent_deletion) ... ok
+test_rule_overlap (test_relational.RelationalTests.test_rule_overlap) ... ok
+test_source_evidence_immutable (test_relational.RelationalTests.test_source_evidence_immutable) ... ok
+test_sql_injection_is_data (test_relational.RelationalTests.test_sql_injection_is_data) ... ok
+test_subtype_totality (test_relational.RelationalTests.test_subtype_totality) ... ok
+test_table_allowlist (test_relational.RelationalTests.test_table_allowlist) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 7.217s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "entities": 26,
+  "relationships": 42,
+  "endpoint_symbols": 84,
+  "counts": {
+    "0..N": 46,
+    "1..1": 33,
+    "1..N": 2,
+    "0..1": 3
+  },
+  "mapping": {
+    "0..1": "ERzeroToOne",
+    "1..1": "ERmandOne",
+    "0..N": "ERzeroToMany",
+    "1..N": "ERoneToMany"
+  },
+  "business_model_sha256": "53a2536814273d541c82970a694439bf52b8f1e4c65f3cda41bcb804fe02bd73",
+  "checks": {
+    "all_endpoint_minima_and_maxima_preserved": true,
+    "native_drawio_markers_match_svg_symbols": true,
+    "numeric_relationship_labels_removed": true,
+    "entity_box_layout_and_relationships_preserved": true,
+    "custom_identity_tags_not_displayed": true,
+    "ISA_and_connected_map_preserved": true,
+    "SVG_XML_and_HTML_consistent": true
+  },
+  "presentation": "Earlier entity-box diagram with named relationship diamonds and requested crows-foot entity-end symbols; not pure Chen notation.",
+  "limits": [
+    "Same reviewed business model; business-reference assumptions are unchanged.",
+    "Viewer controls tested with simulated DOM, not a live browser."
+  ]
+}

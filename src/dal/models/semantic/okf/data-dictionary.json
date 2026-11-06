@@ -1,0 +1,829 @@
+{
+  "ParentCompany": {
+    "fields": [
+      "RegistrationJurisdiction",
+      "BusinessRegistrationNumber",
+      "LegalName"
+    ],
+    "ck": [
+      "RegistrationJurisdiction",
+      "BusinessRegistrationNumber"
+    ],
+    "fks": {},
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "ProviderAuthorization": {
+    "fields": [
+      "ParentCompanyId",
+      "ProviderId",
+      "ValidFrom",
+      "ValidTo",
+      "AuthorizationStatus"
+    ],
+    "ck": [
+      "ParentCompanyId",
+      "ProviderId",
+      "ValidFrom"
+    ],
+    "fks": {
+      "ParentCompanyId": "ParentCompany",
+      "ProviderId": "Provider"
+    },
+    "optional": [
+      "ValidTo"
+    ],
+    "checks": [
+      "(ValidTo IS NULL OR ValidTo > ValidFrom)"
+    ],
+    "unique": []
+  },
+  "VehicleModel": {
+    "fields": [
+      "Manufacturer",
+      "CatalogueNamespace",
+      "ManufacturerModelCode",
+      "ModelYear",
+      "TrimCode",
+      "ModelName"
+    ],
+    "ck": [
+      "Manufacturer",
+      "CatalogueNamespace",
+      "ManufacturerModelCode",
+      "ModelYear",
+      "TrimCode"
+    ],
+    "fks": {},
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "IncentiveProgram": {
+    "fields": [
+      "ParentCompanyId",
+      "OfficialProgramReference",
+      "ProgramName",
+      "ActiveFrom",
+      "ActiveTo",
+      "EventVersionPolicy",
+      "PeriodVersionPolicy"
+    ],
+    "ck": [
+      "ParentCompanyId",
+      "OfficialProgramReference"
+    ],
+    "fks": {
+      "ParentCompanyId": "ParentCompany"
+    },
+    "optional": [
+      "ActiveTo"
+    ],
+    "checks": [
+      "(ActiveTo IS NULL OR ActiveTo > ActiveFrom)"
+    ],
+    "unique": []
+  },
+  "MetricDefinitionVersion": {
+    "fields": [
+      "ParentCompanyId",
+      "OfficialMetricCode",
+      "EffectiveFrom",
+      "EffectiveTo",
+      "MetricName",
+      "DefinitionExpression",
+      "UnitScheme",
+      "UnitCode"
+    ],
+    "ck": [
+      "ParentCompanyId",
+      "OfficialMetricCode",
+      "EffectiveFrom"
+    ],
+    "fks": {
+      "ParentCompanyId": "ParentCompany"
+    },
+    "optional": [
+      "EffectiveTo"
+    ],
+    "checks": [
+      "(EffectiveTo IS NULL OR EffectiveTo > EffectiveFrom)"
+    ],
+    "unique": []
+  },
+  "Provider": {
+    "fields": [
+      "RegistrationJurisdiction",
+      "BusinessRegistrationNumber",
+      "LegalName"
+    ],
+    "ck": [
+      "RegistrationJurisdiction",
+      "BusinessRegistrationNumber"
+    ],
+    "fks": {},
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "CustomerAccount": {
+    "fields": [
+      "ProviderId",
+      "SourceNamespace",
+      "ExistingCustomerReference",
+      "DisplayName",
+      "Email",
+      "PhoneNo"
+    ],
+    "ck": [
+      "ProviderId",
+      "SourceNamespace",
+      "ExistingCustomerReference"
+    ],
+    "fks": {
+      "ProviderId": "Provider"
+    },
+    "optional": [
+      "Email",
+      "PhoneNo"
+    ],
+    "checks": [],
+    "unique": []
+  },
+  "Vehicle": {
+    "fields": [
+      "VIN",
+      "LifecycleStatus",
+      "VehicleModelId"
+    ],
+    "ck": [
+      "VIN"
+    ],
+    "fks": {
+      "VehicleModelId": "VehicleModel"
+    },
+    "optional": [],
+    "checks": [
+      "length(VIN)=17 AND VIN NOT GLOB '*[^A-HJ-NPR-Z0-9]*'"
+    ],
+    "unique": []
+  },
+  "ProgramEnrollment": {
+    "fields": [
+      "IncentiveProgramId",
+      "ProviderId",
+      "ValidFrom",
+      "ValidTo",
+      "EnrollmentStatus"
+    ],
+    "ck": [
+      "IncentiveProgramId",
+      "ProviderId",
+      "ValidFrom"
+    ],
+    "fks": {
+      "IncentiveProgramId": "IncentiveProgram",
+      "ProviderId": "Provider"
+    },
+    "optional": [
+      "ValidTo"
+    ],
+    "checks": [
+      "(ValidTo IS NULL OR ValidTo > ValidFrom)"
+    ],
+    "unique": []
+  },
+  "PerformanceMeasurement": {
+    "fields": [
+      "ProviderId",
+      "MetricDefinitionVersionId",
+      "PeriodStart",
+      "PeriodEnd",
+      "MeasuredValue",
+      "CalculatedAt"
+    ],
+    "ck": [
+      "ProviderId",
+      "MetricDefinitionVersionId",
+      "PeriodStart",
+      "PeriodEnd"
+    ],
+    "fks": {
+      "ProviderId": "Provider",
+      "MetricDefinitionVersionId": "MetricDefinitionVersion"
+    },
+    "optional": [],
+    "checks": [
+      "(PeriodEnd IS NULL OR PeriodEnd > PeriodStart)"
+    ],
+    "unique": []
+  },
+  "EventAwardComponent": {
+    "fields": [
+      "EventAwardId",
+      "RewardType",
+      "UnitScheme",
+      "UnitCode",
+      "BenefitValue",
+      "Currency",
+      "ValidFrom",
+      "ValidTo"
+    ],
+    "ck": [
+      "EventAwardId",
+      "RewardType",
+      "UnitScheme",
+      "UnitCode"
+    ],
+    "fks": {
+      "EventAwardId": "EventAward"
+    },
+    "optional": [
+      "Currency",
+      "ValidTo"
+    ],
+    "checks": [
+      "(ValidTo IS NULL OR ValidTo > ValidFrom)",
+      "BenefitValue >= 0",
+      "(Currency IS NULL OR (length(Currency)=3 AND Currency NOT GLOB '*[^A-Z]*'))",
+      "(RewardType != 'Cash' OR (Currency IS NOT NULL AND UnitScheme='ISO4217' AND UnitCode=Currency))",
+      "(RewardType != 'Points' OR Currency IS NULL)"
+    ],
+    "unique": [
+      [
+        "Id",
+        "EventAwardId"
+      ]
+    ]
+  },
+  "Outlet": {
+    "fields": [
+      "ProviderId",
+      "ExistingOutletReference",
+      "OutletName",
+      "Address"
+    ],
+    "ck": [
+      "ProviderId",
+      "ExistingOutletReference"
+    ],
+    "fks": {
+      "ProviderId": "Provider"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "CustomerIdentityLink": {
+    "fields": [
+      "AccountAId",
+      "AccountBId",
+      "VerificationStatus",
+      "VerificationMethod",
+      "VerifiedAt",
+      "RevokedAt",
+      "EvidenceReference"
+    ],
+    "ck": [
+      "AccountAId",
+      "AccountBId"
+    ],
+    "fks": {
+      "AccountAId": "CustomerAccount",
+      "AccountBId": "CustomerAccount"
+    },
+    "optional": [
+      "RevokedAt",
+      "VerifiedAt"
+    ],
+    "checks": [
+      "AccountAId < AccountBId",
+      "VerificationStatus IN ('Pending','Verified','Revoked','Rejected')",
+      "(VerificationStatus != 'Verified' OR (VerifiedAt IS NOT NULL AND RevokedAt IS NULL))"
+    ],
+    "unique": []
+  },
+  "VehicleActivity": {
+    "fields": [
+      "IssuingOutletId",
+      "SourceNamespace",
+      "ActivityKind",
+      "OfficialActivityReference",
+      "ActivityStatus",
+      "StartedAt",
+      "EndedAt",
+      "RecordedAt",
+      "CustomerAccountId",
+      "VehicleId",
+      "SaleId",
+      "RentalId",
+      "ServiceId"
+    ],
+    "ck": [
+      "IssuingOutletId",
+      "SourceNamespace",
+      "ActivityKind",
+      "OfficialActivityReference"
+    ],
+    "fks": {
+      "IssuingOutletId": "Outlet",
+      "CustomerAccountId": "CustomerAccount",
+      "VehicleId": "Vehicle",
+      "SaleId": "Sale",
+      "RentalId": "Rental",
+      "ServiceId": "Service"
+    },
+    "optional": [
+      "EndedAt",
+      "RentalId",
+      "SaleId",
+      "ServiceId"
+    ],
+    "checks": [
+      "(EndedAt IS NULL OR EndedAt > StartedAt)",
+      "ActivityKind IN ('Sale','Rental','Service')",
+      "(ActivityKind='Sale' AND SaleId IS NOT NULL AND RentalId IS NULL AND ServiceId IS NULL) OR (ActivityKind='Rental' AND RentalId IS NOT NULL AND SaleId IS NULL AND ServiceId IS NULL) OR (ActivityKind='Service' AND ServiceId IS NOT NULL AND SaleId IS NULL AND RentalId IS NULL)"
+    ],
+    "unique": [
+      [
+        "Id",
+        "SaleId"
+      ],
+      [
+        "Id",
+        "RentalId"
+      ],
+      [
+        "Id",
+        "ServiceId"
+      ]
+    ]
+  },
+  "IncentiveRule": {
+    "fields": [
+      "IncentiveProgramId",
+      "OfficialRuleCode",
+      "RuleName",
+      "AssessmentBasis"
+    ],
+    "ck": [
+      "IncentiveProgramId",
+      "OfficialRuleCode"
+    ],
+    "fks": {
+      "IncentiveProgramId": "IncentiveProgram"
+    },
+    "optional": [],
+    "checks": [
+      "AssessmentBasis IN ('Event','Period')"
+    ],
+    "unique": []
+  },
+  "EventEvaluation": {
+    "fields": [
+      "VehicleActivityId",
+      "RuleVersionId",
+      "Result",
+      "Reason",
+      "QualificationDate",
+      "EvaluatedAt",
+      "DecisionEvidenceReference"
+    ],
+    "ck": [
+      "VehicleActivityId",
+      "RuleVersionId"
+    ],
+    "fks": {
+      "VehicleActivityId": "VehicleActivity",
+      "RuleVersionId": "RuleVersion"
+    },
+    "optional": [],
+    "checks": [
+      "Result IN ('Qualified','Rejected')"
+    ],
+    "unique": []
+  },
+  "EventAward": {
+    "fields": [
+      "VehicleActivityId",
+      "IncentiveRuleId",
+      "AwardStatus",
+      "IssuedAt",
+      "AcceptedEvaluationId",
+      "FirstComponentId"
+    ],
+    "ck": [
+      "VehicleActivityId",
+      "IncentiveRuleId"
+    ],
+    "fks": {
+      "VehicleActivityId": "VehicleActivity",
+      "IncentiveRuleId": "IncentiveRule",
+      "AcceptedEvaluationId": "EventEvaluation",
+      "FirstComponentId": "EventAwardComponent"
+    },
+    "optional": [],
+    "checks": [
+      "AwardStatus IN ('Issued','Cancelled')"
+    ],
+    "unique": [
+      [
+        "AcceptedEvaluationId"
+      ]
+    ]
+  },
+  "Capability": {
+    "fields": [
+      "ExistingCapabilityDesignation",
+      "Description"
+    ],
+    "ck": [
+      "ExistingCapabilityDesignation"
+    ],
+    "fks": {},
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "CapabilityAuthorization": {
+    "fields": [
+      "ProviderAuthorizationId",
+      "OutletId",
+      "CapabilityId",
+      "ValidFrom",
+      "ValidTo",
+      "AuthorizationStatus"
+    ],
+    "ck": [
+      "ProviderAuthorizationId",
+      "OutletId",
+      "CapabilityId",
+      "ValidFrom"
+    ],
+    "fks": {
+      "ProviderAuthorizationId": "ProviderAuthorization",
+      "OutletId": "Outlet",
+      "CapabilityId": "Capability"
+    },
+    "optional": [
+      "ValidTo"
+    ],
+    "checks": [
+      "(ValidTo IS NULL OR ValidTo > ValidFrom)"
+    ],
+    "unique": []
+  },
+  "RuleVersion": {
+    "fields": [
+      "IncentiveRuleId",
+      "EffectiveFrom",
+      "EffectiveTo",
+      "ConditionExpression",
+      "RewardSpecification"
+    ],
+    "ck": [
+      "IncentiveRuleId",
+      "EffectiveFrom"
+    ],
+    "fks": {
+      "IncentiveRuleId": "IncentiveRule"
+    },
+    "optional": [
+      "EffectiveTo"
+    ],
+    "checks": [
+      "(EffectiveTo IS NULL OR EffectiveTo > EffectiveFrom)"
+    ],
+    "unique": []
+  },
+  "PeriodEvaluation": {
+    "fields": [
+      "ProviderId",
+      "RuleVersionId",
+      "PeriodStart",
+      "PeriodEnd",
+      "Result",
+      "Reason",
+      "QualificationDate",
+      "EvaluatedAt",
+      "DecisionEvidenceReference"
+    ],
+    "ck": [
+      "ProviderId",
+      "RuleVersionId",
+      "PeriodStart",
+      "PeriodEnd"
+    ],
+    "fks": {
+      "ProviderId": "Provider",
+      "RuleVersionId": "RuleVersion"
+    },
+    "optional": [],
+    "checks": [
+      "(PeriodEnd IS NULL OR PeriodEnd > PeriodStart)",
+      "Result IN ('Qualified','Rejected')"
+    ],
+    "unique": []
+  },
+  "PeriodAward": {
+    "fields": [
+      "ProviderId",
+      "IncentiveRuleId",
+      "PeriodStart",
+      "PeriodEnd",
+      "AwardStatus",
+      "IssuedAt",
+      "AcceptedEvaluationId",
+      "FirstComponentId"
+    ],
+    "ck": [
+      "ProviderId",
+      "IncentiveRuleId",
+      "PeriodStart",
+      "PeriodEnd"
+    ],
+    "fks": {
+      "ProviderId": "Provider",
+      "IncentiveRuleId": "IncentiveRule",
+      "AcceptedEvaluationId": "PeriodEvaluation",
+      "FirstComponentId": "PeriodAwardComponent"
+    },
+    "optional": [],
+    "checks": [
+      "(PeriodEnd IS NULL OR PeriodEnd > PeriodStart)",
+      "AwardStatus IN ('Issued','Cancelled')"
+    ],
+    "unique": [
+      [
+        "AcceptedEvaluationId"
+      ]
+    ]
+  },
+  "Rental": {
+    "fields": [
+      "VehicleActivityId",
+      "RentalCharge",
+      "Currency",
+      "ReturnedAt",
+      "ReplacementForServiceId",
+      "ReplacementPurpose"
+    ],
+    "ck": [
+      "VehicleActivityId"
+    ],
+    "fks": {
+      "VehicleActivityId": "VehicleActivity",
+      "ReplacementForServiceId": "Service"
+    },
+    "optional": [
+      "ReplacementForServiceId",
+      "ReplacementPurpose",
+      "ReturnedAt"
+    ],
+    "checks": [
+      "RentalCharge >= 0",
+      "(Currency IS NULL OR (length(Currency)=3 AND Currency NOT GLOB '*[^A-Z]*'))",
+      "(ReplacementForServiceId IS NULL AND ReplacementPurpose IS NULL) OR (ReplacementForServiceId IS NOT NULL AND ReplacementPurpose IS NOT NULL)"
+    ],
+    "unique": [
+      [
+        "Id",
+        "VehicleActivityId"
+      ]
+    ]
+  },
+  "Sale": {
+    "fields": [
+      "VehicleActivityId",
+      "SalePrice",
+      "Currency",
+      "CompletedAt"
+    ],
+    "ck": [
+      "VehicleActivityId"
+    ],
+    "fks": {
+      "VehicleActivityId": "VehicleActivity"
+    },
+    "optional": [],
+    "checks": [
+      "SalePrice >= 0",
+      "(Currency IS NULL OR (length(Currency)=3 AND Currency NOT GLOB '*[^A-Z]*'))"
+    ],
+    "unique": [
+      [
+        "Id",
+        "VehicleActivityId"
+      ]
+    ]
+  },
+  "Service": {
+    "fields": [
+      "VehicleActivityId",
+      "ServiceType",
+      "Outcome",
+      "CompletedAt"
+    ],
+    "ck": [
+      "VehicleActivityId"
+    ],
+    "fks": {
+      "VehicleActivityId": "VehicleActivity"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": [
+      [
+        "Id",
+        "VehicleActivityId"
+      ]
+    ]
+  },
+  "PeriodAwardComponent": {
+    "fields": [
+      "PeriodAwardId",
+      "RewardType",
+      "UnitScheme",
+      "UnitCode",
+      "BenefitValue",
+      "Currency",
+      "ValidFrom",
+      "ValidTo"
+    ],
+    "ck": [
+      "PeriodAwardId",
+      "RewardType",
+      "UnitScheme",
+      "UnitCode"
+    ],
+    "fks": {
+      "PeriodAwardId": "PeriodAward"
+    },
+    "optional": [
+      "Currency",
+      "ValidTo"
+    ],
+    "checks": [
+      "(ValidTo IS NULL OR ValidTo > ValidFrom)",
+      "BenefitValue >= 0",
+      "(Currency IS NULL OR (length(Currency)=3 AND Currency NOT GLOB '*[^A-Z]*'))",
+      "(RewardType != 'Cash' OR (Currency IS NOT NULL AND UnitScheme='ISO4217' AND UnitCode=Currency))",
+      "(RewardType != 'Points' OR Currency IS NULL)"
+    ],
+    "unique": [
+      [
+        "Id",
+        "PeriodAwardId"
+      ]
+    ]
+  },
+  "MeasurementContribution": {
+    "fields": [
+      "PerformanceMeasurementId",
+      "VehicleActivityId",
+      "ContributionRole"
+    ],
+    "ck": [
+      "PerformanceMeasurementId",
+      "VehicleActivityId"
+    ],
+    "fks": {
+      "PerformanceMeasurementId": "PerformanceMeasurement",
+      "VehicleActivityId": "VehicleActivity"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "RuleMetric": {
+    "fields": [
+      "RuleVersionId",
+      "MetricDefinitionVersionId",
+      "MetricRole"
+    ],
+    "ck": [
+      "RuleVersionId",
+      "MetricDefinitionVersionId"
+    ],
+    "fks": {
+      "RuleVersionId": "RuleVersion",
+      "MetricDefinitionVersionId": "MetricDefinitionVersion"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "EventEvaluationMeasurement": {
+    "fields": [
+      "EventEvaluationId",
+      "PerformanceMeasurementId",
+      "EvidenceRole"
+    ],
+    "ck": [
+      "EventEvaluationId",
+      "PerformanceMeasurementId"
+    ],
+    "fks": {
+      "EventEvaluationId": "EventEvaluation",
+      "PerformanceMeasurementId": "PerformanceMeasurement"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "EventEvaluationActivity": {
+    "fields": [
+      "EventEvaluationId",
+      "VehicleActivityId",
+      "EvidenceRole"
+    ],
+    "ck": [
+      "EventEvaluationId",
+      "VehicleActivityId"
+    ],
+    "fks": {
+      "EventEvaluationId": "EventEvaluation",
+      "VehicleActivityId": "VehicleActivity"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "EventEvaluationIdentity": {
+    "fields": [
+      "EventEvaluationId",
+      "CustomerIdentityLinkId",
+      "VerificationOutcomeUsed",
+      "VerifiedAtUsed",
+      "EvidenceReferenceUsed"
+    ],
+    "ck": [
+      "EventEvaluationId",
+      "CustomerIdentityLinkId"
+    ],
+    "fks": {
+      "EventEvaluationId": "EventEvaluation",
+      "CustomerIdentityLinkId": "CustomerIdentityLink"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "PeriodEvaluationMeasurement": {
+    "fields": [
+      "PeriodEvaluationId",
+      "PerformanceMeasurementId",
+      "EvidenceRole"
+    ],
+    "ck": [
+      "PeriodEvaluationId",
+      "PerformanceMeasurementId"
+    ],
+    "fks": {
+      "PeriodEvaluationId": "PeriodEvaluation",
+      "PerformanceMeasurementId": "PerformanceMeasurement"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "PeriodEvaluationActivity": {
+    "fields": [
+      "PeriodEvaluationId",
+      "VehicleActivityId",
+      "EvidenceRole"
+    ],
+    "ck": [
+      "PeriodEvaluationId",
+      "VehicleActivityId"
+    ],
+    "fks": {
+      "PeriodEvaluationId": "PeriodEvaluation",
+      "VehicleActivityId": "VehicleActivity"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  },
+  "PeriodEvaluationIdentity": {
+    "fields": [
+      "PeriodEvaluationId",
+      "CustomerIdentityLinkId",
+      "VerificationOutcomeUsed",
+      "VerifiedAtUsed",
+      "EvidenceReferenceUsed"
+    ],
+    "ck": [
+      "PeriodEvaluationId",
+      "CustomerIdentityLinkId"
+    ],
+    "fks": {
+      "PeriodEvaluationId": "PeriodEvaluation",
+      "CustomerIdentityLinkId": "CustomerIdentityLink"
+    },
+    "optional": [],
+    "checks": [],
+    "unique": []
+  }
+}

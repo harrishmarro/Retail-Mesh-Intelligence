@@ -1,0 +1,3 @@
+﻿Id,ParentCompanyId,OfficialProgramReference,ProgramName,ActiveFrom,ActiveTo,EventVersionPolicy,PeriodVersionPolicy
+1,1,CMN-CJ-2026,Connected Customer Journey Partner Program,2026-01-01,,QualificationDate,QualificationDate
+2,2,PFRA-SPE-2026,Partner Service Performance Program,2026-01-01,,QualificationDate,QualificationDate

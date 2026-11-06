@@ -1,0 +1,437 @@
+{
+  "company_id": 2,
+  "activity_id": 4,
+  "rule_id": 3,
+  "rule_version_id": 3,
+  "beneficiary_id": 4,
+  "beneficiary": "Maple Motors (fictional)",
+  "fleet_count_before_sale": 12,
+  "rule_conditions": {
+    "operation": "fleet_journey_v1",
+    "minimum_fleet_vehicles": 10,
+    "service_window_days": 30
+  },
+  "reward": {
+    "amount_minor": 15000,
+    "currency": "CAD"
+  },
+  "result": "Qualified",
+  "checks": [
+    {
+      "name": "completed_sale",
+      "passed": true,
+      "detail": "Completed sale at or before evaluation cutoff"
+    },
+    {
+      "name": "program_active",
+      "passed": true,
+      "detail": "Program active at sale completion"
+    },
+    {
+      "name": "program_enrollment",
+      "passed": true,
+      "detail": "Sale provider enrolled at sale completion"
+    },
+    {
+      "name": "sale_authorization",
+      "passed": true,
+      "detail": "Authorized issuing outlet and sale capability"
+    },
+    {
+      "name": "pre_sale_fleet",
+      "passed": true,
+      "detail": "12 existing same-manufacturer vehicles; minimum 10"
+    },
+    {
+      "name": "verified_service_and_replacement",
+      "passed": true,
+      "detail": "Completed service within window, different replacement vehicle during service, verified direct accounts and authorized providers"
+    }
+  ],
+  "evidence": {
+    "sale": {
+      "Id": 4,
+      "IssuingOutletId": 4,
+      "SourceNamespace": "demo.northstar",
+      "ActivityKind": "Sale",
+      "OfficialActivityReference": "NS-SALE-001",
+      "ActivityStatus": "Completed",
+      "StartedAt": "2026-10-01T09:00:00Z",
+      "EndedAt": "2026-10-01T10:00:00Z",
+      "RecordedAt": "2026-10-01T10:00:00Z",
+      "CustomerAccountId": 4,
+      "VehicleId": 15,
+      "SaleId": 2,
+      "RentalId": null,
+      "ServiceId": null,
+      "CompletedAt": "2026-10-01T10:00:00Z",
+      "SalePrice": 30000,
+      "Currency": "CAD",
+      "ProviderId": 4,
+      "ProviderName": "Maple Motors (fictional)"
+    },
+    "rule": {
+      "Id": 3,
+      "IncentiveProgramId": 2,
+      "OfficialRuleCode": "FLEET-JOURNEY-150",
+      "RuleName": "Fleet sale with service and replacement rental",
+      "AssessmentBasis": "Event",
+      "ParentCompanyId": 2,
+      "ActiveFrom": "2026-01-01",
+      "ActiveTo": null,
+      "EventVersionPolicy": "SaleCompletedAt"
+    },
+    "version": {
+      "Id": 3,
+      "IncentiveRuleId": 3,
+      "EffectiveFrom": "2026-01-01",
+      "EffectiveTo": null,
+      "ConditionExpression": "{\"operation\": \"fleet_journey_v1\", \"minimum_fleet_vehicles\": 10, \"service_window_days\": 30}",
+      "RewardSpecification": "{\"amount_minor\": 15000, \"currency\": \"CAD\"}"
+    },
+    "enrollment": [
+      {
+        "Id": 4,
+        "IncentiveProgramId": 2,
+        "ProviderId": 4,
+        "ValidFrom": "2026-01-01",
+        "ValidTo": null,
+        "EnrollmentStatus": "Active"
+      }
+    ],
+    "sale_authorization": [
+      {
+        "Id": 4,
+        "ParentCompanyId": 2,
+        "ProviderId": 4,
+        "ValidFrom": "2026-01-01",
+        "ValidTo": null,
+        "AuthorizationStatus": "Active",
+        "CapabilityAuthorizationId": 4,
+        "CapabilityId": 1,
+        "CapabilityValidFrom": "2026-01-01",
+        "CapabilityValidTo": null
+      }
+    ],
+    "fleet": {
+      "Id": 1,
+      "ParentCompanyId": 2,
+      "OwnerAccountId": 4,
+      "FleetReference": "CEDAR-FLEET",
+      "FleetName": "Cedar Logistics (fictional)"
+    },
+    "fleet_assignments": [
+      {
+        "Id": 1,
+        "FleetId": 1,
+        "VehicleId": 3,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:3",
+        "VIN": "DEMVHCL0000000001",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 2,
+        "FleetId": 1,
+        "VehicleId": 4,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:4",
+        "VIN": "DEMVHCL0000000002",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 3,
+        "FleetId": 1,
+        "VehicleId": 5,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:5",
+        "VIN": "DEMVHCL0000000003",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 4,
+        "FleetId": 1,
+        "VehicleId": 6,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:6",
+        "VIN": "DEMVHCL0000000004",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 5,
+        "FleetId": 1,
+        "VehicleId": 7,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:7",
+        "VIN": "DEMVHCL0000000005",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 6,
+        "FleetId": 1,
+        "VehicleId": 8,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:8",
+        "VIN": "DEMVHCL0000000006",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 7,
+        "FleetId": 1,
+        "VehicleId": 9,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:9",
+        "VIN": "DEMVHCL0000000007",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 8,
+        "FleetId": 1,
+        "VehicleId": 10,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:10",
+        "VIN": "DEMVHCL0000000008",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 9,
+        "FleetId": 1,
+        "VehicleId": 11,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:11",
+        "VIN": "DEMVHCL0000000009",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 10,
+        "FleetId": 1,
+        "VehicleId": 12,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:12",
+        "VIN": "DEMVHCL0000000010",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 11,
+        "FleetId": 1,
+        "VehicleId": 13,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:13",
+        "VIN": "DEMVHCL0000000011",
+        "Manufacturer": "Northstar (fictional)"
+      },
+      {
+        "Id": 12,
+        "FleetId": 1,
+        "VehicleId": 14,
+        "ValidFrom": "2026-01-01T00:00:00Z",
+        "ValidTo": null,
+        "EvidenceReference": "demo:northstar:preexisting:14",
+        "VIN": "DEMVHCL0000000012",
+        "Manufacturer": "Northstar (fictional)"
+      }
+    ],
+    "candidates": [
+      {
+        "service": {
+          "Id": 5,
+          "IssuingOutletId": 6,
+          "SourceNamespace": "demo.northstar",
+          "ActivityKind": "Service",
+          "OfficialActivityReference": "NS-SERVICE-001",
+          "ActivityStatus": "Completed",
+          "StartedAt": "2026-10-10T09:00:00Z",
+          "EndedAt": "2026-10-12T17:00:00Z",
+          "RecordedAt": "2026-10-12T17:00:00Z",
+          "CustomerAccountId": 6,
+          "VehicleId": 15,
+          "SaleId": null,
+          "RentalId": null,
+          "ServiceId": 2,
+          "CompletedAt": "2026-10-12T17:00:00Z",
+          "ServiceType": "Eligible demonstration service",
+          "Outcome": "Completed",
+          "ProviderId": 6
+        },
+        "rental": {
+          "Id": 6,
+          "IssuingOutletId": 5,
+          "SourceNamespace": "demo.northstar",
+          "ActivityKind": "Rental",
+          "OfficialActivityReference": "NS-RENTAL-001",
+          "ActivityStatus": "Completed",
+          "StartedAt": "2026-10-10T12:00:00Z",
+          "EndedAt": "2026-10-11T12:00:00Z",
+          "RecordedAt": "2026-10-11T12:00:00Z",
+          "CustomerAccountId": 5,
+          "VehicleId": 16,
+          "SaleId": null,
+          "RentalId": 2,
+          "ServiceId": null,
+          "ReturnedAt": "2026-10-11T12:00:00Z",
+          "ReplacementPurpose": "Replacement during eligible service",
+          "ReplacementForServiceId": 2,
+          "ProviderId": 5
+        },
+        "service_identity": {
+          "Id": 5,
+          "AccountAId": 4,
+          "AccountBId": 6,
+          "VerificationStatus": "Verified",
+          "VerificationMethod": "Synthetic acceptance fixture",
+          "VerifiedAt": "2026-09-01T00:00:00Z",
+          "RevokedAt": null,
+          "EvidenceReference": "demo:northstar:identity:4:6"
+        },
+        "rental_identity": {
+          "Id": 4,
+          "AccountAId": 4,
+          "AccountBId": 5,
+          "VerificationStatus": "Verified",
+          "VerificationMethod": "Synthetic acceptance fixture",
+          "VerifiedAt": "2026-09-01T00:00:00Z",
+          "RevokedAt": null,
+          "EvidenceReference": "demo:northstar:identity:4:5"
+        },
+        "service_authorization": [
+          {
+            "Id": 6,
+            "ParentCompanyId": 2,
+            "ProviderId": 6,
+            "ValidFrom": "2026-01-01",
+            "ValidTo": null,
+            "AuthorizationStatus": "Active",
+            "CapabilityAuthorizationId": 6,
+            "CapabilityId": 3,
+            "CapabilityValidFrom": "2026-01-01",
+            "CapabilityValidTo": null
+          }
+        ],
+        "rental_authorization": [
+          {
+            "Id": 5,
+            "ParentCompanyId": 2,
+            "ProviderId": 5,
+            "ValidFrom": "2026-01-01",
+            "ValidTo": null,
+            "AuthorizationStatus": "Active",
+            "CapabilityAuthorizationId": 5,
+            "CapabilityId": 2,
+            "CapabilityValidFrom": "2026-01-01",
+            "CapabilityValidTo": null
+          }
+        ],
+        "valid": true
+      }
+    ],
+    "selected": {
+      "service": {
+        "Id": 5,
+        "IssuingOutletId": 6,
+        "SourceNamespace": "demo.northstar",
+        "ActivityKind": "Service",
+        "OfficialActivityReference": "NS-SERVICE-001",
+        "ActivityStatus": "Completed",
+        "StartedAt": "2026-10-10T09:00:00Z",
+        "EndedAt": "2026-10-12T17:00:00Z",
+        "RecordedAt": "2026-10-12T17:00:00Z",
+        "CustomerAccountId": 6,
+        "VehicleId": 15,
+        "SaleId": null,
+        "RentalId": null,
+        "ServiceId": 2,
+        "CompletedAt": "2026-10-12T17:00:00Z",
+        "ServiceType": "Eligible demonstration service",
+        "Outcome": "Completed",
+        "ProviderId": 6
+      },
+      "rental": {
+        "Id": 6,
+        "IssuingOutletId": 5,
+        "SourceNamespace": "demo.northstar",
+        "ActivityKind": "Rental",
+        "OfficialActivityReference": "NS-RENTAL-001",
+        "ActivityStatus": "Completed",
+        "StartedAt": "2026-10-10T12:00:00Z",
+        "EndedAt": "2026-10-11T12:00:00Z",
+        "RecordedAt": "2026-10-11T12:00:00Z",
+        "CustomerAccountId": 5,
+        "VehicleId": 16,
+        "SaleId": null,
+        "RentalId": 2,
+        "ServiceId": null,
+        "ReturnedAt": "2026-10-11T12:00:00Z",
+        "ReplacementPurpose": "Replacement during eligible service",
+        "ReplacementForServiceId": 2,
+        "ProviderId": 5
+      },
+      "service_identity": {
+        "Id": 5,
+        "AccountAId": 4,
+        "AccountBId": 6,
+        "VerificationStatus": "Verified",
+        "VerificationMethod": "Synthetic acceptance fixture",
+        "VerifiedAt": "2026-09-01T00:00:00Z",
+        "RevokedAt": null,
+        "EvidenceReference": "demo:northstar:identity:4:6"
+      },
+      "rental_identity": {
+        "Id": 4,
+        "AccountAId": 4,
+        "AccountBId": 5,
+        "VerificationStatus": "Verified",
+        "VerificationMethod": "Synthetic acceptance fixture",
+        "VerifiedAt": "2026-09-01T00:00:00Z",
+        "RevokedAt": null,
+        "EvidenceReference": "demo:northstar:identity:4:5"
+      },
+      "service_authorization": [
+        {
+          "Id": 6,
+          "ParentCompanyId": 2,
+          "ProviderId": 6,
+          "ValidFrom": "2026-01-01",
+          "ValidTo": null,
+          "AuthorizationStatus": "Active",
+          "CapabilityAuthorizationId": 6,
+          "CapabilityId": 3,
+          "CapabilityValidFrom": "2026-01-01",
+          "CapabilityValidTo": null
+        }
+      ],
+      "rental_authorization": [
+        {
+          "Id": 5,
+          "ParentCompanyId": 2,
+          "ProviderId": 5,
+          "ValidFrom": "2026-01-01",
+          "ValidTo": null,
+          "AuthorizationStatus": "Active",
+          "CapabilityAuthorizationId": 5,
+          "CapabilityId": 2,
+          "CapabilityValidFrom": "2026-01-01",
+          "CapabilityValidTo": null
+        }
+      ],
+      "valid": true
+    }
+  },
+  "evaluated_at": "2026-11-04T08:45:38Z",
+  "input_hash": "de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc",
+  "event_evaluation_id": 2,
+  "event_award_id": 2,
+  "run_id": 1,
+  "replayed": false,
+  "review_required": false
+}
