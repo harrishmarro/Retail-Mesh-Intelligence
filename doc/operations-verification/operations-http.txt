@@ -1,1 +1,0 @@
-PASS: imported company access; live knowledge/OKF/SHACL; no-run knowledge questions; admin-only application workflow; approval/activation/login; one-use tokens; password change and session revocation; provider graph redaction; cross-company observability isolation; safe request telemetry.
