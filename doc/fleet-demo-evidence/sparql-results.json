@@ -1,0 +1,69 @@
+{
+  "replacement-journey.sparql": {
+    "rows": 1,
+    "values": [
+      [
+        "https://example.org/retail-mesh/demo/company/2/activity/6",
+        "https://example.org/retail-mesh/demo/company/2/vehicle/16",
+        "https://example.org/retail-mesh/demo/company/2/activity/5",
+        "https://example.org/retail-mesh/demo/company/2/vehicle/15"
+      ]
+    ]
+  },
+  "award-evidence.sparql": {
+    "rows": 1,
+    "values": [
+      [
+        "Maple Motors (fictional)",
+        "15000",
+        "CAD",
+        "https://example.org/retail-mesh/demo/company/2/rule-version/3",
+        "https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc"
+      ]
+    ]
+  },
+  "fleet-proof.sparql": {
+    "rows": 1,
+    "values": [
+      [
+        "https://example.org/retail-mesh/demo/company/2/run/1",
+        "12"
+      ]
+    ]
+  },
+  "evaluation-checks.sparql": {
+    "rows": 6,
+    "values": [
+      [
+        "completed_sale",
+        "true",
+        "Completed sale at or before evaluation cutoff"
+      ],
+      [
+        "pre_sale_fleet",
+        "true",
+        "12 existing same-manufacturer vehicles; minimum 10"
+      ],
+      [
+        "program_active",
+        "true",
+        "Program active at sale completion"
+      ],
+      [
+        "program_enrollment",
+        "true",
+        "Sale provider enrolled at sale completion"
+      ],
+      [
+        "sale_authorization",
+        "true",
+        "Authorized issuing outlet and sale capability"
+      ],
+      [
+        "verified_service_and_replacement",
+        "true",
+        "Completed service within window, different replacement vehicle during service, verified direct accounts and authorized providers"
+      ]
+    ]
+  }
+}

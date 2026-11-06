@@ -1,0 +1,8 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rm: <https://example.org/retail-mesh/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+rm:RecordShape a sh:NodeShape ;
+ sh:targetClass rm:Record ;
+ sh:nodeKind sh:IRI ;
+ sh:property [ sh:path rm:sourceTable ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+ sh:property [ sh:path rm:sourceRowId ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ] .

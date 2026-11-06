@@ -1,0 +1,6 @@
+PREFIX rm: <https://example.org/retail-mesh/vocab#>
+SELECT ?rental ?replacementVehicle ?service ?servicedVehicle WHERE {
+ ?rental a rm:Rental; rm:replacementFor ?service; rm:involvesVehicle ?replacementVehicle.
+ ?service a rm:Service; rm:involvesVehicle ?servicedVehicle.
+ FILTER(?replacementVehicle != ?servicedVehicle)
+}

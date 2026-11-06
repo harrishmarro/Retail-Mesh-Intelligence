@@ -1,0 +1,17 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> retail-mesh-frontend@0.5.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/scratch/2e2656f5c895/repo/frontend
+
+ ✓ src/app/store.test.ts (17 tests) 27ms
+ ✓ src/features/ui.test.tsx (10 tests) 822ms
+ ✓ src/features/operations.test.tsx (13 tests) 1313ms
+
+ Test Files  3 passed (3)
+      Tests  40 passed (40)
+   Start at  15:46:38
+   Duration  2.93s (transform 728ms, setup 207ms, collect 1.75s, tests 2.16s, environment 1.29s, prepare 261ms)
+

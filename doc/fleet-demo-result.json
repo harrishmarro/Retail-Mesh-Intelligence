@@ -1,0 +1,58 @@
+{
+  "company_id": 2,
+  "activity_id": 4,
+  "rule_id": 3,
+  "rule_version_id": 3,
+  "beneficiary_id": 4,
+  "beneficiary": "Maple Motors (fictional)",
+  "fleet_count_before_sale": 12,
+  "rule_conditions": {
+    "operation": "fleet_journey_v1",
+    "minimum_fleet_vehicles": 10,
+    "service_window_days": 30
+  },
+  "reward": {
+    "amount_minor": 15000,
+    "currency": "CAD"
+  },
+  "result": "Qualified",
+  "checks": [
+    {
+      "name": "completed_sale",
+      "passed": true,
+      "detail": "Completed sale at or before evaluation cutoff"
+    },
+    {
+      "name": "program_active",
+      "passed": true,
+      "detail": "Program active at sale completion"
+    },
+    {
+      "name": "program_enrollment",
+      "passed": true,
+      "detail": "Sale provider enrolled at sale completion"
+    },
+    {
+      "name": "sale_authorization",
+      "passed": true,
+      "detail": "Authorized issuing outlet and sale capability"
+    },
+    {
+      "name": "pre_sale_fleet",
+      "passed": true,
+      "detail": "12 existing same-manufacturer vehicles; minimum 10"
+    },
+    {
+      "name": "verified_service_and_replacement",
+      "passed": true,
+      "detail": "Completed service within window, different replacement vehicle during service, verified direct accounts and authorized providers"
+    }
+  ],
+  "evaluated_at": "2026-11-04T08:45:38Z",
+  "input_hash": "de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc",
+  "event_evaluation_id": 2,
+  "event_award_id": 2,
+  "run_id": 1,
+  "replayed": false,
+  "review_required": false
+}

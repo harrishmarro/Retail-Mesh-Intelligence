@@ -1,0 +1,12 @@
+﻿Id,VehicleActivityId,RentalCharge,Currency,ReturnedAt,ReplacementForServiceId,ReplacementPurpose
+1,25,178,CAD,2026-03-24T01:00:00Z,1,Service downtime mobility; one-hour vehicle handover allowance
+2,26,188,CAD,2026-04-04T01:00:00Z,2,Service downtime mobility; one-hour vehicle handover allowance
+3,27,178,CAD,2026-04-20T01:00:00Z,3,Service downtime mobility; one-hour vehicle handover allowance
+4,28,267,CAD,2026-06-05T01:00:00Z,4,Service downtime mobility; one-hour vehicle handover allowance
+5,29,188,CAD,2026-07-17T01:00:00Z,5,Service downtime mobility; one-hour vehicle handover allowance
+6,30,282,CAD,2026-07-31T01:00:00Z,6,Service downtime mobility; one-hour vehicle handover allowance
+7,31,178,CAD,2026-08-04T01:00:00Z,7,Service downtime mobility; one-hour vehicle handover allowance
+8,32,282,CAD,2026-08-23T01:00:00Z,8,Service downtime mobility; one-hour vehicle handover allowance
+9,33,178,CAD,2026-09-06T01:00:00Z,9,Service downtime mobility; one-hour vehicle handover allowance
+10,34,188,CAD,2026-09-25T01:00:00Z,10,Service downtime mobility; one-hour vehicle handover allowance
+11,35,72,CAD,,,

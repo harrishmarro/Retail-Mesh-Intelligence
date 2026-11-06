@@ -1,0 +1,7 @@
+﻿Id,EventAwardId,RewardType,UnitScheme,UnitCode,BenefitValue,Currency,ValidFrom,ValidTo
+1,1,Cash,ISO4217,CAD,175,CAD,2026-10-27,
+2,2,Cash,ISO4217,CAD,150,CAD,2026-10-27,
+3,2,Points,retail-mesh:points,POINT,300,,2026-10-27,
+4,3,Cash,ISO4217,CAD,175,CAD,2026-10-27,
+5,3,Points,retail-mesh:points,POINT,300,,2026-10-27,
+7,1,Points,retail-mesh:points,POINT,300,,2026-10-27,

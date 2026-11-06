@@ -1,0 +1,1 @@
+PASS: React shell, CSP, JavaScript/CSS/font MIME types, missing assets and encoded path traversal

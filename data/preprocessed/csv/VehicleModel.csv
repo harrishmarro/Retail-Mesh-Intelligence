@@ -1,0 +1,15 @@
+﻿Id,Manufacturer,CatalogueNamespace,ManufacturerModelCode,ModelYear,TrimCode,ModelName
+1,Toyota,urn:retail-mesh:synthetic-catalogue:2026,TOY-RAV4H-XLE,2024,XLE-HYB,RAV4 Hybrid
+2,Ford,urn:retail-mesh:synthetic-catalogue:2026,FORD-TRANSIT-250,2024,MR-CARGO,Transit 250 Cargo
+3,Honda,urn:retail-mesh:synthetic-catalogue:2026,HON-CRV-SPORT-H,2025,SPORT-HYB,CR-V Sport Hybrid
+4,Toyota,urn:retail-mesh:synthetic-catalogue:2026,TOY-COROLLA-H,2023,LE-HYB,Corolla Hybrid
+5,Hyundai,urn:retail-mesh:synthetic-catalogue:2026,HYU-IONIQ5-PREF,2025,PREFERRED-AWD,IONIQ 5
+6,Ford,urn:retail-mesh:synthetic-catalogue:2026,FORD-F150-XLT,2024,XLT-4X4,F-150
+7,Kia,urn:retail-mesh:synthetic-catalogue:2026,KIA-EV6-WIND,2025,WIND-AWD,EV6
+8,Subaru,urn:retail-mesh:synthetic-catalogue:2026,SUB-OUTBACK-LTD,2024,LIMITED,Outback
+9,Honda,urn:retail-mesh:synthetic-catalogue:2026,HON-CIVIC-SPORT,2023,SPORT,Civic
+10,Mazda,urn:retail-mesh:synthetic-catalogue:2026,MAZ-CX5-GS,2024,GS,CX-5
+11,Toyota,urn:retail-mesh:synthetic-catalogue:2026,TOY-COROLLA-LE,2024,LE,Corolla
+12,Nissan,urn:retail-mesh:synthetic-catalogue:2026,NIS-ROGUE-SV,2023,SV-AWD,Rogue
+13,Hyundai,urn:retail-mesh:synthetic-catalogue:2026,HYU-ELANTRA-PREF,2024,PREFERRED,Elantra
+14,Chevrolet,urn:retail-mesh:synthetic-catalogue:2026,CHEV-EQUINOX-EV,2025,LT-AWD,Equinox EV

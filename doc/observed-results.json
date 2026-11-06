@@ -1,0 +1,109 @@
+{
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "relation_count": 34,
+  "rows_per_relation": {
+    "ParentCompany": 1,
+    "ProviderAuthorization": 3,
+    "VehicleModel": 1,
+    "IncentiveProgram": 1,
+    "MetricDefinitionVersion": 1,
+    "Provider": 3,
+    "CustomerAccount": 3,
+    "Vehicle": 2,
+    "ProgramEnrollment": 3,
+    "PerformanceMeasurement": 1,
+    "EventAwardComponent": 1,
+    "Outlet": 3,
+    "CustomerIdentityLink": 3,
+    "VehicleActivity": 3,
+    "IncentiveRule": 2,
+    "EventEvaluation": 1,
+    "EventAward": 1,
+    "Capability": 3,
+    "CapabilityAuthorization": 3,
+    "RuleVersion": 2,
+    "PeriodEvaluation": 1,
+    "PeriodAward": 1,
+    "Rental": 1,
+    "Sale": 1,
+    "Service": 1,
+    "PeriodAwardComponent": 1,
+    "MeasurementContribution": 1,
+    "RuleMetric": 2,
+    "EventEvaluationMeasurement": 1,
+    "EventEvaluationActivity": 1,
+    "EventEvaluationIdentity": 1,
+    "PeriodEvaluationMeasurement": 1,
+    "PeriodEvaluationActivity": 1,
+    "PeriodEvaluationIdentity": 1
+  },
+  "foreign_key_check": [],
+  "integrity_check": "ok",
+  "04_journey": [
+    {
+      "OfficialActivityReference": "SALE-001",
+      "ActivityKind": "Sale",
+      "Provider": "Dealer A",
+      "VIN": "1HGCM82633A004352",
+      "ExistingCustomerReference": "C-001",
+      "StartedAt": "2026-10-01T10:00:00Z",
+      "ReplacementForService": null,
+      "ReplacementPurpose": null
+    },
+    {
+      "OfficialActivityReference": "SVC-001",
+      "ActivityKind": "Service",
+      "Provider": "Provider C Service",
+      "VIN": "1HGCM82633A004352",
+      "ExistingCustomerReference": "C-001",
+      "StartedAt": "2026-10-01T10:00:00Z",
+      "ReplacementForService": null,
+      "ReplacementPurpose": null
+    },
+    {
+      "OfficialActivityReference": "RENT-001",
+      "ActivityKind": "Rental",
+      "Provider": "Provider B Rental",
+      "VIN": "1HGCM82633A004353",
+      "ExistingCustomerReference": "C-001",
+      "StartedAt": "2026-10-01T10:00:00Z",
+      "ReplacementForService": "SVC-001",
+      "ReplacementPurpose": "Warranty replacement"
+    }
+  ],
+  "05_metrics": [
+    {
+      "LegalName": "Provider C Service",
+      "OfficialMetricCode": "SERVICE-COUNT",
+      "PeriodStart": "2026-10-01",
+      "PeriodEnd": "2026-11-01",
+      "MeasuredValue": 1,
+      "UnitCode": "service",
+      "ContributingActivities": 1
+    }
+  ],
+  "06_awards": [
+    {
+      "Scope": "Event",
+      "Beneficiary": "Dealer A",
+      "OfficialRuleCode": "EVENT-01",
+      "AwardStatus": "Issued",
+      "RewardType": "Cash",
+      "BenefitValue": 100,
+      "UnitCode": "CAD",
+      "Currency": "CAD"
+    },
+    {
+      "Scope": "Period",
+      "Beneficiary": "Provider C Service",
+      "OfficialRuleCode": "PERIOD-01",
+      "AwardStatus": "Issued",
+      "RewardType": "Points",
+      "BenefitValue": 10,
+      "UnitCode": "POINT",
+      "Currency": null
+    }
+  ],
+  "07_audit": []
+}

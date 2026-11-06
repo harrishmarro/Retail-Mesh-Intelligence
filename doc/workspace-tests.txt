@@ -1,0 +1,110 @@
+test_cancelled_sale_rejects (test_fleet_engine.FleetEngineTests.test_cancelled_sale_rejects) ... ok
+test_concurrent_evaluation_has_one_entitlement (test_fleet_engine.FleetEngineTests.test_concurrent_evaluation_has_one_entitlement) ... ok
+test_cross_company_rule_blocked (test_fleet_engine.FleetEngineTests.test_cross_company_rule_blocked) ... ok
+test_cross_company_run_blocked (test_fleet_engine.FleetEngineTests.test_cross_company_run_blocked) ... ok
+test_duplicate_run_does_not_duplicate_award (test_fleet_engine.FleetEngineTests.test_duplicate_run_does_not_duplicate_award) ... ok
+test_engine_award_value_is_immutable (test_fleet_engine.FleetEngineTests.test_engine_award_value_is_immutable) ... ok
+test_fractional_minor_units_rejected (test_fleet_engine.FleetEngineTests.test_fractional_minor_units_rejected) ... ok
+test_future_record_not_available_at_cutoff (test_fleet_engine.FleetEngineTests.test_future_record_not_available_at_cutoff) ... ok
+test_future_verification_not_accepted (test_fleet_engine.FleetEngineTests.test_future_verification_not_accepted) ... ok
+test_graph_fleet_count_matches_relational_snapshot (test_fleet_engine.FleetEngineTests.test_graph_fleet_count_matches_relational_snapshot) ... ok
+test_graph_roundtrip_validation_query_and_answer (test_fleet_engine.FleetEngineTests.test_graph_roundtrip_validation_query_and_answer) ... /root/.local/lib/python3.12/site-packages/rdflib/graph.py:2340: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  if context == self.default_context:
+/root/.local/lib/python3.12/site-packages/rdflib/plugins/parsers/jsonld.py:159: DeprecationWarning: ConjunctiveGraph is deprecated, use Dataset instead.
+  conj_sink = ConjunctiveGraph(store=sink.store, identifier=sink.identifier)
+ok
+test_invalid_graph_is_rejected (test_fleet_engine.FleetEngineTests.test_invalid_graph_is_rejected) ... /root/.local/lib/python3.12/site-packages/rdflib/graph.py:804: DeprecationWarning: Dataset.identifier is deprecated and will be removed in future versions.
+  return hash(self.identifier)
+ok
+test_low_historical_fleet_rejects (test_fleet_engine.FleetEngineTests.test_low_historical_fleet_rejects) ... ok
+test_missing_enrollment_rejects (test_fleet_engine.FleetEngineTests.test_missing_enrollment_rejects) ... ok
+test_missing_rental_capability_rejects (test_fleet_engine.FleetEngineTests.test_missing_rental_capability_rejects) ... ok
+test_newly_sold_vehicle_not_counted (test_fleet_engine.FleetEngineTests.test_newly_sold_vehicle_not_counted) ... ok
+test_overlapping_assignment_rejected (test_fleet_engine.FleetEngineTests.test_overlapping_assignment_rejected) ... ok
+test_prepare_and_migration_idempotent (test_fleet_engine.FleetEngineTests.test_prepare_and_migration_idempotent) ... ok
+test_qualified_graph_without_award_is_invalid (test_fleet_engine.FleetEngineTests.test_qualified_graph_without_award_is_invalid) ... ok
+test_qualifies_and_creates_150_cash (test_fleet_engine.FleetEngineTests.test_qualifies_and_creates_150_cash) ... ok
+test_rejected_can_be_corrected_then_qualify (test_fleet_engine.FleetEngineTests.test_rejected_can_be_corrected_then_qualify) ... ok
+test_rejected_graph_does_not_invent_award (test_fleet_engine.FleetEngineTests.test_rejected_graph_does_not_invent_award) ... ok
+test_rental_after_service_rejects (test_fleet_engine.FleetEngineTests.test_rental_after_service_rejects) ... ok
+test_revoked_identity_rejects (test_fleet_engine.FleetEngineTests.test_revoked_identity_rejects) ... ok
+test_service_outside_30_day_window_rejects (test_fleet_engine.FleetEngineTests.test_service_outside_30_day_window_rejects) ... ok
+test_snapshot_cannot_be_mutated (test_fleet_engine.FleetEngineTests.test_snapshot_cannot_be_mutated) ... ok
+test_snapshot_immutable_after_source_change (test_fleet_engine.FleetEngineTests.test_snapshot_immutable_after_source_change) ... ok
+test_unknown_rule_operation_rejected (test_fleet_engine.FleetEngineTests.test_unknown_rule_operation_rejected) ... ok
+test_accepted_evidence_immutable (test_relational.RelationalTests.test_accepted_evidence_immutable) ... ok
+test_activity_failure_rolls_back (test_relational.RelationalTests.test_activity_failure_rolls_back) ... ok
+test_all_34_relations_seeded (test_relational.RelationalTests.test_all_34_relations_seeded) ... ok
+test_atomic_activity (test_relational.RelationalTests.test_atomic_activity) ... ok
+test_atomic_award (test_relational.RelationalTests.test_atomic_award) ... ok
+test_audit (test_relational.RelationalTests.test_audit) ... ok
+test_award_wrong_beneficiary (test_relational.RelationalTests.test_award_wrong_beneficiary) ... ok
+test_awards_units_and_beneficiary (test_relational.RelationalTests.test_awards_units_and_beneficiary) ... ok
+test_bad_interval (test_relational.RelationalTests.test_bad_interval) ... ok
+test_business_identity_immutable (test_relational.RelationalTests.test_business_identity_immutable) ... ok
+test_candidate_key (test_relational.RelationalTests.test_candidate_key) ... ok
+test_cash_units_consistent (test_relational.RelationalTests.test_cash_units_consistent) ... ok
+test_component_minimum (test_relational.RelationalTests.test_component_minimum) ... ok
+test_contribution_immutable (test_relational.RelationalTests.test_contribution_immutable) ... ok
+test_crud (test_relational.RelationalTests.test_crud) ... ok
+test_empty_key (test_relational.RelationalTests.test_empty_key) ... ok
+test_event_award_wrong_rule (test_relational.RelationalTests.test_event_award_wrong_rule) ... ok
+test_extra_wrong_subtype_rejected (test_relational.RelationalTests.test_extra_wrong_subtype_rejected) ... ok
+test_final_evaluation_immutable (test_relational.RelationalTests.test_final_evaluation_immutable) ... ok
+test_foreign_keys (test_relational.RelationalTests.test_foreign_keys) ... ok
+test_identity_reverse_duplicate (test_relational.RelationalTests.test_identity_reverse_duplicate) ... ok
+test_identity_self (test_relational.RelationalTests.test_identity_self) ... ok
+test_identity_verified_requires_timestamp (test_relational.RelationalTests.test_identity_verified_requires_timestamp) ... ok
+test_integrity (test_relational.RelationalTests.test_integrity) ... ok
+test_invalid_reference (test_relational.RelationalTests.test_invalid_reference) ... ok
+test_invalid_sql_date (test_relational.RelationalTests.test_invalid_sql_date) ... ok
+test_invalid_sql_timestamp (test_relational.RelationalTests.test_invalid_sql_timestamp) ... ok
+test_invalid_timestamp (test_relational.RelationalTests.test_invalid_timestamp) ... ok
+test_journey_query (test_relational.RelationalTests.test_journey_query) ... ok
+test_metric_definition_immutable (test_relational.RelationalTests.test_metric_definition_immutable) ... ok
+test_metric_query (test_relational.RelationalTests.test_metric_query) ... ok
+test_no_overwrite (test_relational.RelationalTests.test_no_overwrite) ... ok
+test_nonfinite_number (test_relational.RelationalTests.test_nonfinite_number) ... ok
+test_null_key (test_relational.RelationalTests.test_null_key) ... ok
+test_outlet_cannot_redirect_beneficiary (test_relational.RelationalTests.test_outlet_cannot_redirect_beneficiary) ... ok
+test_restrict_parent_deletion (test_relational.RelationalTests.test_restrict_parent_deletion) ... ok
+test_rule_overlap (test_relational.RelationalTests.test_rule_overlap) ... ok
+test_source_evidence_immutable (test_relational.RelationalTests.test_source_evidence_immutable) ... ok
+test_sql_injection_is_data (test_relational.RelationalTests.test_sql_injection_is_data) ... ok
+test_subtype_totality (test_relational.RelationalTests.test_subtype_totality) ... ok
+test_table_allowlist (test_relational.RelationalTests.test_table_allowlist) ... ok
+test_malformed_provider_response_falls_back (test_workspaces.NarrationTests.test_malformed_provider_response_falls_back) ... ok
+test_mock_responses_narrative_preserves_authoritative_answer (test_workspaces.NarrationTests.test_mock_responses_narrative_preserves_authoritative_answer) ... ok
+test_no_call_without_explicit_opt_in (test_workspaces.NarrationTests.test_no_call_without_explicit_opt_in) ... ok
+test_transport_failure_does_not_expose_credentials (test_workspaces.NarrationTests.test_transport_failure_does_not_expose_credentials) ... ok
+test_unconfigured_falls_back (test_workspaces.NarrationTests.test_unconfigured_falls_back) ... ok
+test_analyst_cannot_evaluate_or_manage_members (test_workspaces.WorkspaceTests.test_analyst_cannot_evaluate_or_manage_members) ... ok
+test_audit_is_immutable_and_no_passwords (test_workspaces.WorkspaceTests.test_audit_is_immutable_and_no_passwords) ... ok
+test_bad_password_and_unknown_user_same_message (test_workspaces.WorkspaceTests.test_bad_password_and_unknown_user_same_message) ... ok
+test_cannot_claim_existing_company (test_workspaces.WorkspaceTests.test_cannot_claim_existing_company) ... ok
+test_cannot_revoke_or_demote_self (test_workspaces.WorkspaceTests.test_cannot_revoke_or_demote_self) ... ok
+test_disabled_user_session_fails (test_workspaces.WorkspaceTests.test_disabled_user_session_fails) ... ok
+test_existing_member_password_not_reset_by_another_admin (test_workspaces.WorkspaceTests.test_existing_member_password_not_reset_by_another_admin) ... ok
+test_expired_session_fails (test_workspaces.WorkspaceTests.test_expired_session_fails) ... ok
+test_legacy_demo_still_works_after_workspace_seed (test_workspaces.WorkspaceTests.test_legacy_demo_still_works_after_workspace_seed) ... ok
+test_login_rotates_session_and_csrf (test_workspaces.WorkspaceTests.test_login_rotates_session_and_csrf) ... ok
+test_login_session_never_exposes_hash (test_workspaces.WorkspaceTests.test_login_session_never_exposes_hash) ... ok
+test_login_throttle (test_workspaces.WorkspaceTests.test_login_throttle) ... ok
+test_logout_revokes_session (test_workspaces.WorkspaceTests.test_logout_revokes_session) ... ok
+test_member_revocation_takes_effect_with_existing_session (test_workspaces.WorkspaceTests.test_member_revocation_takes_effect_with_existing_session) ... ok
+test_membership_cannot_be_forged (test_workspaces.WorkspaceTests.test_membership_cannot_be_forged) ... ok
+test_password_hash_and_verification (test_workspaces.WorkspaceTests.test_password_hash_and_verification) ... ok
+test_password_minimum (test_workspaces.WorkspaceTests.test_password_minimum) ... ok
+test_provider_authorization_revocation_applies_immediately (test_workspaces.WorkspaceTests.test_provider_authorization_revocation_applies_immediately) ... ok
+test_provider_requires_company_authorization (test_workspaces.WorkspaceTests.test_provider_requires_company_authorization) ... ok
+test_provider_scope_and_redacted_run (test_workspaces.WorkspaceTests.test_provider_scope_and_redacted_run) ... ok
+test_rental_provider_cannot_read_sale_award (test_workspaces.WorkspaceTests.test_rental_provider_cannot_read_sale_award) ... ok
+test_salts_are_random (test_workspaces.WorkspaceTests.test_salts_are_random) ... ok
+test_setup_is_single_use (test_workspaces.WorkspaceTests.test_setup_is_single_use) ... ok
+test_two_workspace_demos_isolated (test_workspaces.WorkspaceTests.test_two_workspace_demos_isolated) ... ok
+test_workspace_demo_preparation_idempotent (test_workspaces.WorkspaceTests.test_workspace_demo_preparation_idempotent) ... ok
+
+----------------------------------------------------------------------
+Ran 99 tests in 22.220s
+
+OK

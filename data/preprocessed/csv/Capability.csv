@@ -1,0 +1,6 @@
+﻿Id,ExistingCapabilityDesignation,Description
+1,VehicleSale,Authorized vehicle sales and delivery
+2,VehicleRental,Short-term and replacement vehicle rental
+3,VehicleService,Vehicle maintenance and repair services
+4,WarrantyRepair,Warranty and recall repair work
+5,EVDiagnostics,Electric-vehicle diagnostics and battery inspection

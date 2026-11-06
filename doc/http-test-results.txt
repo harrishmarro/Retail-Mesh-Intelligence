@@ -1,0 +1,1 @@
+PASS: HTTP create/search/update/delete, joined reports, restricted deletion, CSRF. Browser rendering not evaluated.

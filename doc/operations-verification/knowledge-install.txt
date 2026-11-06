@@ -1,0 +1,35 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting rdflib==7.6.0 (from -r requirements-knowledge.txt (line 2))
+  Downloading rdflib-7.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting pyshacl==0.40.2 (from -r requirements-knowledge.txt (line 3))
+  Downloading pyshacl-0.40.2-py3-none-any.whl.metadata (38 kB)
+Requirement already satisfied: pyparsing<4,>=2.1.0 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from rdflib==7.6.0->-r requirements-knowledge.txt (line 2)) (3.3.2)
+Collecting owlrl<8,>=7.6.2 (from pyshacl==0.40.2->-r requirements-knowledge.txt (line 3))
+  Downloading owlrl-7.6.2-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: packaging>=21.3 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from pyshacl==0.40.2->-r requirements-knowledge.txt (line 3)) (26.3)
+Collecting prettytable>=3.7.0 (from pyshacl==0.40.2->-r requirements-knowledge.txt (line 3))
+  Downloading prettytable-3.18.0-py3-none-any.whl.metadata (37 kB)
+Collecting html5rdf<2,>=1.2 (from rdflib[html]<8.0,>=7.3.0->pyshacl==0.40.2->-r requirements-knowledge.txt (line 3))
+  Downloading html5rdf-1.2.1-py2.py3-none-any.whl.metadata (7.5 kB)
+Collecting wcwidth>=0.3.5 (from prettytable>=3.7.0->pyshacl==0.40.2->-r requirements-knowledge.txt (line 3))
+  Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Downloading rdflib-7.6.0-py3-none-any.whl (615 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 615.4/615.4 kB 6.4 MB/s  0:00:00
+Downloading pyshacl-0.40.2-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 15.6 MB/s  0:00:00
+Downloading owlrl-7.6.2-py3-none-any.whl (55 kB)
+Downloading html5rdf-1.2.1-py2.py3-none-any.whl (109 kB)
+Downloading prettytable-3.18.0-py3-none-any.whl (37 kB)
+Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (785 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 785.9/785.9 kB 8.9 MB/s  0:00:00
+Installing collected packages: wcwidth, rdflib, html5rdf, prettytable, owlrl, pyshacl
+  WARNING: The scripts csv2rdf, rdf2dot, rdfgraphisomorphism, rdfpipe, rdfs2dot and sparqlquery are installed in '/root/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts pyshacl, pyshacl_rules, pyshacl_server and pyshacl_validate are installed in '/root/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+Successfully installed html5rdf-1.2.1 owlrl-7.6.2 prettytable-3.18.0 pyshacl-0.40.2 rdflib-7.6.0 wcwidth-0.9.4
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip

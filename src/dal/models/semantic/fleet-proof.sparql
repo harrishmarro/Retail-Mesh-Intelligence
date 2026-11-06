@@ -1,0 +1,7 @@
+PREFIX rm: <https://example.org/retail-mesh/vocab#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT ?evaluation (COUNT(DISTINCT ?vehicle) AS ?preSaleFleetCount) WHERE {
+ ?evaluation a rm:IncentiveEvaluation; prov:used ?snapshot.
+ ?snapshot rm:citesMembership ?membership.
+ ?membership a rm:FleetMembershipEvidence;rm:vehicle ?vehicle.
+} GROUP BY ?evaluation

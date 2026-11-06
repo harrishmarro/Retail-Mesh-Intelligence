@@ -1,0 +1,3683 @@
+{
+  "dataset_version": "2.0",
+  "raw_sha256": "9f2f8cd9cbb2141cd9da567d31db5f0b464e9ec9cf453b639288a8eb04b91046",
+  "prepared_sha256": "b962424d7ad357d74e9e9b734cbf0790155283e828f5b3ecc50472b299cef9d0",
+  "changes": [
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "COUNT completed VehicleActivity records for this provider and period",
+          "after": "COUNT completed provider activities by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "COUNT completed Service activities for this provider and period",
+          "after": "COUNT completed provider services by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "SUM Sale.SalePrice for completed sales in the period",
+          "after": "SUM tax-exclusive SalePrice in CAD for completed sales by completion business date; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "COUNT Rental activities explicitly linked to a Service",
+          "after": "COUNT completed provider rentals linked to a service, by local return date; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "SUM calendar rental days for returned Rental activities",
+          "after": "SUM CEILING elapsed rental seconds / 86400 for completed rentals, by America/Vancouver return date; minimum one billable day; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "COUNT completed VehicleActivity records for this provider and period",
+          "after": "COUNT completed provider activities by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "COUNT completed Service activities for this provider and period",
+          "after": "COUNT completed provider services by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "SUM Sale.SalePrice for completed sales in the period",
+          "after": "SUM tax-exclusive SalePrice in CAD for completed sales by completion business date; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "COUNT Rental activities explicitly linked to a Service",
+          "after": "COUNT completed provider rentals linked to a service, by local return date; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "MetricDefinitionVersion",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "DefinitionExpression": {
+          "before": "SUM calendar rental days for returned Rental activities",
+          "after": "SUM CEILING elapsed rental seconds / 86400 for completed rentals, by America/Vancouver return date; minimum one billable day; [PeriodStart, PeriodEnd)"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "11",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "12",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "13",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "14",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "15",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "16",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "17",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "18",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "19",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "20",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "21",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "22",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "23",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "24",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "25",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "26",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "27",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "28",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "29",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "30",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "31",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "32",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "33",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "34",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "35",
+      "action": "updated",
+      "fields": {
+        "MeasuredValue": {
+          "before": "6",
+          "after": "2"
+        },
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "36",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "37",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "38",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "39",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "40",
+      "action": "updated",
+      "fields": {
+        "MeasuredValue": {
+          "before": "9",
+          "after": "5"
+        },
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "41",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "42",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "43",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "44",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "45",
+      "action": "updated",
+      "fields": {
+        "MeasuredValue": {
+          "before": "9",
+          "after": "4"
+        },
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "46",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "47",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "48",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "49",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "50",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "51",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "52",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "53",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "54",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "55",
+      "action": "updated",
+      "fields": {
+        "MeasuredValue": {
+          "before": "4",
+          "after": "2"
+        },
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "56",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "57",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "58",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "59",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "60",
+      "action": "updated",
+      "fields": {
+        "MeasuredValue": {
+          "before": "16",
+          "after": "10"
+        },
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "61",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "62",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "63",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "64",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "65",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "66",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "67",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "68",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "69",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "70",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "71",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "72",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "73",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "74",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "75",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "76",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "77",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "78",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "79",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "80",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "81",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "82",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "83",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "84",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "85",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "86",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "87",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "88",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "89",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "90",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "91",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "92",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "93",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "94",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "95",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-04-01T02:00:00Z",
+          "after": "2026-04-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "96",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "97",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "98",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "99",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "100",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-07-01T02:00:00Z",
+          "after": "2026-07-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "101",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "102",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "103",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "104",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PerformanceMeasurement",
+      "source_id": "105",
+      "action": "updated",
+      "fields": {
+        "CalculatedAt": {
+          "before": "2026-10-01T02:00:00Z",
+          "after": "2026-10-01T09:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventAwardComponent",
+      "source_id": "6",
+      "action": "removed",
+      "before": {
+        "Id": "6",
+        "EventAwardId": "4",
+        "RewardType": "Cash",
+        "UnitScheme": "ISO4217",
+        "UnitCode": "CAD",
+        "BenefitValue": "150",
+        "Currency": "CAD",
+        "ValidFrom": "2026-10-27",
+        "ValidTo": ""
+      },
+      "after": null
+    },
+    {
+      "table": "EventAwardComponent",
+      "source_id": "7",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "7",
+        "EventAwardId": "1",
+        "RewardType": "Points",
+        "UnitScheme": "retail-mesh:points",
+        "UnitCode": "POINT",
+        "BenefitValue": "300",
+        "Currency": "",
+        "ValidFrom": "2026-10-27",
+        "ValidTo": ""
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "11",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "12",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "13",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "14",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "15",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "16",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "17",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "18",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "19",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "20",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "21",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "22",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "23",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "24",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "25",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "26",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "27",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "28",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-08-15T12:00:00Z",
+          "after": "2026-08-15T19:00:00Z"
+        },
+        "RevokedAt": {
+          "before": "2026-10-15T12:00:00Z",
+          "after": "2026-10-15T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "29",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "30",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "31",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "CustomerIdentityLink",
+      "source_id": "33",
+      "action": "updated",
+      "fields": {
+        "VerifiedAt": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-02-10T10:00:00Z",
+          "after": "2026-02-10T18:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-02-10T11:00:00Z",
+          "after": "2026-02-10T19:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-02-10T10:00:00Z",
+          "after": "2026-02-10T19:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-03-12T10:00:00Z",
+          "after": "2026-03-12T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-03-12T11:00:00Z",
+          "after": "2026-03-12T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-03-12T10:00:00Z",
+          "after": "2026-03-12T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-04-05T10:00:00Z",
+          "after": "2026-04-05T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-04-05T11:00:00Z",
+          "after": "2026-04-05T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-04-05T10:00:00Z",
+          "after": "2026-04-05T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-05-16T10:00:00Z",
+          "after": "2026-05-16T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-05-16T11:00:00Z",
+          "after": "2026-05-16T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-05-16T10:00:00Z",
+          "after": "2026-05-16T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-06-21T10:00:00Z",
+          "after": "2026-06-21T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-06-21T11:00:00Z",
+          "after": "2026-06-21T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-06-21T10:00:00Z",
+          "after": "2026-06-21T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-07-08T10:00:00Z",
+          "after": "2026-07-08T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-07-08T11:00:00Z",
+          "after": "2026-07-08T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-07-08T10:00:00Z",
+          "after": "2026-07-08T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-07-26T10:00:00Z",
+          "after": "2026-07-26T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-07-26T11:00:00Z",
+          "after": "2026-07-26T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-07-26T10:00:00Z",
+          "after": "2026-07-26T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-08-13T10:00:00Z",
+          "after": "2026-08-13T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-08-13T11:00:00Z",
+          "after": "2026-08-13T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-08-13T10:00:00Z",
+          "after": "2026-08-13T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-09-02T10:00:00Z",
+          "after": "2026-09-02T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-09-02T11:00:00Z",
+          "after": "2026-09-02T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-09-02T10:00:00Z",
+          "after": "2026-09-02T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-09-18T10:00:00Z",
+          "after": "2026-09-18T17:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-09-18T11:00:00Z",
+          "after": "2026-09-18T18:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-09-18T10:00:00Z",
+          "after": "2026-09-18T18:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "11",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-03-22T09:00:00Z",
+          "after": "2026-03-22T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-03-23T17:00:00Z",
+          "after": "2026-03-24T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-03-22T10:00:00Z",
+          "after": "2026-03-24T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "12",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-04-02T09:00:00Z",
+          "after": "2026-04-02T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-04-03T17:00:00Z",
+          "after": "2026-04-04T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-04-02T10:00:00Z",
+          "after": "2026-04-04T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "13",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-04-18T09:00:00Z",
+          "after": "2026-04-18T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-04-19T17:00:00Z",
+          "after": "2026-04-20T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-04-18T10:00:00Z",
+          "after": "2026-04-20T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "14",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-06-02T09:00:00Z",
+          "after": "2026-06-02T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-06-04T17:00:00Z",
+          "after": "2026-06-05T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-06-02T10:00:00Z",
+          "after": "2026-06-05T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "15",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-07-15T09:00:00Z",
+          "after": "2026-07-15T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-07-16T17:00:00Z",
+          "after": "2026-07-17T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-07-15T10:00:00Z",
+          "after": "2026-07-17T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "16",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-07-28T09:00:00Z",
+          "after": "2026-07-28T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-07-30T17:00:00Z",
+          "after": "2026-07-31T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-07-28T10:00:00Z",
+          "after": "2026-07-31T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "17",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-08-02T09:00:00Z",
+          "after": "2026-08-02T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-08-03T17:00:00Z",
+          "after": "2026-08-04T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-08-02T10:00:00Z",
+          "after": "2026-08-04T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "18",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-08-20T09:00:00Z",
+          "after": "2026-08-20T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-08-22T17:00:00Z",
+          "after": "2026-08-23T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-08-20T10:00:00Z",
+          "after": "2026-08-23T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "19",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-09-04T09:00:00Z",
+          "after": "2026-09-04T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-09-05T17:00:00Z",
+          "after": "2026-09-06T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-09-04T10:00:00Z",
+          "after": "2026-09-06T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "20",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-09-23T09:00:00Z",
+          "after": "2026-09-23T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-09-24T17:00:00Z",
+          "after": "2026-09-25T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-09-23T10:00:00Z",
+          "after": "2026-09-25T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "21",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-10-15T09:00:00Z",
+          "after": "2026-10-15T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-10-16T17:00:00Z",
+          "after": "2026-10-17T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-10-15T10:00:00Z",
+          "after": "2026-10-17T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "22",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-10-18T09:00:00Z",
+          "after": "2026-10-18T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-10-18T17:00:00Z",
+          "after": "2026-10-19T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-10-18T10:00:00Z",
+          "after": "2026-10-19T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "23",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-10-20T09:00:00Z",
+          "after": "2026-10-20T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-10-21T17:00:00Z",
+          "after": "2026-10-22T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-10-20T10:00:00Z",
+          "after": "2026-10-22T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "24",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-10-26T09:00:00Z",
+          "after": "2026-10-26T16:00:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-10-27T17:00:00Z",
+          "after": "2026-10-28T00:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-10-26T10:00:00Z",
+          "after": "2026-10-28T00:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "25",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-03-22T09:00:00Z",
+          "after": "2026-03-22T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-03-28T17:00:00Z",
+          "after": "2026-03-24T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-03-22T10:00:00Z",
+          "after": "2026-03-24T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "26",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-04-02T09:00:00Z",
+          "after": "2026-04-02T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-04-06T17:00:00Z",
+          "after": "2026-04-04T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-04-02T10:00:00Z",
+          "after": "2026-04-04T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "27",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-04-18T09:00:00Z",
+          "after": "2026-04-18T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-04-24T17:00:00Z",
+          "after": "2026-04-20T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-04-18T10:00:00Z",
+          "after": "2026-04-20T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "28",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-06-02T09:00:00Z",
+          "after": "2026-06-02T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-06-05T17:00:00Z",
+          "after": "2026-06-05T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-06-02T10:00:00Z",
+          "after": "2026-06-05T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "29",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-07-15T09:00:00Z",
+          "after": "2026-07-15T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-07-19T17:00:00Z",
+          "after": "2026-07-17T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-07-15T10:00:00Z",
+          "after": "2026-07-17T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "30",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-07-28T09:00:00Z",
+          "after": "2026-07-28T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-08-02T17:00:00Z",
+          "after": "2026-07-31T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-07-28T10:00:00Z",
+          "after": "2026-07-31T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "31",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-08-02T09:00:00Z",
+          "after": "2026-08-02T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-08-07T17:00:00Z",
+          "after": "2026-08-04T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-08-02T10:00:00Z",
+          "after": "2026-08-04T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "32",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-08-20T09:00:00Z",
+          "after": "2026-08-20T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-08-23T17:00:00Z",
+          "after": "2026-08-23T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-08-20T10:00:00Z",
+          "after": "2026-08-23T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "33",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-09-04T09:00:00Z",
+          "after": "2026-09-04T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-09-08T17:00:00Z",
+          "after": "2026-09-06T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-09-04T10:00:00Z",
+          "after": "2026-09-06T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "34",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-09-23T09:00:00Z",
+          "after": "2026-09-23T16:30:00Z"
+        },
+        "EndedAt": {
+          "before": "2026-09-27T17:00:00Z",
+          "after": "2026-09-25T01:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-09-23T10:00:00Z",
+          "after": "2026-09-25T01:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "VehicleActivity",
+      "source_id": "35",
+      "action": "updated",
+      "fields": {
+        "StartedAt": {
+          "before": "2026-11-01T09:00:00Z",
+          "after": "2026-11-01T16:00:00Z"
+        },
+        "RecordedAt": {
+          "before": "2026-11-01T10:00:00Z",
+          "after": "2026-11-01T16:05:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluation",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Completed sale, service and replacement-rental evidence; customer account link directly verified. Synthetic manual review; no automated rule engine is implied.",
+          "after": "Prepared synthetic decision: completed sale, service and replacement rental with both direct identity proofs valid at evaluation; all cited evidence available by qualification date."
+        },
+        "QualificationDate": {
+          "before": "2026-07-08",
+          "after": "2026-10-01"
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-25T10:00:00Z",
+          "after": "2026-10-25T17:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluation",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Completed sale with a same-vehicle service event and linked replacement rental; direct account evidence verified. Synthetic manual review; no automated rule engine is implied.",
+          "after": "Prepared synthetic decision: completed sale, service and replacement rental with both direct identity proofs valid at evaluation; all cited evidence available by qualification date."
+        },
+        "QualificationDate": {
+          "before": "2026-07-26",
+          "after": "2026-10-01"
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-25T10:00:00Z",
+          "after": "2026-10-25T17:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluation",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Commercial vehicle sale supported by completed inspection and replacement mobility evidence. Synthetic manual review; no automated rule engine is implied.",
+          "after": "Prepared synthetic decision: completed sale, service and replacement rental with both direct identity proofs valid at evaluation; all cited evidence available by qualification date."
+        },
+        "QualificationDate": {
+          "before": "2026-08-13",
+          "after": "2026-10-01"
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-25T10:00:00Z",
+          "after": "2026-10-25T17:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluation",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "Result": {
+          "before": "Qualified",
+          "after": "Rejected"
+        },
+        "Reason": {
+          "before": "Sale and completed maintenance are linked by vehicle and a directly verified account assertion. Synthetic manual review; no automated rule engine is implied.",
+          "after": "Prepared synthetic rejection: sale-to-Rental: CustomerIdentityLink #28 is Revoked. Non-verified assertions are not stored as accepted identity evidence."
+        },
+        "QualificationDate": {
+          "before": "2026-09-02",
+          "after": "2026-10-25"
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-25T10:00:00Z",
+          "after": "2026-10-25T17:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluation",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Customer account linkage remained pending at evaluation time; the cross-provider identity evidence was insufficient. Synthetic manual review; no automated rule engine is implied.",
+          "after": "Prepared synthetic rejection: sale-to-Service: CustomerIdentityLink #32 is Pending. Non-verified assertions are not stored as accepted identity evidence."
+        },
+        "QualificationDate": {
+          "before": "2026-09-18",
+          "after": "2026-10-25"
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-25T10:00:00Z",
+          "after": "2026-10-25T17:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventAward",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-27T12:00:00Z",
+          "after": "2026-10-27T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventAward",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-27T12:00:00Z",
+          "after": "2026-10-27T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventAward",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-27T12:00:00Z",
+          "after": "2026-10-27T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventAward",
+      "source_id": "4",
+      "action": "removed",
+      "before": {
+        "Id": "4",
+        "VehicleActivityId": "9",
+        "IncentiveRuleId": "1",
+        "AwardStatus": "Issued",
+        "IssuedAt": "2026-10-27T12:00:00Z",
+        "AcceptedEvaluationId": "4",
+        "FirstComponentId": "6"
+      },
+      "after": null
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Event\",\"version\":\"1.0\",\"note\":\"Synthetic policy description; not executed by the prototype.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Event\",\"version\":\"1.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"eventChecks\":[\"completed sale\",\"same-vehicle completed service\",\"linked replacement rental\",\"same company scope\",\"direct sale-to-service and sale-to-rental verified identity snapshots valid at evaluation\"],\"requireDirectIdentitySnapshots\":true,\"replacementHandoverGraceMinutes\":60}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"1.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"1.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"}]}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Event\",\"version\":\"2.0\",\"eventChecks\":[\"completed activity\",\"supporting cross-provider event\",\"direct verified identity evidence when customer continuity is relied upon\"],\"periodChecks\":[],\"note\":\"Stored rule text is documentary; no general rules engine is claimed.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Event\",\"version\":\"2.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"eventChecks\":[\"completed sale\",\"same-vehicle completed service\",\"linked replacement rental\",\"same company scope\",\"direct sale-to-service and sale-to-rental verified identity snapshots valid at evaluation\"],\"requireDirectIdentitySnapshots\":true,\"replacementHandoverGraceMinutes\":60}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"2.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":150,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":300,\"unit\":\"POINT\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"2.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":150,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":300,\"unit\":\"POINT\"}]}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Period\",\"version\":\"1.0\",\"note\":\"Synthetic policy description; not executed by the prototype.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Period\",\"version\":\"1.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"businessTimezone\":\"America/Vancouver\",\"periodBoundary\":\"start inclusive, end exclusive\",\"capabilityPriority\":[\"VehicleSale\",\"VehicleRental\",\"VehicleService\"],\"criteriaByCapability\":{\"VehicleSale\":{\"ACTIVITY-COMPLETED-COUNT\":1,\"SALE-VALUE-CAD\":50000},\"VehicleRental\":{\"REPLACEMENT-RENTAL-COUNT\":2,\"RENTAL-DURATION-DAYS\":4},\"VehicleService\":{\"SERVICE-COMPLETED-COUNT\":2}}}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"1.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"1.0\",\"benefitsByCapability\":{\"VehicleSale\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":250,\"unit\":\"POINT\"}],\"VehicleRental\":[{\"type\":\"Points\",\"amount\":250,\"unit\":\"POINT\"}],\"VehicleService\":[{\"type\":\"Points\",\"amount\":250,\"unit\":\"POINT\"}]}}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Period\",\"version\":\"2.0\",\"eventChecks\":[],\"periodChecks\":[\"measurement window\",\"contributing activities\",\"provider evidence review\"],\"note\":\"Stored rule text is documentary; no general rules engine is claimed.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Period\",\"version\":\"2.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"businessTimezone\":\"America/Vancouver\",\"periodBoundary\":\"start inclusive, end exclusive\",\"capabilityPriority\":[\"VehicleSale\",\"VehicleRental\",\"VehicleService\"],\"criteriaByCapability\":{\"VehicleSale\":{\"ACTIVITY-COMPLETED-COUNT\":1,\"SALE-VALUE-CAD\":50000},\"VehicleRental\":{\"REPLACEMENT-RENTAL-COUNT\":2,\"RENTAL-DURATION-DAYS\":4},\"VehicleService\":{\"SERVICE-COMPLETED-COUNT\":2}}}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"2.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":250,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"2.0\",\"benefitsByCapability\":{\"VehicleSale\":[{\"type\":\"Cash\",\"amount\":250,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}],\"VehicleRental\":[{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}],\"VehicleService\":[{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}]}}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Event\",\"version\":\"1.0\",\"note\":\"Synthetic policy description; not executed by the prototype.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Event\",\"version\":\"1.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"eventChecks\":[\"completed sale\",\"same-vehicle completed service\",\"linked replacement rental\",\"same company scope\",\"direct sale-to-service and sale-to-rental verified identity snapshots valid at evaluation\"],\"requireDirectIdentitySnapshots\":true,\"replacementHandoverGraceMinutes\":60}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"1.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"1.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"}]}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Event\",\"version\":\"2.0\",\"eventChecks\":[\"completed activity\",\"supporting cross-provider event\",\"direct verified identity evidence when customer continuity is relied upon\"],\"periodChecks\":[],\"note\":\"Stored rule text is documentary; no general rules engine is claimed.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Event\",\"version\":\"2.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"eventChecks\":[\"completed sale\",\"same-vehicle completed service\",\"linked replacement rental\",\"same company scope\",\"direct sale-to-service and sale-to-rental verified identity snapshots valid at evaluation\"],\"requireDirectIdentitySnapshots\":true,\"replacementHandoverGraceMinutes\":60}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"2.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":150,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":300,\"unit\":\"POINT\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"2.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":175,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":300,\"unit\":\"POINT\"}]}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Period\",\"version\":\"1.0\",\"note\":\"Synthetic policy description; not executed by the prototype.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Period\",\"version\":\"1.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"businessTimezone\":\"America/Vancouver\",\"periodBoundary\":\"start inclusive, end exclusive\",\"capabilityPriority\":[\"VehicleSale\",\"VehicleRental\",\"VehicleService\"],\"criteriaByCapability\":{\"VehicleSale\":{\"ACTIVITY-COMPLETED-COUNT\":1,\"SALE-VALUE-CAD\":50000},\"VehicleRental\":{\"REPLACEMENT-RENTAL-COUNT\":2,\"RENTAL-DURATION-DAYS\":4},\"VehicleService\":{\"SERVICE-COMPLETED-COUNT\":2}}}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"1.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"1.0\",\"benefitsByCapability\":{\"VehicleSale\":[{\"type\":\"Cash\",\"amount\":100,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":250,\"unit\":\"POINT\"}],\"VehicleRental\":[{\"type\":\"Points\",\"amount\":250,\"unit\":\"POINT\"}],\"VehicleService\":[{\"type\":\"Points\",\"amount\":250,\"unit\":\"POINT\"}]}}"
+        }
+      }
+    },
+    {
+      "table": "RuleVersion",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "ConditionExpression": {
+          "before": "{\"qualificationMode\":\"manual-review\",\"assessmentBasis\":\"Period\",\"version\":\"2.0\",\"eventChecks\":[],\"periodChecks\":[\"measurement window\",\"contributing activities\",\"provider evidence review\"],\"note\":\"Stored rule text is documentary; no general rules engine is claimed.\"}",
+          "after": "{\"qualificationMode\":\"synthetic-fixture-preparation\",\"assessmentBasis\":\"Period\",\"version\":\"2.0\",\"note\":\"Offline sample-policy calculation during dataset preparation; not a live business decision or the fleet IncentiveRun engine.\",\"businessTimezone\":\"America/Vancouver\",\"periodBoundary\":\"start inclusive, end exclusive\",\"capabilityPriority\":[\"VehicleSale\",\"VehicleRental\",\"VehicleService\"],\"criteriaByCapability\":{\"VehicleSale\":{\"ACTIVITY-COMPLETED-COUNT\":1,\"SALE-VALUE-CAD\":50000},\"VehicleRental\":{\"REPLACEMENT-RENTAL-COUNT\":2,\"RENTAL-DURATION-DAYS\":4},\"VehicleService\":{\"SERVICE-COMPLETED-COUNT\":2}}}"
+        },
+        "RewardSpecification": {
+          "before": "{\"illustrativeOnly\":true,\"version\":\"2.0\",\"benefits\":[{\"type\":\"Cash\",\"amount\":250,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}]}",
+          "after": "{\"illustrativeOnly\":true,\"offlineFixtureOnly\":true,\"version\":\"2.0\",\"benefitsByCapability\":{\"VehicleSale\":[{\"type\":\"Cash\",\"amount\":250,\"currency\":\"CAD\"},{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}],\"VehicleRental\":[{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}],\"VehicleService\":[{\"type\":\"Points\",\"amount\":500,\"unit\":\"POINT\"}]}}"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Quarterly evidence reviewed; recorded performance measurements met the illustrative review criteria. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic qualified: {\"ACTIVITY-COMPLETED-COUNT\":\"2\",\"RENTAL-DURATION-DAYS\":\"0\",\"REPLACEMENT-RENTAL-COUNT\":\"0\",\"SALE-VALUE-CAD\":\"92000\",\"SERVICE-COMPLETED-COUNT\":\"0\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Quarterly evidence reviewed; recorded performance measurements met the illustrative review criteria. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic qualified: {\"ACTIVITY-COMPLETED-COUNT\":\"3\",\"RENTAL-DURATION-DAYS\":\"0\",\"REPLACEMENT-RENTAL-COUNT\":\"0\",\"SALE-VALUE-CAD\":\"154200\",\"SERVICE-COMPLETED-COUNT\":\"0\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Quarterly evidence reviewed; recorded performance measurements met the illustrative review criteria. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic qualified: {\"ACTIVITY-COMPLETED-COUNT\":\"2\",\"RENTAL-DURATION-DAYS\":\"4\",\"REPLACEMENT-RENTAL-COUNT\":\"2\",\"SALE-VALUE-CAD\":\"0\",\"SERVICE-COMPLETED-COUNT\":\"0\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "Result": {
+          "before": "Rejected",
+          "after": "Qualified"
+        },
+        "Reason": {
+          "before": "Quarterly evidence was recorded, but the illustrative review criteria were not met. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic qualified: {\"ACTIVITY-COMPLETED-COUNT\":\"4\",\"RENTAL-DURATION-DAYS\":\"10\",\"REPLACEMENT-RENTAL-COUNT\":\"4\",\"SALE-VALUE-CAD\":\"0\",\"SERVICE-COMPLETED-COUNT\":\"0\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Quarterly evidence reviewed; recorded performance measurements met the illustrative review criteria. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic qualified: {\"ACTIVITY-COMPLETED-COUNT\":\"2\",\"RENTAL-DURATION-DAYS\":\"0\",\"REPLACEMENT-RENTAL-COUNT\":\"0\",\"SALE-VALUE-CAD\":\"0\",\"SERVICE-COMPLETED-COUNT\":\"2\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Quarterly evidence reviewed; recorded performance measurements met the illustrative review criteria. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic qualified: {\"ACTIVITY-COMPLETED-COUNT\":\"3\",\"RENTAL-DURATION-DAYS\":\"0\",\"REPLACEMENT-RENTAL-COUNT\":\"0\",\"SALE-VALUE-CAD\":\"0\",\"SERVICE-COMPLETED-COUNT\":\"3\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluation",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "Reason": {
+          "before": "Quarterly evidence was recorded, but the illustrative review criteria were not met. Synthetic manual review; rule expressions are stored, not executed.",
+          "after": "Prepared synthetic rejected: {\"ACTIVITY-COMPLETED-COUNT\":\"1\",\"RENTAL-DURATION-DAYS\":\"0\",\"REPLACEMENT-RENTAL-COUNT\":\"0\",\"SALE-VALUE-CAD\":\"0\",\"SERVICE-COMPLETED-COUNT\":\"1\"}; checked against the declared capability thresholds. Offline fixture calculation; no payment settlement."
+        },
+        "EvaluatedAt": {
+          "before": "2026-10-28T09:00:00Z",
+          "after": "2026-10-28T16:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAward",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-29T12:00:00Z",
+          "after": "2026-10-29T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAward",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-29T12:00:00Z",
+          "after": "2026-10-29T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAward",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-29T12:00:00Z",
+          "after": "2026-10-29T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAward",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-29T12:00:00Z",
+          "after": "2026-10-29T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAward",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "IssuedAt": {
+          "before": "2026-10-29T12:00:00Z",
+          "after": "2026-10-29T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAward",
+      "source_id": "6",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "6",
+        "ProviderId": "4",
+        "IncentiveRuleId": "4",
+        "PeriodStart": "2026-07-01",
+        "PeriodEnd": "2026-10-01",
+        "AwardStatus": "Issued",
+        "IssuedAt": "2026-10-29T19:00:00Z",
+        "AcceptedEvaluationId": "4",
+        "FirstComponentId": "8"
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "534",
+          "after": "178"
+        },
+        "ReturnedAt": {
+          "before": "2026-03-28T16:00:00Z",
+          "after": "2026-03-24T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "376",
+          "after": "188"
+        },
+        "ReturnedAt": {
+          "before": "2026-04-06T16:00:00Z",
+          "after": "2026-04-04T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "534",
+          "after": "178"
+        },
+        "ReturnedAt": {
+          "before": "2026-04-24T16:00:00Z",
+          "after": "2026-04-20T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "ReturnedAt": {
+          "before": "2026-06-05T16:00:00Z",
+          "after": "2026-06-05T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "376",
+          "after": "188"
+        },
+        "ReturnedAt": {
+          "before": "2026-07-19T16:00:00Z",
+          "after": "2026-07-17T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "470",
+          "after": "282"
+        },
+        "ReturnedAt": {
+          "before": "2026-08-02T16:00:00Z",
+          "after": "2026-07-31T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "445",
+          "after": "178"
+        },
+        "ReturnedAt": {
+          "before": "2026-08-07T16:00:00Z",
+          "after": "2026-08-04T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "ReturnedAt": {
+          "before": "2026-08-23T16:00:00Z",
+          "after": "2026-08-23T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "356",
+          "after": "178"
+        },
+        "ReturnedAt": {
+          "before": "2026-09-08T16:00:00Z",
+          "after": "2026-09-06T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Rental",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "RentalCharge": {
+          "before": "376",
+          "after": "188"
+        },
+        "ReturnedAt": {
+          "before": "2026-09-27T16:00:00Z",
+          "after": "2026-09-25T01:00:00Z"
+        },
+        "ReplacementPurpose": {
+          "before": "Customer mobility during vehicle service downtime",
+          "after": "Service downtime mobility; one-hour vehicle handover allowance"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-02-10T11:00:00Z",
+          "after": "2026-02-10T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-03-12T11:00:00Z",
+          "after": "2026-03-12T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-04-05T11:00:00Z",
+          "after": "2026-04-05T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-05-16T11:00:00Z",
+          "after": "2026-05-16T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-06-21T11:00:00Z",
+          "after": "2026-06-21T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-07-08T11:00:00Z",
+          "after": "2026-07-08T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-07-26T11:00:00Z",
+          "after": "2026-07-26T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-08-13T11:00:00Z",
+          "after": "2026-08-13T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-09-02T11:00:00Z",
+          "after": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Sale",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-09-18T11:00:00Z",
+          "after": "2026-09-18T18:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-03-23T17:00:00Z",
+          "after": "2026-03-24T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-04-03T17:00:00Z",
+          "after": "2026-04-04T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "ServiceType": {
+          "before": "EV battery diagnostic",
+          "after": "Hybrid battery diagnostic"
+        },
+        "Outcome": {
+          "before": "Battery health within expected range",
+          "after": "Hybrid battery condition checked; no repair required in this synthetic inspection"
+        },
+        "CompletedAt": {
+          "before": "2026-04-19T17:00:00Z",
+          "after": "2026-04-20T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-06-04T17:00:00Z",
+          "after": "2026-06-05T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-07-16T17:00:00Z",
+          "after": "2026-07-17T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-07-30T17:00:00Z",
+          "after": "2026-07-31T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-08-03T17:00:00Z",
+          "after": "2026-08-04T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "8",
+      "action": "updated",
+      "fields": {
+        "ServiceType": {
+          "before": "Commercial vehicle inspection",
+          "after": "Fleet safety inspection"
+        },
+        "CompletedAt": {
+          "before": "2026-08-22T17:00:00Z",
+          "after": "2026-08-23T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "9",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-09-05T17:00:00Z",
+          "after": "2026-09-06T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "10",
+      "action": "updated",
+      "fields": {
+        "ServiceType": {
+          "before": "EV charging-system diagnostic",
+          "after": "Electrical system diagnostic"
+        },
+        "Outcome": {
+          "before": "Charging system tested and operating normally",
+          "after": "Battery and low-voltage charging circuit checked; no fault found in this synthetic inspection"
+        },
+        "CompletedAt": {
+          "before": "2026-09-24T17:00:00Z",
+          "after": "2026-09-25T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "11",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-10-16T17:00:00Z",
+          "after": "2026-10-17T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "12",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-10-18T17:00:00Z",
+          "after": "2026-10-19T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "13",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-10-21T17:00:00Z",
+          "after": "2026-10-22T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "Service",
+      "source_id": "14",
+      "action": "updated",
+      "fields": {
+        "CompletedAt": {
+          "before": "2026-10-27T17:00:00Z",
+          "after": "2026-10-28T00:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "PeriodAwardComponent",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "BenefitValue": {
+          "before": "650",
+          "after": "500"
+        }
+      }
+    },
+    {
+      "table": "PeriodAwardComponent",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "BenefitValue": {
+          "before": "800",
+          "after": "500"
+        }
+      }
+    },
+    {
+      "table": "PeriodAwardComponent",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "BenefitValue": {
+          "before": "800",
+          "after": "500"
+        }
+      }
+    },
+    {
+      "table": "PeriodAwardComponent",
+      "source_id": "6",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "6",
+        "PeriodAwardId": "1",
+        "RewardType": "Points",
+        "UnitScheme": "retail-mesh:points",
+        "UnitCode": "POINT",
+        "BenefitValue": "500",
+        "Currency": "",
+        "ValidFrom": "2026-10-29",
+        "ValidTo": ""
+      }
+    },
+    {
+      "table": "PeriodAwardComponent",
+      "source_id": "7",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "7",
+        "PeriodAwardId": "2",
+        "RewardType": "Points",
+        "UnitScheme": "retail-mesh:points",
+        "UnitCode": "POINT",
+        "BenefitValue": "500",
+        "Currency": "",
+        "ValidFrom": "2026-10-29",
+        "ValidTo": ""
+      }
+    },
+    {
+      "table": "PeriodAwardComponent",
+      "source_id": "8",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "8",
+        "PeriodAwardId": "6",
+        "RewardType": "Points",
+        "UnitScheme": "retail-mesh:points",
+        "UnitCode": "POINT",
+        "BenefitValue": "500",
+        "Currency": "",
+        "ValidFrom": "2026-10-29",
+        "ValidTo": ""
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "25",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "25",
+        "RuleVersionId": "3",
+        "MetricDefinitionVersionId": "3",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "26",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "26",
+        "RuleVersionId": "3",
+        "MetricDefinitionVersionId": "4",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "27",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "27",
+        "RuleVersionId": "4",
+        "MetricDefinitionVersionId": "3",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "28",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "28",
+        "RuleVersionId": "4",
+        "MetricDefinitionVersionId": "4",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "29",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "29",
+        "RuleVersionId": "7",
+        "MetricDefinitionVersionId": "8",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "30",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "30",
+        "RuleVersionId": "7",
+        "MetricDefinitionVersionId": "9",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "31",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "31",
+        "RuleVersionId": "8",
+        "MetricDefinitionVersionId": "8",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "RuleMetric",
+      "source_id": "32",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "32",
+        "RuleVersionId": "8",
+        "MetricDefinitionVersionId": "9",
+        "MetricRole": "Conditional"
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        }
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "5",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "5",
+        "EventEvaluationId": "1",
+        "CustomerIdentityLinkId": "16",
+        "VerificationOutcomeUsed": "Verified",
+        "VerifiedAtUsed": "2026-10-01T19:00:00Z",
+        "EvidenceReferenceUsed": "synthetic:evidence:identity:C006:P02-P04:verified"
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "6",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "6",
+        "EventEvaluationId": "2",
+        "CustomerIdentityLinkId": "22",
+        "VerificationOutcomeUsed": "Verified",
+        "VerifiedAtUsed": "2026-10-01T19:00:00Z",
+        "EvidenceReferenceUsed": "synthetic:evidence:identity:C007:P01-P03:verified"
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "7",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "7",
+        "EventEvaluationId": "3",
+        "CustomerIdentityLinkId": "25",
+        "VerificationOutcomeUsed": "Verified",
+        "VerifiedAtUsed": "2026-10-01T19:00:00Z",
+        "EvidenceReferenceUsed": "synthetic:evidence:identity:C008:P02-P04:verified"
+      }
+    },
+    {
+      "table": "EventEvaluationIdentity",
+      "source_id": "8",
+      "action": "added",
+      "before": null,
+      "after": {
+        "Id": "8",
+        "EventEvaluationId": "5",
+        "CustomerIdentityLinkId": "31",
+        "VerificationOutcomeUsed": "Verified",
+        "VerifiedAtUsed": "2026-10-01T19:00:00Z",
+        "EvidenceReferenceUsed": "synthetic:evidence:identity:C010:P02-P04:verified"
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "1",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "1",
+          "after": "23"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C001:P01-P03:verified",
+          "after": "synthetic:evidence:identity:C007:P01-P05:verified"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "2",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "4",
+          "after": "18"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C002:P02-P04:verified",
+          "after": "synthetic:evidence:identity:C006:P02-P06:verified"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "3",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "1",
+          "after": "22"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C001:P01-P03:verified",
+          "after": "synthetic:evidence:identity:C007:P01-P03:verified"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "4",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "4",
+          "after": "16"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C002:P02-P04:verified",
+          "after": "synthetic:evidence:identity:C006:P02-P04:verified"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "5",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "2",
+          "after": "23"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C001:P01-P05:verified",
+          "after": "synthetic:evidence:identity:C007:P01-P05:verified"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "6",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "5",
+          "after": "18"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C002:P02-P06:verified",
+          "after": "synthetic:evidence:identity:C006:P02-P06:verified"
+        }
+      }
+    },
+    {
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "7",
+      "action": "updated",
+      "fields": {
+        "CustomerIdentityLinkId": {
+          "before": "8",
+          "after": "33"
+        },
+        "VerifiedAtUsed": {
+          "before": "2026-10-01T12:00:00Z",
+          "after": "2026-10-01T19:00:00Z"
+        },
+        "EvidenceReferenceUsed": {
+          "before": "synthetic:evidence:identity:C003:P01-P07:verified",
+          "after": "synthetic:evidence:identity:C010:P04-P07:verified"
+        }
+      }
+    }
+  ],
+  "assumptions": {
+    "business_timezone": "America/Vancouver",
+    "source_clock_interpretation": "Original clock readings treated as intended local business time, then converted to UTC",
+    "replacement_handover_grace_minutes": 60,
+    "rental_billable_unit": "CEILING elapsed seconds / 86400; minimum 1 day",
+    "replacement_daily_rate_cad_by_source_provider": {
+      "3": 89,
+      "4": 94
+    },
+    "open_rental": "Contract quote of CAD 72 remains provisional and excluded from completion metrics",
+    "report_as_of": "2026-11-04",
+    "decision_basis": "Offline synthetic sample policy preparation, not real business or human approval"
+  }
+}

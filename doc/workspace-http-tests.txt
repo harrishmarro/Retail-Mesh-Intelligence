@@ -1,0 +1,1 @@
+PASS: default authentication, setup/login/logout, hashed session revocation, CSRF/origin/host checks, two isolated company demos, role denials, provider redaction, immediate membership revocation, disabled legacy routes and unconfigured AI fallback.

@@ -1,0 +1,18 @@
+﻿Id,PeriodEvaluationId,VehicleActivityId,EvidenceRole
+1,1,7,Completed activity within Q3 review window
+2,1,9,Completed activity within Q3 review window
+3,2,6,Completed activity within Q3 review window
+4,2,8,Completed activity within Q3 review window
+5,2,10,Completed activity within Q3 review window
+6,3,31,Completed activity within Q3 review window
+7,3,33,Completed activity within Q3 review window
+8,4,29,Completed activity within Q3 review window
+9,4,30,Completed activity within Q3 review window
+10,4,32,Completed activity within Q3 review window
+11,4,34,Completed activity within Q3 review window
+12,5,17,Completed activity within Q3 review window
+13,5,19,Completed activity within Q3 review window
+14,6,15,Completed activity within Q3 review window
+15,6,16,Completed activity within Q3 review window
+16,6,18,Completed activity within Q3 review window
+17,7,20,Completed activity within Q3 review window

@@ -1,0 +1,226 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rm: <https://example.org/retail-mesh/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/retail-mesh/demo/company/2/award/2> a rm:ProviderAward ;
+    prov:wasGeneratedBy <https://example.org/retail-mesh/demo/company/2/run/1> ;
+    rm:amountMinor 15000 ;
+    rm:beneficiary <https://example.org/retail-mesh/demo/company/2/provider/4> ;
+    rm:currency "CAD" .
+
+<https://example.org/retail-mesh/demo/company/2/activity/4> a rm:Sale ;
+    rm:involvesVehicle <https://example.org/retail-mesh/demo/company/2/vehicle/15> ;
+    rm:performedBy <https://example.org/retail-mesh/demo/company/2/provider/4> ;
+    rm:sourceReference "demo.northstar:NS-SALE-001" .
+
+<https://example.org/retail-mesh/demo/company/2/activity/6> a rm:Rental ;
+    rm:involvesVehicle <https://example.org/retail-mesh/demo/company/2/vehicle/16> ;
+    rm:performedBy <https://example.org/retail-mesh/demo/company/2/provider/5> ;
+    rm:replacementFor <https://example.org/retail-mesh/demo/company/2/activity/5> ;
+    rm:sourceReference "demo.northstar:NS-RENTAL-001" .
+
+<https://example.org/retail-mesh/demo/company/2/provider/5> a rm:Provider .
+
+<https://example.org/retail-mesh/demo/company/2/provider/6> a rm:Provider .
+
+<https://example.org/retail-mesh/demo/company/2/rule-version/3> a rm:RuleVersion ;
+    rm:conditionsJson "{\"operation\": \"fleet_journey_v1\", \"minimum_fleet_vehicles\": 10, \"service_window_days\": 30}" ;
+    rm:effectiveFrom "2026-01-01"^^xsd:date ;
+    rm:rewardJson "{\"amount_minor\": 15000, \"currency\": \"CAD\"}" .
+
+<https://example.org/retail-mesh/demo/company/2/run/1> a rm:IncentiveEvaluation ;
+    prov:used <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc> ;
+    rm:appliedRuleVersion <https://example.org/retail-mesh/demo/company/2/rule-version/3> ;
+    rm:evaluatedAt "2026-11-04T08:45:38+00:00"^^xsd:dateTime ;
+    rm:fleetCountBeforeSale 12 ;
+    rm:hasCheck <https://example.org/retail-mesh/demo/company/2/run/1/check/0>,
+        <https://example.org/retail-mesh/demo/company/2/run/1/check/1>,
+        <https://example.org/retail-mesh/demo/company/2/run/1/check/2>,
+        <https://example.org/retail-mesh/demo/company/2/run/1/check/3>,
+        <https://example.org/retail-mesh/demo/company/2/run/1/check/4>,
+        <https://example.org/retail-mesh/demo/company/2/run/1/check/5> ;
+    rm:inputHash "de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc" ;
+    rm:result "Qualified" .
+
+<https://example.org/retail-mesh/demo/company/2/run/1/check/0> a rm:Check ;
+    rm:description "Completed sale at or before evaluation cutoff" ;
+    rm:name "completed_sale" ;
+    rm:passed true .
+
+<https://example.org/retail-mesh/demo/company/2/run/1/check/1> a rm:Check ;
+    rm:description "Program active at sale completion" ;
+    rm:name "program_active" ;
+    rm:passed true .
+
+<https://example.org/retail-mesh/demo/company/2/run/1/check/2> a rm:Check ;
+    rm:description "Sale provider enrolled at sale completion" ;
+    rm:name "program_enrollment" ;
+    rm:passed true .
+
+<https://example.org/retail-mesh/demo/company/2/run/1/check/3> a rm:Check ;
+    rm:description "Authorized issuing outlet and sale capability" ;
+    rm:name "sale_authorization" ;
+    rm:passed true .
+
+<https://example.org/retail-mesh/demo/company/2/run/1/check/4> a rm:Check ;
+    rm:description "12 existing same-manufacturer vehicles; minimum 10" ;
+    rm:name "pre_sale_fleet" ;
+    rm:passed true .
+
+<https://example.org/retail-mesh/demo/company/2/run/1/check/5> a rm:Check ;
+    rm:description "Completed service within window, different replacement vehicle during service, verified direct accounts and authorized providers" ;
+    rm:name "verified_service_and_replacement" ;
+    rm:passed true .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc> a rm:EvidenceSnapshot ;
+    rm:citesActivity <https://example.org/retail-mesh/demo/company/2/activity/4>,
+        <https://example.org/retail-mesh/demo/company/2/activity/5>,
+        <https://example.org/retail-mesh/demo/company/2/activity/6> ;
+    rm:citesEnrollment <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/enrollment/4> ;
+    rm:citesFleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:citesIdentity <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/4>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/5> ;
+    rm:citesMembership <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/1>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/10>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/11>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/12>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/2>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/3>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/4>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/5>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/6>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/7>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/8>,
+        <https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/9> ;
+    rm:sourceReference "urn:retail-mesh:snapshot:sha256:de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc" .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/enrollment/4> a rm:EnrollmentEvidence ;
+    rm:sourceReference "ProgramEnrollment:4" ;
+    rm:validFromDate "2026-01-01"^^xsd:date .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/4> a rm:IdentityEvidence ;
+    rm:accountAId 4 ;
+    rm:accountBId 5 ;
+    rm:sourceReference "demo:northstar:identity:4:5" ;
+    rm:verificationStatus "Verified" ;
+    rm:verifiedAt "2026-09-01T00:00:00+00:00"^^xsd:dateTime .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/identity/5> a rm:IdentityEvidence ;
+    rm:accountAId 4 ;
+    rm:accountBId 6 ;
+    rm:sourceReference "demo:northstar:identity:4:6" ;
+    rm:verificationStatus "Verified" ;
+    rm:verifiedAt "2026-09-01T00:00:00+00:00"^^xsd:dateTime .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/1> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:3" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/3> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/10> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:12" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/12> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/11> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:13" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/13> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/12> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:14" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/14> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/2> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:4" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/4> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/3> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:5" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/5> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/4> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:6" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/6> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/5> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:7" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/7> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/6> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:8" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/8> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/7> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:9" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/9> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/8> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:10" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/10> .
+
+<https://example.org/retail-mesh/demo/company/2/snapshot/de9601929a16b43207fc8d589c9b1726cec50f7ba0dd8e7f319184bd3e583bbc/membership/9> a rm:FleetMembershipEvidence ;
+    rm:fleet <https://example.org/retail-mesh/demo/company/2/fleet/1> ;
+    rm:sourceReference "demo:northstar:preexisting:11" ;
+    rm:validFrom "2026-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    rm:vehicle <https://example.org/retail-mesh/demo/company/2/vehicle/11> .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/10> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/11> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/12> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/13> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/14> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/16> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/3> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/4> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/5> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/6> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/7> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/8> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/9> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/activity/5> a rm:Service ;
+    rm:involvesVehicle <https://example.org/retail-mesh/demo/company/2/vehicle/15> ;
+    rm:performedBy <https://example.org/retail-mesh/demo/company/2/provider/6> ;
+    rm:sourceReference "demo.northstar:NS-SERVICE-001" .
+
+<https://example.org/retail-mesh/demo/company/2/provider/4> a rm:Provider ;
+    rdfs:label "Maple Motors (fictional)" .
+
+<https://example.org/retail-mesh/demo/company/2/vehicle/15> a rm:Vehicle .
+
+<https://example.org/retail-mesh/demo/company/2/fleet/1> a rm:Fleet ;
+    rm:name "Cedar Logistics (fictional)" .
+

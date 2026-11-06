@@ -1,0 +1,4 @@
+﻿Id,VehicleActivityId,IncentiveRuleId,AwardStatus,IssuedAt,AcceptedEvaluationId,FirstComponentId
+1,6,3,Issued,2026-10-27T19:00:00Z,1,1
+2,7,1,Issued,2026-10-27T19:00:00Z,2,2
+3,8,3,Issued,2026-10-27T19:00:00Z,3,4

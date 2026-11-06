@@ -1,0 +1,8 @@
+﻿Id,PeriodEvaluationId,CustomerIdentityLinkId,VerificationOutcomeUsed,VerifiedAtUsed,EvidenceReferenceUsed
+1,1,23,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C007:P01-P05:verified
+2,2,18,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C006:P02-P06:verified
+3,3,22,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C007:P01-P03:verified
+4,4,16,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C006:P02-P04:verified
+5,5,23,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C007:P01-P05:verified
+6,6,18,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C006:P02-P06:verified
+7,7,33,Verified,2026-10-01T19:00:00Z,synthetic:evidence:identity:C010:P04-P07:verified

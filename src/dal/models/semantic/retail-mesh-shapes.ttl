@@ -1,0 +1,47 @@
+@prefix rm: <https://example.org/retail-mesh/vocab#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+rm:ActivityShape a sh:NodeShape ; sh:targetClass rm:Sale,rm:Rental,rm:Service ;
+ sh:property [sh:path rm:performedBy; sh:minCount 1;sh:maxCount 1;sh:class rm:Provider] ;
+ sh:property [sh:path rm:involvesVehicle;sh:minCount 1;sh:maxCount 1;sh:class rm:Vehicle] ;
+ sh:property [sh:path rm:sourceReference;sh:minCount 1;sh:datatype xsd:string] .
+rm:RentalShape a sh:NodeShape ; sh:targetClass rm:Rental ;
+ sh:property [sh:path rm:replacementFor;sh:minCount 1;sh:maxCount 1;sh:class rm:Service] .
+rm:EvaluationShape a sh:NodeShape ; sh:targetClass rm:IncentiveEvaluation ;
+ sh:property [sh:path rm:result;sh:minCount 1;sh:maxCount 1;sh:in ("Qualified" "Rejected")] ;
+ sh:property [sh:path rm:appliedRuleVersion;sh:minCount 1;sh:maxCount 1;sh:class rm:RuleVersion] ;
+ sh:property [sh:path rm:inputHash;sh:minCount 1;sh:pattern "^[0-9a-f]{64}$"] ;
+ sh:property [sh:path rm:hasCheck;sh:minCount 6;sh:class rm:Check] ;
+ sh:property [sh:path prov:used;sh:minCount 1;sh:class rm:EvidenceSnapshot] .
+rm:AwardShape a sh:NodeShape ; sh:targetClass rm:ProviderAward ;
+ sh:property [sh:path rm:beneficiary;sh:minCount 1;sh:maxCount 1;sh:class rm:Provider] ;
+ sh:property [sh:path rm:amountMinor;sh:minCount 1;sh:maxCount 1;sh:datatype xsd:integer;sh:minInclusive 1] ;
+ sh:property [sh:path rm:currency;sh:minCount 1;sh:maxCount 1;sh:hasValue "CAD"] ;
+ sh:property [sh:path prov:wasGeneratedBy;sh:minCount 1;sh:maxCount 1;sh:class rm:IncentiveEvaluation] .
+rm:CheckShape a sh:NodeShape ;sh:targetClass rm:Check ;
+ sh:property [sh:path rm:passed;sh:minCount 1;sh:maxCount 1;sh:datatype xsd:boolean] ;
+ sh:property [sh:path rm:description;sh:minCount 1;sh:datatype xsd:string] .
+rm:QualifiedConsistencyShape a sh:NodeShape ; sh:targetClass rm:IncentiveEvaluation ;
+ sh:sparql [
+  sh:message "Qualified evaluation must generate an award and have no failed checks." ;
+  sh:select """
+   PREFIX rm:<https://example.org/retail-mesh/vocab#>
+   PREFIX prov:<http://www.w3.org/ns/prov#>
+   SELECT $this WHERE {
+    $this rm:result "Qualified" .
+    FILTER (NOT EXISTS {?award a rm:ProviderAward; prov:wasGeneratedBy $this}
+       || EXISTS {$this rm:hasCheck ?check. ?check rm:passed false})
+   }
+  """
+ ] .
+
+rm:MembershipShape a sh:NodeShape ;sh:targetClass rm:FleetMembershipEvidence ;
+ sh:property [sh:path rm:fleet;sh:minCount 1;sh:maxCount 1;sh:class rm:Fleet] ;
+ sh:property [sh:path rm:vehicle;sh:minCount 1;sh:maxCount 1;sh:class rm:Vehicle] ;
+ sh:property [sh:path rm:validFrom;sh:minCount 1;sh:maxCount 1;sh:datatype xsd:dateTime] ;
+ sh:property [sh:path rm:sourceReference;sh:minCount 1;sh:datatype xsd:string] .
+rm:IdentityShape a sh:NodeShape ;sh:targetClass rm:IdentityEvidence ;
+ sh:property [sh:path rm:verificationStatus;sh:minCount 1;sh:hasValue "Verified"] ;
+ sh:property [sh:path rm:verifiedAt;sh:minCount 1;sh:maxCount 1;sh:datatype xsd:dateTime] ;
+ sh:property [sh:path rm:sourceReference;sh:minCount 1;sh:datatype xsd:string] .

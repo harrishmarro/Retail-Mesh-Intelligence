@@ -1,0 +1,11 @@
+﻿Id,ParentCompanyId,OfficialMetricCode,EffectiveFrom,EffectiveTo,MetricName,DefinitionExpression,UnitScheme,UnitCode
+1,1,ACTIVITY-COMPLETED-COUNT,2026-01-01,,Completed activity count,"COUNT completed provider activities by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)",UCUM,1
+2,1,SERVICE-COMPLETED-COUNT,2026-01-01,,Completed service count,"COUNT completed provider services by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)",UCUM,1
+3,1,SALE-VALUE-CAD,2026-01-01,,Completed vehicle sales value,"SUM tax-exclusive SalePrice in CAD for completed sales by completion business date; [PeriodStart, PeriodEnd)",ISO4217,CAD
+4,1,REPLACEMENT-RENTAL-COUNT,2026-01-01,,Replacement rental count,"COUNT completed provider rentals linked to a service, by local return date; [PeriodStart, PeriodEnd)",UCUM,1
+5,1,RENTAL-DURATION-DAYS,2026-01-01,,Returned rental duration,"SUM CEILING elapsed rental seconds / 86400 for completed rentals, by America/Vancouver return date; minimum one billable day; [PeriodStart, PeriodEnd)",UCUM,d
+6,2,ACTIVITY-COMPLETED-COUNT,2026-01-01,,Completed activity count,"COUNT completed provider activities by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)",UCUM,1
+7,2,SERVICE-COMPLETED-COUNT,2026-01-01,,Completed service count,"COUNT completed provider services by completion business date in America/Vancouver; [PeriodStart, PeriodEnd)",UCUM,1
+8,2,SALE-VALUE-CAD,2026-01-01,,Completed vehicle sales value,"SUM tax-exclusive SalePrice in CAD for completed sales by completion business date; [PeriodStart, PeriodEnd)",ISO4217,CAD
+9,2,REPLACEMENT-RENTAL-COUNT,2026-01-01,,Replacement rental count,"COUNT completed provider rentals linked to a service, by local return date; [PeriodStart, PeriodEnd)",UCUM,1
+10,2,RENTAL-DURATION-DAYS,2026-01-01,,Returned rental duration,"SUM CEILING elapsed rental seconds / 86400 for completed rentals, by America/Vancouver return date; minimum one billable day; [PeriodStart, PeriodEnd)",UCUM,d

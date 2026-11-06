@@ -1,0 +1,19 @@
+# Run each SELECT separately. Read-only templates; no user-generated SPARQL execution endpoint.
+PREFIX rm: <https://example.org/retail-mesh/vocab#>
+SELECT ?activity ?kind ?reference ?outlet WHERE {
+ ?activity a rm:VehicleActivity ; rm:ActivityKind ?kind ; rm:OfficialActivityReference ?reference ; rm:IssuingOutletId ?outlet .
+}
+
+# Provider authorization path:
+PREFIX rm: <https://example.org/retail-mesh/vocab#>
+SELECT ?company ?provider ?name WHERE {
+ ?authorization a rm:ProviderAuthorization ; rm:ParentCompanyId ?company ; rm:ProviderId ?provider .
+ ?provider rm:LegalName ?name .
+}
+
+# Exact accepted evaluation and component amounts, without mixing units:
+PREFIX rm: <https://example.org/retail-mesh/vocab#>
+SELECT ?award ?evaluation ?value ?unit WHERE {
+ ?award a rm:EventAward ; rm:AcceptedEvaluationId ?evaluation .
+ ?component rm:EventAwardId ?award ; rm:BenefitValue ?value ; rm:UnitCode ?unit .
+}

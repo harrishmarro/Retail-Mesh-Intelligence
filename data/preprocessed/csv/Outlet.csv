@@ -1,0 +1,11 @@
+﻿Id,ProviderId,ExistingOutletReference,OutletName,Address
+1,1,VIC-MAIN,Harbourview Victoria Sales,"101 Example Harbour Road, Victoria, BC, Canada"
+2,1,SAN-DELIVERY,Harbourview Saanich Delivery Centre,"22 Fictional Motor Way, Saanich, BC, Canada"
+3,2,NAN-MAIN,Westshore Nanaimo Motors,"80 Sample Parkway, Nanaimo, BC, Canada"
+4,3,YYJ-AIRPORT,Island Fleet Victoria Airport,"1 Demonstration Terminal Road, Victoria, BC, Canada"
+5,3,NAN-DOCK,Island Fleet Nanaimo Dockside,"5 Imaginary Wharf Street, Nanaimo, BC, Canada"
+6,4,SUR-MAIN,Victoria City Mobility Surrey Branch,"300 Placeholder Fleet Avenue, Surrey, BC, Canada"
+7,5,BURNSIDE-SVC,Pacific Service Burnside Centre,"44 Example Service Lane, Victoria, BC, Canada"
+8,5,LANGFORD-SVC,Pacific Service Langford Express,"18 Fictional Repair Road, Langford, BC, Canada"
+9,6,NAN-SVC,North Island Nanaimo Auto Care,"72 Sample Industrial Way, Nanaimo, BC, Canada"
+10,7,VIC-EV,EV Specialists Victoria Diagnostics,"9 Demonstration Technology Drive, Victoria, BC, Canada"

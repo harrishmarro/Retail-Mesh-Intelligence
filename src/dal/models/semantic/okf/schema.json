@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:retail-mesh:okf:schema:1.0.0",
+  "title": "Retail-Mesh company knowledge snapshot",
+  "type": "object",
+  "required": [
+    "okf_version",
+    "@context",
+    "@graph",
+    "scope",
+    "snapshot_sha256",
+    "provenance"
+  ],
+  "properties": {
+    "okf_version": {
+      "const": "1.0.0"
+    },
+    "@context": {
+      "type": "object"
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "company_id",
+        "role"
+      ],
+      "properties": {
+        "company_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "role": {
+          "enum": [
+            "CompanyAdmin",
+            "CompanyOperator",
+            "Analyst"
+          ]
+        }
+      }
+    },
+    "snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "@graph": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "@id",
+          "@type",
+          "rm:sourceTable",
+          "rm:sourceRowId"
+        ],
+        "properties": {
+          "@id": {
+            "type": "string",
+            "pattern": "^urn:retail-mesh:company:[0-9]+:record:"
+          },
+          "@type": {
+            "type": "array",
+            "contains": {
+              "const": "rm:Record"
+            }
+          },
+          "rm:sourceTable": {
+            "type": "string"
+          },
+          "rm:sourceRowId": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+﻿Id,EventEvaluationId,VehicleActivityId,EvidenceRole
+1,1,16,Same-vehicle completed service
+2,1,30,Replacement mobility event
+3,2,17,Same-vehicle completed service
+4,2,31,Replacement mobility event
+5,3,18,Same-vehicle completed service
+6,3,32,Replacement mobility event
+7,4,19,Same-vehicle completed service
+8,4,33,Replacement mobility event
+9,5,20,Same-vehicle completed service
+10,5,34,Replacement mobility event

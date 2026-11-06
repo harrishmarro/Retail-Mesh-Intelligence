@@ -1,0 +1,1004 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7296" height="6432" viewBox="0 0 7296 6432" role="img" aria-labelledby="retail-map-title retail-map-desc">
+<title id="retail-map-title">Retail-Mesh reviewed connected ER model</title>
+<desc id="retail-map-desc">One reviewed connected model links legal providers and outlets, verified customer accounts, vehicle activities, dated authorizations, performance evidence, exact rule versions, typed assessments and stable reward entitlements.</desc>
+<rect width="7296" height="6432" fill="#faf9f6"/>
+<text x="120" y="73" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#627083">RETAIL-MESH  /  CONCEPTUAL DATA ARCHITECTURE</text>
+<text x="120" y="148" font-family="Arial,sans-serif" font-size="52" font-weight="700" fill="#243448">Retail-Mesh: the complete ER model with crow’s-foot endpoints</text>
+<text x="120" y="195" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#627083">Provider networks → vehicle activities → verified customer journeys → assessments → incentive entitlements</text>
+<text x="120" y="339" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#627083">LEGAL PROVIDERS</text>
+<text x="1320" y="339" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#627083">ACCOUNTS &amp; AUTHORITY</text>
+<text x="2520" y="339" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#627083">VEHICLE ACTIVITIES</text>
+<text x="3720" y="339" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#627083">INCENTIVE POLICY</text>
+<text x="4920" y="339" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#627083">METRICS &amp; ASSESSMENT</text>
+<text x="6120" y="339" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#627083">REWARD ENTITLEMENTS</text>
+<text x="120" y="254" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#627083">26 entities · 42 relationships · one connected map · Natural keys and business assumptions documented</text>
+<path d="M2280,5334 L2280.0,5394.0 Q2280,5400 2286.0,5400.0 L2286.0,5400.0 Q2292,5400 2292.0,5406.0 L2292,5436" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2280,5334 L2280.0,5394.0 Q2280,5400 2286.0,5400.0 L2286.0,5400.0 Q2292,5400 2292.0,5406.0 L2292,5436" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4680,2706 L4680.0,2778.0 Q4680,2784 4686.0,2784.0 L4686.0,2784.0 Q4692,2784 4692.0,2790.0 L4692,2820" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4680,2706 L4680.0,2778.0 Q4680,2784 4686.0,2784.0 L4686.0,2784.0 Q4692,2784 4692.0,2790.0 L4692,2820" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4680,4062 L4680.0,4134.0 Q4680,4140 4686.0,4140.0 L4686.0,4140.0 Q4692,4140 4692.0,4146.0 L4692,4176" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4680,4062 L4680.0,4134.0 Q4680,4140 4686.0,4140.0 L4686.0,4140.0 Q4692,4140 4692.0,4146.0 L4692,4176" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5244,2700 L5244,2820" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5244,2700 L5244,2820" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5652,3900 L5652,4020" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5652,3900 L5652,4020" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3480,3486 L3480.0,3558.0 Q3480,3564 3486.0,3564.0 L3486.0,3564.0 Q3492,3564 3492.0,3570.0 L3492,3600" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3480,3486 L3480.0,3558.0 Q3480,3564 3486.0,3564.0 L3486.0,3564.0 Q3492,3564 3492.0,3570.0 L3492,3600" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3480,4026 L3480.0,4098.0 Q3480,4104 3486.0,4104.0 L3486.0,4104.0 Q3492,4104 3492.0,4110.0 L3492,4140" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3480,4026 L3480.0,4098.0 Q3480,4104 3486.0,4104.0 L3486.0,4104.0 Q3492,4104 3492.0,4110.0 L3492,4140" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2772,4620 L2772.0,4756.0 Q2772,4764 2780.0,4764.0 L2788.0,4764.0 Q2796,4764 2796.0,4772.0 L2796,4800" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2772,4620 L2772.0,4756.0 Q2772,4764 2780.0,4764.0 L2788.0,4764.0 Q2796,4764 2796.0,4772.0 L2796,4800" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2172,3600 L2172.0,3736.0 Q2172,3744 2180.0,3744.0 L2236.0,3744.0 Q2244,3744 2244.0,3752.0 L2244,3780" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2172,3600 L2172.0,3736.0 Q2172,3744 2180.0,3744.0 L2236.0,3744.0 Q2244,3744 2244.0,3752.0 L2244,3780" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2148,3600 L2148.0,3640.0 Q2148,3648 2140.0,3648.0 L1940.0,3648.0 Q1932,3648 1932.0,3656.0 L1932,3780" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2148,3600 L2148.0,3640.0 Q2148,3648 2140.0,3648.0 L1940.0,3648.0 Q1932,3648 1932.0,3656.0 L1932,3780" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2832,1800 L2832,1566" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2832,1800 L2832,1566" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2748,4620 L2748.0,4660.0 Q2748,4668 2740.0,4668.0 L2492.0,4668.0 Q2484,4668 2484.0,4676.0 L2484,4800" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2748,4620 L2748.0,4660.0 Q2748,4668 2740.0,4668.0 L2492.0,4668.0 Q2484,4668 2484.0,4676.0 L2484,4800" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4140,1800 L4140.0,1616.0 Q4140,1608 4132.0,1608.0 L4040.0,1608.0 Q4032,1608 4032.0,1600.0 L4032,1566" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4140,1800 L4140.0,1616.0 Q4140,1608 4132.0,1608.0 L4040.0,1608.0 Q4032,1608 4032.0,1600.0 L4032,1566" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5340,1800 L5340.0,1616.0 Q5340,1608 5332.0,1608.0 L5240.0,1608.0 Q5232,1608 5232.0,1600.0 L5232,1566" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5340,1800 L5340.0,1616.0 Q5340,1608 5332.0,1608.0 L5240.0,1608.0 Q5232,1608 5232.0,1600.0 L5232,1566" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M432,3000 L432,2706" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M432,3000 L432,2706" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4032,3000 L4032,2706" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4032,3000 L4032,2706" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6540,3000 L6540.0,2744.0 Q6540,2736 6532.0,2736.0 L6440.0,2736.0 Q6432,2736 6432.0,2728.0 L6432,2706" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6540,3000 L6540.0,2744.0 Q6540,2736 6532.0,2736.0 L6440.0,2736.0 Q6432,2736 6432.0,2728.0 L6432,2706" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2280,3552 L2548.0,3552.0 Q2556,3552 2556.0,3560.0 L2556,3780" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2280,3552 L2548.0,3552.0 Q2556,3552 2556.0,3560.0 L2556,3780" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3876,4200 L3876.0,3944.0 Q3876,3936 3884.0,3936.0 L4024.0,3936.0 Q4032,3936 4032.0,3928.0 L4032,3906" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3876,4200 L3876.0,3944.0 Q3876,3936 3884.0,3936.0 L4024.0,3936.0 Q4032,3936 4032.0,3928.0 L4032,3906" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5232,3000 L5232.0,2972.0 Q5232,2964 5224.0,2964.0 L5096.0,2964.0 Q5088,2964 5088.0,2956.0 L5088.0,2756.0 Q5088,2748 5096.0,2748.0 L5212.0,2748.0 Q5220,2748 5220.0,2740.0 L5220,2700" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5232,3000 L5232.0,2972.0 Q5232,2964 5224.0,2964.0 L5096.0,2964.0 Q5088,2964 5088.0,2956.0 L5088.0,2756.0 Q5088,2748 5096.0,2748.0 L5212.0,2748.0 Q5220,2748 5220.0,2740.0 L5220,2700" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1524,3000 L1524.0,2742.0 Q1524,2736 1518.0,2736.0 L1518.0,2736.0 Q1512,2736 1512.0,2730.0 L1512,2706" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1524,3000 L1524.0,2742.0 Q1524,2736 1518.0,2736.0 L1518.0,2736.0 Q1512,2736 1512.0,2730.0 L1512,2706" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2940,3000 L2940.0,2744.0 Q2940,2736 2932.0,2736.0 L2840.0,2736.0 Q2832,2736 2832.0,2728.0 L2832,2706" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2940,3000 L2940.0,2744.0 Q2940,2736 2932.0,2736.0 L2840.0,2736.0 Q2832,2736 2832.0,2728.0 L2832,2706" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6432,5520 L6432,5226" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6432,5520 L6432,5226" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1320,1944 L1224,1944" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1320,1944 L1224,1944" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2520,3192 L2466.0,3192.0 Q2460,3192 2460.0,3186.0 L2460.0,3186.0 Q2460,3180 2454.0,3180.0 L2424,3180" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2520,3192 L2466.0,3192.0 Q2460,3192 2460.0,3186.0 L2460.0,3186.0 Q2460,3180 2454.0,3180.0 L2424,3180" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,3084 L4868.0,3084.0 Q4860,3084 4860.0,3092.0 L4860.0,3172.0 Q4860,3180 4852.0,3180.0 L4824,3180" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,3084 L4868.0,3084.0 Q4860,3084 4860.0,3092.0 L4860.0,3172.0 Q4860,3180 4852.0,3180.0 L4824,3180" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1320,4296 L1268.0,4296.0 Q1260,4296 1260.0,4304.0 L1260.0,4312.0 Q1260,4320 1252.0,4320.0 L1224,4320" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1320,4296 L1268.0,4296.0 Q1260,4296 1260.0,4304.0 L1260.0,4312.0 Q1260,4320 1252.0,4320.0 L1224,4320" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1740,3000 L1740.0,2744.0 Q1740,2736 1748.0,2736.0 L1792.0,2736.0 Q1800,2736 1800.0,2728.0 L1800,2706" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1740,3000 L1740.0,2744.0 Q1740,2736 1748.0,2736.0 L1792.0,2736.0 Q1800,2736 1800.0,2728.0 L1800,2706" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,4368 L4868.0,4368.0 Q4860,4368 4860.0,4360.0 L4860.0,4352.0 Q4860,4344 4852.0,4344.0 L4824,4344" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,4368 L4868.0,4368.0 Q4860,4368 4860.0,4360.0 L4860.0,4352.0 Q4860,4344 4852.0,4344.0 L4824,4344" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6120,3120 L6092.0,3120.0 Q6084,3120 6084.0,3128.0 L6084.0,3172.0 Q6084,3180 6076.0,3180.0 L6024,3180" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6120,3120 L6092.0,3120.0 Q6084,3120 6084.0,3128.0 L6084.0,3172.0 Q6084,3180 6076.0,3180.0 L6024,3180" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1320,732 L1292.0,732.0 Q1284,732 1284.0,740.0 L1284.0,796.0 Q1284,804 1276.0,804.0 L1224,804" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1320,732 L1292.0,732.0 Q1284,732 1284.0,740.0 L1284.0,796.0 Q1284,804 1276.0,804.0 L1224,804" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6120,4344 L6092.0,4344.0 Q6084,4344 6084.0,4352.0 L6084.0,4432.0 Q6084,4440 6076.0,4440.0 L6024,4440" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6120,4344 L6092.0,4344.0 Q6084,4344 6084.0,4352.0 L6084.0,4432.0 Q6084,4440 6076.0,4440.0 L6024,4440" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2832,5148 L2832,5520" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2832,5148 L2832,5520" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1320,4404 L1292.0,4404.0 Q1284,4404 1284.0,4412.0 L1284.0,4552.0 Q1284,4560 1276.0,4560.0 L1224,4560" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1320,4404 L1292.0,4404.0 Q1284,4404 1284.0,4412.0 L1284.0,4552.0 Q1284,4560 1276.0,4560.0 L1224,4560" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6324,3000 L6324.0,2972.0 Q6324,2964 6316.0,2964.0 L6068.0,2964.0 Q6060,2964 6060.0,2956.0 L6060.0,2828.0 Q6060,2820 6052.0,2820.0 L6024,2820" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6324,3000 L6324.0,2972.0 Q6324,2964 6316.0,2964.0 L6068.0,2964.0 Q6060,2964 6060.0,2956.0 L6060.0,2828.0 Q6060,2820 6052.0,2820.0 L6024,2820" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4032,600 L4032.0,572.0 Q4032,564 4024.0,564.0 L3668.0,564.0 Q3660,564 3660.0,556.0 L3660.0,464.0 Q3660,456 3652.0,456.0 L3624,456" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4032,600 L4032.0,572.0 Q4032,564 4024.0,564.0 L3668.0,564.0 Q3660,564 3660.0,556.0 L3660.0,464.0 Q3660,456 3652.0,456.0 L3624,456" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3924,1800 L3924.0,1772.0 Q3924,1764 3916.0,1764.0 L3668.0,1764.0 Q3660,1764 3660.0,1756.0 L3660.0,1628.0 Q3660,1620 3652.0,1620.0 L3624,1620" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3924,1800 L3924.0,1772.0 Q3924,1764 3916.0,1764.0 L3668.0,1764.0 Q3660,1764 3660.0,1756.0 L3660.0,1628.0 Q3660,1620 3652.0,1620.0 L3624,1620" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1632,4200 L1632.0,3824.0 Q1632,3816 1624.0,3816.0 L1520.0,3816.0 Q1512,3816 1512.0,3808.0 L1512,3786" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1632,4200 L1632.0,3824.0 Q1632,3816 1624.0,3816.0 L1520.0,3816.0 Q1512,3816 1512.0,3808.0 L1512,3786" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5232,600 L5232.0,572.0 Q5232,564 5224.0,564.0 L4868.0,564.0 Q4860,564 4860.0,556.0 L4860.0,464.0 Q4860,456 4852.0,456.0 L4824,456" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5232,600 L5232.0,572.0 Q5232,564 5224.0,564.0 L4868.0,564.0 Q4860,564 4860.0,556.0 L4860.0,464.0 Q4860,456 4852.0,456.0 L4824,456" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5124,1800 L5124.0,1772.0 Q5124,1764 5116.0,1764.0 L4868.0,1764.0 Q4860,1764 4860.0,1756.0 L4860.0,1628.0 Q4860,1620 4852.0,1620.0 L4824,1620" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5124,1800 L5124.0,1772.0 Q5124,1764 5116.0,1764.0 L4868.0,1764.0 Q4860,1764 4860.0,1756.0 L4860.0,1628.0 Q4860,1620 4852.0,1620.0 L4824,1620" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1524,3336 L1524.0,3532.0 Q1524,3540 1532.0,3540.0 L2016,3540" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1524,3336 L1524.0,3532.0 Q1524,3540 1532.0,3540.0 L2016,3540" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,4524 L4892.0,4524.0 Q4884,4524 4884.0,4532.0 L4884.0,4732.0 Q4884,4740 4876.0,4740.0 L4824,4740" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,4524 L4892.0,4524.0 Q4884,4524 4884.0,4532.0 L4884.0,4732.0 Q4884,4740 4876.0,4740.0 L4824,4740" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4344,4332 L4494.0,4332.0 Q4500,4332 4500.0,4338.0 L4500.0,4338.0 Q4500,4344 4506.0,4344.0 L4536,4344" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4344,4332 L4494.0,4332.0 Q4500,4332 4500.0,4338.0 L4500.0,4338.0 Q4500,4344 4506.0,4344.0 L4536,4344" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5544,4404 L5692.0,4404.0 Q5700,4404 5700.0,4412.0 L5700.0,4432.0 Q5700,4440 5708.0,4440.0 L5736,4440" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5544,4404 L5692.0,4404.0 Q5700,4404 5700.0,4412.0 L5700.0,4432.0 Q5700,4440 5708.0,4440.0 L5736,4440" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2616,4560 L2180.0,4560.0 Q2172,4560 2172.0,4568.0 L2172,4800" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2616,4560 L2180.0,4560.0 Q2172,4560 2172.0,4568.0 L2172,4800" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,1944 L936,1944" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,1944 L936,1944" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6432,2172 L6432,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6432,2172 L6432,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,744 L892.0,744.0 Q900,744 900.0,752.0 L900.0,796.0 Q900,804 908.0,804.0 L936,804" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,744 L892.0,744.0 Q900,744 900.0,752.0 L900.0,796.0 Q900,804 908.0,804.0 L936,804" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6432,3228 L6432.0,3256.0 Q6432,3264 6424.0,3264.0 L6068.0,3264.0 Q6060,3264 6060.0,3272.0 L6060.0,3472.0 Q6060,3480 6052.0,3480.0 L6024,3480" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6432,3228 L6432.0,3256.0 Q6432,3264 6424.0,3264.0 L6068.0,3264.0 Q6060,3264 6060.0,3272.0 L6060.0,3472.0 Q6060,3480 6052.0,3480.0 L6024,3480" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6324,4500 L6324.0,4528.0 Q6324,4536 6316.0,4536.0 L6068.0,4536.0 Q6060,4536 6060.0,4544.0 L6060.0,4732.0 Q6060,4740 6052.0,4740.0 L6024,4740" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6324,4500 L6324.0,4528.0 Q6324,4536 6316.0,4536.0 L6068.0,4536.0 Q6060,4536 6060.0,4544.0 L6060.0,4732.0 Q6060,4740 6052.0,4740.0 L6024,4740" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6432,4200 L6432.0,4172.0 Q6432,4164 6424.0,4164.0 L6068.0,4164.0 Q6060,4164 6060.0,4156.0 L6060.0,3968.0 Q6060,3960 6052.0,3960.0 L6024,3960" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6432,4200 L6432.0,4172.0 Q6432,4164 6424.0,4164.0 L6068.0,4164.0 Q6060,4164 6060.0,4156.0 L6060.0,3968.0 Q6060,3960 6052.0,3960.0 L6024,3960" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3144,3300 L3292.0,3300.0 Q3300,3300 3300.0,3308.0 L3300.0,3412.0 Q3300,3420 3308.0,3420.0 L3336,3420" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3144,3300 L3292.0,3300.0 Q3300,3300 3300.0,3308.0 L3300.0,3412.0 Q3300,3420 3308.0,3420.0 L3336,3420" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5232,2100 L5232,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5232,2100 L5232,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5232,4200 L5232.0,3956.0 Q5232,3948 5240.0,3948.0 L5620.0,3948.0 Q5628,3948 5628.0,3940.0 L5628,3900" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5232,4200 L5232.0,3956.0 Q5232,3948 5240.0,3948.0 L5620.0,3948.0 Q5628,3948 5628.0,3940.0 L5628,3900" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1476,2100 L1476.0,2536.0 Q1476,2544 1484.0,2544.0 L1504.0,2544.0 Q1512,2544 1512.0,2552.0 L1512,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1476,2100 L1476.0,2536.0 Q1476,2544 1484.0,2544.0 L1504.0,2544.0 Q1512,2544 1512.0,2552.0 L1512,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M432,4356 L432.0,4384.0 Q432,4392 440.0,4392.0 L892.0,4392.0 Q900,4392 900.0,4400.0 L900.0,4552.0 Q900,4560 908.0,4560.0 L936,4560" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M432,4356 L432.0,4384.0 Q432,4392 440.0,4392.0 L892.0,4392.0 Q900,4392 900.0,4400.0 L900.0,4552.0 Q900,4560 908.0,4560.0 L936,4560" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1632,2100 L1632.0,2536.0 Q1632,2544 1640.0,2544.0 L1792.0,2544.0 Q1800,2544 1800.0,2552.0 L1800,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1632,2100 L1632.0,2536.0 Q1632,2544 1640.0,2544.0 L1792.0,2544.0 Q1800,2544 1800.0,2552.0 L1800,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5340,972 L5340.0,1384.0 Q5340,1392 5332.0,1392.0 L5240.0,1392.0 Q5232,1392 5232.0,1400.0 L5232,1434" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5340,972 L5340.0,1384.0 Q5340,1392 5332.0,1392.0 L5240.0,1392.0 Q5232,1392 5232.0,1400.0 L5232,1434" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5544,3168 L5572.0,3168.0 Q5580,3168 5580.0,3176.0 L5580.0,3472.0 Q5580,3480 5588.0,3480.0 L5736,3480" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5544,3168 L5572.0,3168.0 Q5580,3168 5580.0,3176.0 L5580.0,3472.0 Q5580,3480 5588.0,3480.0 L5736,3480" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3924,3228 L3924.0,3736.0 Q3924,3744 3932.0,3744.0 L4024.0,3744.0 Q4032,3744 4032.0,3752.0 L4032,3774" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3924,3228 L3924.0,3736.0 Q3924,3744 3932.0,3744.0 L4024.0,3744.0 Q4032,3744 4032.0,3752.0 L4032,3774" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4032,4200 L4032.0,4004.0 Q4032,3996 4040.0,3996.0 L4536,3996" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4032,4200 L4032.0,4004.0 Q4032,3996 4040.0,3996.0 L4536,3996" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3924,936 L3924.0,1384.0 Q3924,1392 3932.0,1392.0 L4024.0,1392.0 Q4032,1392 4032.0,1400.0 L4032,1434" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3924,936 L3924.0,1384.0 Q3924,1392 3932.0,1392.0 L4024.0,1392.0 Q4032,1392 4032.0,1400.0 L4032,1434" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M276,1992 L276.0,2536.0 Q276,2544 284.0,2544.0 L424.0,2544.0 Q432,2544 432.0,2552.0 L432,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M276,1992 L276.0,2536.0 Q276,2544 284.0,2544.0 L424.0,2544.0 Q432,2544 432.0,2552.0 L432,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1524,5520 L1524.0,5492.0 Q1524,5484 1532.0,5484.0 L2092.0,5484.0 Q2100,5484 2100.0,5476.0 L2100.0,5276.0 Q2100,5268 2108.0,5268.0 L2136,5268" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1524,5520 L1524.0,5492.0 Q1524,5484 1532.0,5484.0 L2092.0,5484.0 Q2100,5484 2100.0,5476.0 L2100.0,5276.0 Q2100,5268 2108.0,5268.0 L2136,5268" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2832,900 L2832,1434" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2832,900 L2832,1434" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2832,1956 L2832,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2832,1956 L2832,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2724,3000 L2724.0,2972.0 Q2724,2964 2716.0,2964.0 L2468.0,2964.0 Q2460,2964 2460.0,2956.0 L2460.0,2648.0 Q2460,2640 2452.0,2640.0 L2424,2640" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2724,3000 L2724.0,2972.0 Q2724,2964 2716.0,2964.0 L2468.0,2964.0 Q2460,2964 2460.0,2956.0 L2460.0,2648.0 Q2460,2640 2452.0,2640.0 L2424,2640" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5232,3336 L5232.0,3364.0 Q5232,3372 5224.0,3372.0 L4688.0,3372.0 Q4680,3372 4680.0,3380.0 L4680,3654" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5232,3336 L5232.0,3364.0 Q5232,3372 5224.0,3372.0 L4688.0,3372.0 Q4680,3372 4680.0,3380.0 L4680,3654" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M432,1800 L432.0,1772.0 Q432,1764 440.0,1764.0 L892.0,1764.0 Q900,1764 900.0,1756.0 L900.0,1460.0 Q900,1452 908.0,1452.0 L936,1452" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M432,1800 L432.0,1772.0 Q432,1764 440.0,1764.0 L892.0,1764.0 Q900,1764 900.0,1756.0 L900.0,1460.0 Q900,1452 908.0,1452.0 L936,1452" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M6540,4500 L6540.0,5056.0 Q6540,5064 6532.0,5064.0 L6440.0,5064.0 Q6432,5064 6432.0,5072.0 L6432,5094" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M6540,4500 L6540.0,5056.0 Q6540,5064 6532.0,5064.0 L6440.0,5064.0 Q6432,5064 6432.0,5072.0 L6432,5094" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5076,2100 L5076.0,2536.0 Q5076,2544 5068.0,2544.0 L4688.0,2544.0 Q4680,2544 4680.0,2552.0 L4680,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5076,2100 L5076.0,2536.0 Q5076,2544 5068.0,2544.0 L4688.0,2544.0 Q4680,2544 4680.0,2552.0 L4680,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4188,4200 L4188.0,4172.0 Q4188,4164 4196.0,4164.0 L4504.0,4164.0 Q4512,4164 4512.0,4156.0 L4512.0,3728.0 Q4512,3720 4520.0,3720.0 L4536,3720" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4188,4200 L4188.0,4172.0 Q4188,4164 4196.0,4164.0 L4504.0,4164.0 Q4512,4164 4512.0,4156.0 L4512.0,3728.0 Q4512,3720 4520.0,3720.0 L4536,3720" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1524,864 L1524.0,892.0 Q1524,900 1516.0,900.0 L1088.0,900.0 Q1080,900 1080.0,908.0 L1080,1386" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1524,864 L1524.0,892.0 Q1524,900 1516.0,900.0 L1088.0,900.0 Q1080,900 1080.0,908.0 L1080,1386" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1788,2100 L1788.0,2128.0 Q1788,2136 1796.0,2136.0 L2272.0,2136.0 Q2280,2136 2280.0,2144.0 L2280,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1788,2100 L1788.0,2128.0 Q1788,2136 1796.0,2136.0 L2272.0,2136.0 Q2280,2136 2280.0,2144.0 L2280,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2940,3372 L2940.0,3856.0 Q2940,3864 2948.0,3864.0 L3472.0,3864.0 Q3480,3864 3480.0,3872.0 L3480,3894" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2940,3372 L2940.0,3856.0 Q2940,3864 2948.0,3864.0 L3472.0,3864.0 Q3480,3864 3480.0,3872.0 L3480,3894" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2760,5058 L2655.0,5058.0 Q2652,5058 2652.0,5061.0 L2652.0,5061.0 Q2652,5064 2649.0,5064.0 L1748.0,5064.0 Q1740,5064 1740.0,5072.0 L1740,5520" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2760,5058 L2655.0,5058.0 Q2652,5058 2652.0,5061.0 L2652.0,5061.0 Q2652,5064 2649.0,5064.0 L1748.0,5064.0 Q1740,5064 1740.0,5072.0 L1740,5520" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2904,5058 L3009.0,5058.0 Q3012,5058 3012.0,5061.0 L3012.0,5061.0 Q3012,5064 3015.0,5064.0 L4024.0,5064.0 Q4032,5064 4032.0,5072.0 L4032,5520" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2904,5058 L3009.0,5058.0 Q3012,5058 3012.0,5061.0 L3012.0,5061.0 Q3012,5064 3015.0,5064.0 L4024.0,5064.0 Q4032,5064 4032.0,5072.0 L4032,5520" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M432,3228 L432.0,3256.0 Q432,3264 440.0,3264.0 L1072.0,3264.0 Q1080,3264 1080.0,3272.0 L1080,4254" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M432,3228 L432.0,3256.0 Q432,3264 440.0,3264.0 L1072.0,3264.0 Q1080,3264 1080.0,3272.0 L1080,4254" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,3168 L4892.0,3168.0 Q4884,3168 4884.0,3176.0 L4884.0,3208.0 Q4884,3216 4876.0,3216.0 L4856.0,3216.0 Q4848,3216 4848.0,3224.0 L4848.0,3328.0 Q4848,3336 4840.0,3336.0 L3668.0,3336.0 Q3660,3336 3660.0,3344.0 L3660.0,3412.0 Q3660,3420 3652.0,3420.0 L3624,3420" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,3168 L4892.0,3168.0 Q4884,3168 4884.0,3176.0 L4884.0,3208.0 Q4884,3216 4876.0,3216.0 L4856.0,3216.0 Q4848,3216 4848.0,3224.0 L4848.0,3328.0 Q4848,3336 4840.0,3336.0 L3668.0,3336.0 Q3660,3336 3660.0,3344.0 L3660.0,3412.0 Q3660,3420 3652.0,3420.0 L3624,3420" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3720,5640 L3692.0,5640.0 Q3684,5640 3684.0,5632.0 L3684.0,5504.0 Q3684,5496 3676.0,5496.0 L2468.0,5496.0 Q2460,5496 2460.0,5488.0 L2460.0,5276.0 Q2460,5268 2452.0,5268.0 L2424,5268" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3720,5640 L3692.0,5640.0 Q3684,5640 3684.0,5632.0 L3684.0,5504.0 Q3684,5496 3676.0,5496.0 L2468.0,5496.0 Q2460,5496 2460.0,5488.0 L2460.0,5276.0 Q2460,5268 2452.0,5268.0 L2424,5268" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1740,3336 L1740.0,3436.0 Q1740,3444 1748.0,3444.0 L2752.0,3444.0 Q2760,3444 2760.0,3452.0 L2760,4494" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1740,3336 L1740.0,3436.0 Q1740,3444 1748.0,3444.0 L2752.0,3444.0 Q2760,3444 2760.0,3452.0 L2760,4494" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,4284 L4892.0,4284.0 Q4884,4284 4884.0,4276.0 L4884.0,4100.0 Q4884,4092 4876.0,4092.0 L3668.0,4092.0 Q3660,4092 3660.0,4084.0 L3660.0,3968.0 Q3660,3960 3652.0,3960.0 L3624,3960" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,4284 L4892.0,4284.0 Q4884,4284 4884.0,4276.0 L4884.0,4100.0 Q4884,4092 4876.0,4092.0 L3668.0,4092.0 Q3660,4092 3660.0,4084.0 L3660.0,3968.0 Q3660,3960 3652.0,3960.0 L3624,3960" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3144,3144 L3688.0,3144.0 Q3696,3144 3696.0,3152.0 L3696.0,3280.0 Q3696,3288 3704.0,3288.0 L4492.0,3288.0 Q4500,3288 4500.0,3280.0 L4500.0,3188.0 Q4500,3180 4508.0,3180.0 L4536,3180" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3144,3144 L3688.0,3144.0 Q3696,3144 3696.0,3152.0 L3696.0,3280.0 Q3696,3288 3704.0,3288.0 L4492.0,3288.0 Q4500,3288 4500.0,3280.0 L4500.0,3188.0 Q4500,3180 4508.0,3180.0 L4536,3180" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,3120 L772.0,3120.0 Q780,3120 780.0,3112.0 L780.0,2948.0 Q780,2940 788.0,2940.0 L2092.0,2940.0 Q2100,2940 2100.0,2948.0 L2100.0,3172.0 Q2100,3180 2108.0,3180.0 L2136,3180" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,3120 L772.0,3120.0 Q780,3120 780.0,3112.0 L780.0,2948.0 Q780,2940 788.0,2940.0 L2092.0,2940.0 Q2100,2940 2100.0,2948.0 L2100.0,3172.0 Q2100,3180 2108.0,3180.0 L2136,3180" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4344,3120 L4372.0,3120.0 Q4380,3120 4380.0,3112.0 L4380.0,2924.0 Q4380,2916 4388.0,2916.0 L5692.0,2916.0 Q5700,2916 5700.0,2908.0 L5700.0,2828.0 Q5700,2820 5708.0,2820.0 L5736,2820" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4344,3120 L4372.0,3120.0 Q4380,3120 4380.0,3112.0 L4380.0,2924.0 Q4380,2916 4388.0,2916.0 L5692.0,2916.0 Q5700,2916 5700.0,2908.0 L5700.0,2828.0 Q5700,2820 5708.0,2820.0 L5736,2820" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4140,936 L4140.0,964.0 Q4140,972 4148.0,972.0 L4360.0,972.0 Q4368,972 4368.0,980.0 L4368.0,2536.0 Q4368,2544 4360.0,2544.0 L4040.0,2544.0 Q4032,2544 4032.0,2552.0 L4032,2574" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4140,936 L4140.0,964.0 Q4140,972 4148.0,972.0 L4360.0,972.0 Q4368,972 4368.0,980.0 L4368.0,2536.0 Q4368,2544 4360.0,2544.0 L4040.0,2544.0 Q4032,2544 4032.0,2552.0 L4032,2574" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M2724,3372 L2724.0,3400.0 Q2724,3408 2732.0,3408.0 L2896.0,3408.0 Q2904,3408 2904.0,3416.0 L2904.0,4456.0 Q2904,4464 2912.0,4464.0 L2944.0,4464.0 Q2952,4464 2952.0,4472.0 L2952.0,4924.0 Q2952,4932 2944.0,4932.0 L2840.0,4932.0 Q2832,4932 2832.0,4940.0 L2832,4968" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M2724,3372 L2724.0,3400.0 Q2724,3408 2732.0,3408.0 L2896.0,3408.0 Q2904,3408 2904.0,3416.0 L2904.0,4456.0 Q2904,4464 2912.0,4464.0 L2944.0,4464.0 Q2952,4464 2952.0,4472.0 L2952.0,4924.0 Q2952,4932 2944.0,4932.0 L2840.0,4932.0 Q2832,4932 2832.0,4940.0 L2832,4968" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3144,3072 L3172.0,3072.0 Q3180,3072 3180.0,3064.0 L3180.0,2744.0 Q3180,2736 3188.0,2736.0 L4492.0,2736.0 Q4500,2736 4500.0,2728.0 L4500.0,2648.0 Q4500,2640 4508.0,2640.0 L4536,2640" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3144,3072 L3172.0,3072.0 Q3180,3072 3180.0,3064.0 L3180.0,2744.0 Q3180,2736 3188.0,2736.0 L4492.0,2736.0 Q4500,2736 4500.0,2728.0 L4500.0,2648.0 Q4500,2640 4508.0,2640.0 L4536,2640" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5388,2100 L5388.0,2128.0 Q5388,2136 5396.0,2136.0 L5704.0,2136.0 Q5712,2136 5712.0,2144.0 L5712.0,3736.0 Q5712,3744 5704.0,3744.0 L5648.0,3744.0 Q5640,3744 5640.0,3752.0 L5640,3774" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5388,2100 L5388.0,2128.0 Q5388,2136 5396.0,2136.0 L5704.0,2136.0 Q5712,2136 5712.0,2144.0 L5712.0,3736.0 Q5712,3744 5704.0,3744.0 L5648.0,3744.0 Q5640,3744 5640.0,3752.0 L5640,3774" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4140,3228 L4140.0,3616.0 Q4140,3624 4148.0,3624.0 L5464.0,3624.0 Q5472,3624 5472.0,3632.0 L5472.0,3928.0 Q5472,3936 5480.0,3936.0 L5692.0,3936.0 Q5700,3936 5700.0,3944.0 L5700.0,3952.0 Q5700,3960 5708.0,3960.0 L5736,3960" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4140,3228 L4140.0,3616.0 Q4140,3624 4148.0,3624.0 L5464.0,3624.0 Q5472,3624 5472.0,3632.0 L5472.0,3928.0 Q5472,3936 5480.0,3936.0 L5692.0,3936.0 Q5700,3936 5700.0,3944.0 L5700.0,3952.0 Q5700,3960 5708.0,3960.0 L5736,3960" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,4440 L4376.0,4440.0 Q4368,4440 4368.0,4448.0 L4368.0,4552.0 Q4368,4560 4360.0,4560.0 L2904,4560" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,4440 L4376.0,4440.0 Q4368,4440 4368.0,4448.0 L4368.0,4552.0 Q4368,4560 4360.0,4560.0 L2904,4560" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1740,864 L1740.0,1768.0 Q1740,1776 1732.0,1776.0 L1256.0,1776.0 Q1248,1776 1248.0,1784.0 L1248.0,3616.0 Q1248,3624 1256.0,3624.0 L1504.0,3624.0 Q1512,3624 1512.0,3632.0 L1512,3654" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M1740,864 L1740.0,1768.0 Q1740,1776 1732.0,1776.0 L1256.0,1776.0 Q1248,1776 1248.0,1784.0 L1248.0,3616.0 Q1248,3624 1256.0,3624.0 L1504.0,3624.0 Q1512,3624 1512.0,3632.0 L1512,3654" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3144,3228 L3640.0,3228.0 Q3648,3228 3648.0,3236.0 L3648.0,3424.0 Q3648,3432 3656.0,3432.0 L5692.0,3432.0 Q5700,3432 5700.0,3424.0 L5700.0,3188.0 Q5700,3180 5708.0,3180.0 L5736,3180" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M3144,3228 L3640.0,3228.0 Q3648,3228 3648.0,3236.0 L3648.0,3424.0 Q3648,3432 3656.0,3432.0 L5692.0,3432.0 Q5700,3432 5700.0,3424.0 L5700.0,3188.0 Q5700,3180 5708.0,3180.0 L5736,3180" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,648 L772.0,648.0 Q780,648 780.0,640.0 L780.0,464.0 Q780,456 788.0,456.0 L3336,456" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,648 L772.0,648.0 Q780,648 780.0,640.0 L780.0,464.0 Q780,456 788.0,456.0 L3336,456" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,1848 L1228.0,1848.0 Q1236,1848 1236.0,1840.0 L1236.0,1604.0 Q1236,1596 1244.0,1596.0 L3292.0,1596.0 Q3300,1596 3300.0,1604.0 L3300.0,1612.0 Q3300,1620 3308.0,1620.0 L3336,1620" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,1848 L1228.0,1848.0 Q1236,1848 1236.0,1840.0 L1236.0,1604.0 Q1236,1596 1244.0,1596.0 L3292.0,1596.0 Q3300,1596 3300.0,1604.0 L3300.0,1612.0 Q3300,1620 3308.0,1620.0 L3336,1620" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M4920,3252 L4892.0,3252.0 Q4884,3252 4884.0,3260.0 L4884.0,3352.0 Q4884,3360 4876.0,3360.0 L3680.0,3360.0 Q3672,3360 3672.0,3368.0 L3672.0,3508.0 Q3672,3516 3664.0,3516.0 L2346.0,3516.0 Q2340,3516 2340.0,3522.0 L2340.0,3522.0 Q2340,3528 2334.0,3528.0 L2280,3528" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M4920,3252 L4892.0,3252.0 Q4884,3252 4884.0,3260.0 L4884.0,3352.0 Q4884,3360 4876.0,3360.0 L3680.0,3360.0 Q3672,3360 3672.0,3368.0 L3672.0,3508.0 Q3672,3516 3664.0,3516.0 L2346.0,3516.0 Q2340,3516 2340.0,3522.0 L2340.0,3522.0 Q2340,3528 2334.0,3528.0 L2280,3528" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5124,972 L5124.0,1000.0 Q5124,1008 5116.0,1008.0 L4856.0,1008.0 Q4848,1008 4848.0,1016.0 L4848.0,3198.0 Q4848,3204 4854.0,3204.0 L4854.0,3204.0 Q4860,3204 4860.0,3210.0 L4860.0,3880.0 Q4860,3888 4852.0,3888.0 L4688.0,3888.0 Q4680,3888 4680.0,3896.0 L4680,3930" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M5124,972 L5124.0,1000.0 Q5124,1008 5116.0,1008.0 L4856.0,1008.0 Q4848,1008 4848.0,1016.0 L4848.0,3198.0 Q4848,3204 4854.0,3204.0 L4854.0,3204.0 Q4860,3204 4860.0,3210.0 L4860.0,3880.0 Q4860,3888 4852.0,3888.0 L4688.0,3888.0 Q4680,3888 4680.0,3896.0 L4680,3930" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,696 L1288.0,696.0 Q1296,696 1296.0,688.0 L1296.0,560.0 Q1296,552 1304.0,552.0 L3640.0,552.0 Q3648,552 3648.0,544.0 L3648.0,452.0 Q3648,444 3656.0,444.0 L4494.0,444.0 Q4500,444 4500.0,450.0 L4500.0,450.0 Q4500,456 4506.0,456.0 L4536,456" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,696 L1288.0,696.0 Q1296,696 1296.0,688.0 L1296.0,560.0 Q1296,552 1304.0,552.0 L3640.0,552.0 Q3648,552 3648.0,544.0 L3648.0,452.0 Q3648,444 3656.0,444.0 L4494.0,444.0 Q4500,444 4500.0,450.0 L4500.0,450.0 Q4500,456 4506.0,456.0 L4536,456" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M744,1896 L904.0,1896.0 Q912,1896 912.0,1888.0 L912.0,1724.0 Q912,1716 920.0,1716.0 L3640.0,1716.0 Q3648,1716 3648.0,1708.0 L3648.0,1604.0 Q3648,1596 3656.0,1596.0 L4492.0,1596.0 Q4500,1596 4500.0,1604.0 L4500.0,1612.0 Q4500,1620 4508.0,1620.0 L4536,1620" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M744,1896 L904.0,1896.0 Q912,1896 912.0,1888.0 L912.0,1724.0 Q912,1716 920.0,1716.0 L3640.0,1716.0 Q3648,1716 3648.0,1708.0 L3648.0,1604.0 Q3648,1596 3656.0,1596.0 L4492.0,1596.0 Q4500,1596 4500.0,1604.0 L4500.0,1612.0 Q4500,1620 4508.0,1620.0 L4536,1620" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M432,1992 L432.0,2524.0 Q432,2532 440.0,2532.0 L1156.0,2532.0 Q1164,2532 1164.0,2540.0 L1164.0,4216.0 Q1164,4224 1172.0,4224.0 L1240.0,4224.0 Q1248,4224 1248.0,4232.0 L1248.0,4564.0 Q1248,4572 1256.0,4572.0 L2152.0,4572.0 Q2160,4572 2160.0,4564.0 L2160.0,4556.0 Q2160,4548 2168.0,4548.0 L2584.0,4548.0 Q2592,4548 2592.0,4556.0 L2592.0,4648.0 Q2592,4656 2600.0,4656.0 L4492.0,4656.0 Q4500,4656 4500.0,4664.0 L4500.0,4732.0 Q4500,4740 4508.0,4740.0 L4536,4740" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M432,1992 L432.0,2524.0 Q432,2532 440.0,2532.0 L1156.0,2532.0 Q1164,2532 1164.0,2540.0 L1164.0,4216.0 Q1164,4224 1172.0,4224.0 L1240.0,4224.0 Q1248,4224 1248.0,4232.0 L1248.0,4564.0 Q1248,4572 1256.0,4572.0 L2152.0,4572.0 Q2160,4572 2160.0,4564.0 L2160.0,4556.0 Q2160,4548 2168.0,4548.0 L2584.0,4548.0 Q2592,4548 2592.0,4556.0 L2592.0,4648.0 Q2592,4656 2600.0,4656.0 L4492.0,4656.0 Q4500,4656 4500.0,4664.0 L4500.0,4732.0 Q4500,4740 4508.0,4740.0 L4536,4740" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M588,1992 L588.0,2512.0 Q588,2520 596.0,2520.0 L1228.0,2520.0 Q1236,2520 1236.0,2528.0 L1236.0,4108.0 Q1236,4116 1244.0,4116.0 L3688.0,4116.0 Q3696,4116 3696.0,4124.0 L3696.0,4636.0 Q3696,4644 3704.0,4644.0 L4840.0,4644.0 Q4848,4644 4848.0,4652.0 L4848.0,4744.0 Q4848,4752 4856.0,4752.0 L5694.0,4752.0 Q5700,4752 5700.0,4746.0 L5700.0,4746.0 Q5700,4740 5706.0,4740.0 L5736,4740" fill="none" stroke="#faf9f6" stroke-width="13" stroke-linejoin="round"/>
+<path d="M588,1992 L588.0,2512.0 Q588,2520 596.0,2520.0 L1228.0,2520.0 Q1236,2520 1236.0,2528.0 L1236.0,4108.0 Q1236,4116 1244.0,4116.0 L3688.0,4116.0 Q3696,4116 3696.0,4124.0 L3696.0,4636.0 Q3696,4644 3704.0,4644.0 L4840.0,4644.0 Q4848,4644 4848.0,4652.0 L4848.0,4744.0 Q4848,4752 4856.0,4752.0 L5694.0,4752.0 Q5700,4752 5700.0,4746.0 L5700.0,4746.0 Q5700,4740 5706.0,4740.0 L5736,4740" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<rect x="120" y="600" width="624" height="192" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="140" y="648" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">ParentCompany</text>
+<path d="M136,660 L728,660" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="140" y="705" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">RegistrationJurisdiction</text>
+<text x="140" y="741" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">BusinessRegistrationNumber</text>
+<text x="140" y="777" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">LegalName</text>
+<rect x="1320" y="600" width="624" height="264" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="1326" y="606" width="612" height="252" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="1340" y="648" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">ProviderAuthorization</text>
+<path d="M1336,660 L1928,660" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="705" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ParentCompany</text>
+<text x="1340" y="741" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="1340" y="777" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ValidFrom</text>
+<text x="1340" y="813" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidTo</text>
+<text x="1340" y="849" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">AuthorizationStatus</text>
+<rect x="2520" y="600" width="624" height="300" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="2540" y="648" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">VehicleModel</text>
+<path d="M2536,660 L3128,660" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="2540" y="705" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Manufacturer</text>
+<text x="2540" y="741" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">CatalogueNamespace</text>
+<text x="2540" y="777" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ManufacturerModelCode</text>
+<text x="2540" y="813" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ModelYear</text>
+<text x="2540" y="849" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">TrimCode</text>
+<text x="2540" y="885" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ModelName</text>
+<rect x="3720" y="600" width="624" height="336" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="3726" y="606" width="612" height="324" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="3740" y="648" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">IncentiveProgram</text>
+<path d="M3736,660 L4328,660" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="3740" y="705" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ParentCompany</text>
+<text x="3740" y="741" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">OfficialProgramReference</text>
+<text x="3740" y="777" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ProgramName</text>
+<text x="3740" y="813" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ActiveFrom</text>
+<text x="3740" y="849" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ActiveTo</text>
+<text x="3740" y="885" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EventVersionPolicy</text>
+<text x="3740" y="921" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">PeriodVersionPolicy</text>
+<rect x="4920" y="600" width="624" height="372" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="4926" y="606" width="612" height="360" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="4940" y="648" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">MetricDefinitionVersion</text>
+<path d="M4936,660 L5528,660" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="4940" y="705" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ParentCompany</text>
+<text x="4940" y="741" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">OfficialMetricCode</text>
+<text x="4940" y="777" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">EffectiveFrom</text>
+<text x="4940" y="813" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EffectiveTo</text>
+<text x="4940" y="849" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">MetricName</text>
+<text x="4940" y="885" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">DefinitionExpression</text>
+<text x="4940" y="921" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">UnitScheme</text>
+<text x="4940" y="957" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">UnitCode</text>
+<rect x="120" y="1800" width="624" height="192" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="140" y="1848" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Provider</text>
+<path d="M136,1860 L728,1860" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="140" y="1905" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">RegistrationJurisdiction</text>
+<text x="140" y="1941" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">BusinessRegistrationNumber</text>
+<text x="140" y="1977" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">LegalName</text>
+<rect x="1320" y="1800" width="624" height="300" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="1326" y="1806" width="612" height="288" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="1340" y="1848" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">CustomerAccount</text>
+<path d="M1336,1860 L1928,1860" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="1905" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="1340" y="1941" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">SourceNamespace</text>
+<text x="1340" y="1977" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ExistingCustomerReference</text>
+<text x="1340" y="2013" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">DisplayName</text>
+<text x="1340" y="2049" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Email</text>
+<text x="1340" y="2085" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">PhoneNo</text>
+<rect x="2520" y="1800" width="624" height="156" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="2540" y="1848" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Vehicle</text>
+<path d="M2536,1860 L3128,1860" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="2540" y="1905" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">VIN</text>
+<text x="2540" y="1941" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">LifecycleStatus</text>
+<rect x="3720" y="1800" width="624" height="264" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="3726" y="1806" width="612" height="252" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="3740" y="1848" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">ProgramEnrollment</text>
+<path d="M3736,1860 L4328,1860" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="3740" y="1905" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">IncentiveProgram</text>
+<text x="3740" y="1941" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="3740" y="1977" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ValidFrom</text>
+<text x="3740" y="2013" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidTo</text>
+<text x="3740" y="2049" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EnrollmentStatus</text>
+<rect x="4920" y="1800" width="624" height="300" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="4926" y="1806" width="612" height="288" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="4940" y="1848" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">PerformanceMeasurement</text>
+<path d="M4936,1860 L5528,1860" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="4940" y="1905" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="4940" y="1941" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">MetricDefinitionVersion</text>
+<text x="4940" y="1977" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodStart</text>
+<text x="4940" y="2013" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodEnd</text>
+<text x="4940" y="2049" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">MeasuredValue</text>
+<text x="4940" y="2085" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">CalculatedAt</text>
+<rect x="6120" y="1800" width="624" height="372" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="6126" y="1806" width="612" height="360" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="6140" y="1848" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">EventAwardComponent</text>
+<path d="M6136,1860 L6728,1860" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="6140" y="1905" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">EventAward</text>
+<text x="6140" y="1941" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">RewardType</text>
+<text x="6140" y="1977" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">UnitScheme</text>
+<text x="6140" y="2013" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">UnitCode</text>
+<text x="6140" y="2049" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">BenefitValue</text>
+<text x="6140" y="2085" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Currency</text>
+<text x="6140" y="2121" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidFrom</text>
+<text x="6140" y="2157" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidTo</text>
+<rect x="120" y="3000" width="624" height="228" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="126" y="3006" width="612" height="216" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="140" y="3048" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Outlet</text>
+<path d="M136,3060 L728,3060" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="140" y="3105" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="140" y="3141" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ExistingOutletReference</text>
+<text x="140" y="3177" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">OutletName</text>
+<text x="140" y="3213" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Address</text>
+<rect x="1320" y="3000" width="624" height="336" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="1326" y="3006" width="612" height="324" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="1340" y="3048" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">CustomerIdentityLink</text>
+<path d="M1336,3060 L1928,3060" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="3105" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">AccountA</text>
+<text x="1340" y="3141" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">AccountB</text>
+<text x="1340" y="3177" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">VerificationStatus</text>
+<text x="1340" y="3213" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">VerificationMethod</text>
+<text x="1340" y="3249" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">VerifiedAt</text>
+<text x="1340" y="3285" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">RevokedAt</text>
+<text x="1340" y="3321" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EvidenceReference</text>
+<rect x="2520" y="3000" width="624" height="372" rx="4" fill="#fff0e9" stroke="#a3472f" stroke-width="3"/>
+<rect x="2526" y="3006" width="612" height="360" rx="0" fill="#fff0e9" stroke="#a3472f" stroke-width="1"/>
+<text x="2540" y="3048" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#a3472f">VehicleActivity</text>
+<path d="M2536,3060 L3128,3060" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="2540" y="3105" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">IssuingOutlet</text>
+<text x="2540" y="3141" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">SourceNamespace</text>
+<text x="2540" y="3177" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ActivityKind</text>
+<text x="2540" y="3213" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">OfficialActivityReference</text>
+<text x="2540" y="3249" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ActivityStatus</text>
+<text x="2540" y="3285" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">StartedAt</text>
+<text x="2540" y="3321" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EndedAt</text>
+<text x="2540" y="3357" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">RecordedAt</text>
+<rect x="3720" y="3000" width="624" height="228" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="3726" y="3006" width="612" height="216" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="3740" y="3048" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">IncentiveRule</text>
+<path d="M3736,3060 L4328,3060" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="3740" y="3105" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">IncentiveProgram</text>
+<text x="3740" y="3141" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">OfficialRuleCode</text>
+<text x="3740" y="3177" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">RuleName</text>
+<text x="3740" y="3213" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">AssessmentBasis</text>
+<rect x="4920" y="3000" width="624" height="336" rx="4" fill="#fff0e9" stroke="#a3472f" stroke-width="3"/>
+<rect x="4926" y="3006" width="612" height="324" rx="0" fill="#fff0e9" stroke="#a3472f" stroke-width="1"/>
+<text x="4940" y="3048" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#a3472f">EventEvaluation</text>
+<path d="M4936,3060 L5528,3060" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="4940" y="3105" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">VehicleActivity</text>
+<text x="4940" y="3141" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">RuleVersion</text>
+<text x="4940" y="3177" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Result</text>
+<text x="4940" y="3213" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Reason</text>
+<text x="4940" y="3249" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">QualificationDate</text>
+<text x="4940" y="3285" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EvaluatedAt</text>
+<text x="4940" y="3321" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">DecisionEvidenceReference</text>
+<rect x="6120" y="3000" width="624" height="228" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="6126" y="3006" width="612" height="216" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="6140" y="3048" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">EventAward</text>
+<path d="M6136,3060 L6728,3060" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="6140" y="3105" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">VehicleActivity</text>
+<text x="6140" y="3141" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">IncentiveRule</text>
+<text x="6140" y="3177" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">AwardStatus</text>
+<text x="6140" y="3213" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">IssuedAt</text>
+<rect x="120" y="4200" width="624" height="156" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="140" y="4248" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Capability</text>
+<path d="M136,4260 L728,4260" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="140" y="4305" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ExistingCapabilityDesignation</text>
+<text x="140" y="4341" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Description</text>
+<rect x="1320" y="4200" width="624" height="300" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="1326" y="4206" width="612" height="288" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="1340" y="4248" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">CapabilityAuthorization</text>
+<path d="M1336,4260 L1928,4260" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="4305" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ProviderAuthorization</text>
+<text x="1340" y="4341" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Outlet</text>
+<text x="1340" y="4377" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Capability</text>
+<text x="1340" y="4413" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">ValidFrom</text>
+<text x="1340" y="4449" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidTo</text>
+<text x="1340" y="4485" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">AuthorizationStatus</text>
+<rect x="3720" y="4200" width="624" height="264" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="3726" y="4206" width="612" height="252" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="3740" y="4248" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">RuleVersion</text>
+<path d="M3736,4260 L4328,4260" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="3740" y="4305" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">IncentiveRule</text>
+<text x="3740" y="4341" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">EffectiveFrom</text>
+<text x="3740" y="4377" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EffectiveTo</text>
+<text x="3740" y="4413" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ConditionExpression</text>
+<text x="3740" y="4449" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">RewardSpecification</text>
+<rect x="4920" y="4200" width="624" height="408" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="4926" y="4206" width="612" height="396" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="4940" y="4248" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">PeriodEvaluation</text>
+<path d="M4936,4260 L5528,4260" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="4940" y="4305" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="4940" y="4341" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">RuleVersion</text>
+<text x="4940" y="4377" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodStart</text>
+<text x="4940" y="4413" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodEnd</text>
+<text x="4940" y="4449" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Result</text>
+<text x="4940" y="4485" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Reason</text>
+<text x="4940" y="4521" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">QualificationDate</text>
+<text x="4940" y="4557" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">EvaluatedAt</text>
+<text x="4940" y="4593" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">DecisionEvidenceReference</text>
+<rect x="6120" y="4200" width="624" height="300" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="6126" y="4206" width="612" height="288" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="6140" y="4248" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">PeriodAward</text>
+<path d="M6136,4260 L6728,4260" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="6140" y="4305" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">Provider</text>
+<text x="6140" y="4341" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">IncentiveRule</text>
+<text x="6140" y="4377" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodStart</text>
+<text x="6140" y="4413" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodEnd</text>
+<text x="6140" y="4449" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">AwardStatus</text>
+<text x="6140" y="4485" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">IssuedAt</text>
+<rect x="1320" y="5520" width="624" height="228" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="1340" y="5568" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Rental</text>
+<path d="M1336,5580 L1928,5580" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1340" y="5625" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">VehicleActivity</text>
+<text x="1340" y="5661" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">RentalCharge</text>
+<text x="1340" y="5697" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Currency</text>
+<text x="1340" y="5733" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ReturnedAt</text>
+<rect x="2520" y="5520" width="624" height="228" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="2540" y="5568" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Sale</text>
+<path d="M2536,5580 L3128,5580" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="2540" y="5625" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">VehicleActivity</text>
+<text x="2540" y="5661" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">SalePrice</text>
+<text x="2540" y="5697" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Currency</text>
+<text x="2540" y="5733" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">CompletedAt</text>
+<rect x="3720" y="5520" width="624" height="228" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<text x="3740" y="5568" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">Service</text>
+<path d="M3736,5580 L4328,5580" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="3740" y="5625" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">VehicleActivity</text>
+<text x="3740" y="5661" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ServiceType</text>
+<text x="3740" y="5697" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Outcome</text>
+<text x="3740" y="5733" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">CompletedAt</text>
+<rect x="6120" y="5520" width="624" height="372" rx="4" fill="#ffffff" stroke="#243448" stroke-width="3"/>
+<rect x="6126" y="5526" width="612" height="360" rx="0" fill="#ffffff" stroke="#243448" stroke-width="1"/>
+<text x="6140" y="5568" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">PeriodAwardComponent</text>
+<path d="M6136,5580 L6728,5580" fill="none" stroke="#c7cdd4" stroke-width="1" stroke-linejoin="round"/>
+<text x="6140" y="5625" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">PeriodAward</text>
+<text x="6140" y="5661" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">RewardType</text>
+<text x="6140" y="5697" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">UnitScheme</text>
+<text x="6140" y="5733" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448" text-decoration="underline">UnitCode</text>
+<text x="6140" y="5769" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">BenefitValue</text>
+<text x="6140" y="5805" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Currency</text>
+<text x="6140" y="5841" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidFrom</text>
+<text x="6140" y="5877" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">ValidTo</text>
+<polygon points="1080.0,738 1224,804.0 1080.0,870 936,804.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1080.0,745 1210,804.0 1080.0,863 950,804.0" fill="none" stroke="#243448"/>
+<text x="1025.0" y="811.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Authorizes</text>
+<polygon points="1080.0,1386 1224,1452.0 1080.0,1518 936,1452.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1080.0,1393 1210,1452.0 1080.0,1511 950,1452.0" fill="none" stroke="#243448"/>
+<text x="1015.5" y="1459.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">IsAuthorized</text>
+<polygon points="432.0,2574 576,2640.0 432.0,2706 288,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="432.0,2581 562,2640.0 432.0,2699 302,2640.0" fill="none" stroke="#243448"/>
+<text x="384.0" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Operates</text>
+<polygon points="1080.0,1878 1224,1944.0 1080.0,2010 936,1944.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1080.0,1885 1210,1944.0 1080.0,2003 950,1944.0" fill="none" stroke="#243448"/>
+<text x="1030.5" y="1951.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Maintains</text>
+<polygon points="1512.0,2574 1656,2640.0 1512.0,2706 1368,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1512.0,2581 1642,2640.0 1512.0,2699 1382,2640.0" fill="none" stroke="#243448"/>
+<text x="1462.5" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AccountA</text>
+<polygon points="1800.0,2574 1944,2640.0 1800.0,2706 1656,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1800.0,2581 1930,2640.0 1800.0,2699 1670,2640.0" fill="none" stroke="#243448"/>
+<text x="1750.5" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AccountB</text>
+<polygon points="1512.0,3654 1656,3720.0 1512.0,3786 1368,3720.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1512.0,3661 1642,3720.0 1512.0,3779 1382,3720.0" fill="none" stroke="#243448"/>
+<text x="1477.0" y="3727.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Grants</text>
+<polygon points="1080.0,4254 1224,4320.0 1080.0,4386 936,4320.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1080.0,4261 1210,4320.0 1080.0,4379 950,4320.0" fill="none" stroke="#243448"/>
+<text x="1050.0" y="4327.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Holds</text>
+<polygon points="1080.0,4494 1224,4560.0 1080.0,4626 936,4560.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="1080.0,4501 1210,4560.0 1080.0,4619 950,4560.0" fill="none" stroke="#243448"/>
+<text x="1001.0" y="4567.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">ClassifiesGrant</text>
+<polygon points="2280.0,3114 2424,3180.0 2280.0,3246 2136,3180.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="2280.0,3121 2410,3180.0 2280.0,3239 2150,3180.0" fill="none" stroke="#243448"/>
+<text x="2233.0" y="3187.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Performs</text>
+<polygon points="2280.0,2574 2424,2640.0 2280.0,2706 2136,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="2219.5" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Participates</text>
+<polygon points="2832.0,1434 2976,1500.0 2832.0,1566 2688,1500.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="2782.0" y="1507.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Classifies</text>
+<polygon points="2832.0,2574 2976,2640.0 2832.0,2706 2688,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="2789.0" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Involves</text>
+<polygon points="2280.0,5202 2424,5268.0 2280.0,5334 2136,5268.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="2194.0" y="5275.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">ReplacementFor</text>
+<ellipse cx="2292.0" cy="5472.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="2188.5" y="5478.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">ReplacementPurpose</text>
+<polygon points="3480.0,390 3624,456.0 3480.0,522 3336,456.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="3480.0,397 3610,456.0 3480.0,515 3350,456.0" fill="none" stroke="#243448"/>
+<text x="3450.0" y="463.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Owns</text>
+<polygon points="4032.0,1434 4176,1500.0 4032.0,1566 3888,1500.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4032.0,1441 4162,1500.0 4032.0,1559 3902,1500.0" fill="none" stroke="#243448"/>
+<text x="3996.5" y="1507.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Enrolls</text>
+<polygon points="3480.0,1554 3624,1620.0 3480.0,1686 3336,1620.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="3480.0,1561 3610,1620.0 3480.0,1679 3350,1620.0" fill="none" stroke="#243448"/>
+<text x="3452.5" y="1627.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Joins</text>
+<polygon points="4032.0,2574 4176,2640.0 4032.0,2706 3888,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4032.0,2581 4162,2640.0 4032.0,2699 3902,2640.0" fill="none" stroke="#243448"/>
+<text x="3992.5" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">Defines</text>
+<polygon points="4032.0,3774 4176,3840.0 4032.0,3906 3888,3840.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4032.0,3781 4162,3840.0 4032.0,3899 3902,3840.0" fill="none" stroke="#243448"/>
+<text x="3971.5078125" y="3847.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">HasVersion</text>
+<polygon points="4680.0,390 4824,456.0 4680.0,522 4536,456.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4680.0,397 4810,456.0 4680.0,515 4550,456.0" fill="none" stroke="#243448"/>
+<text x="4609.0" y="463.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">DefinesMetric</text>
+<polygon points="4680.0,1554 4824,1620.0 4680.0,1686 4536,1620.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4680.0,1561 4810,1620.0 4680.0,1679 4550,1620.0" fill="none" stroke="#243448"/>
+<text x="4610.5" y="1627.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">MeasuredFor</text>
+<polygon points="5232.0,1434 5376,1500.0 5232.0,1566 5088,1500.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="5232.0,1441 5362,1500.0 5232.0,1559 5102,1500.0" fill="none" stroke="#243448"/>
+<text x="5147.0" y="1507.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">DefinesMeasure</text>
+<polygon points="4680.0,2574 4824,2640.0 4680.0,2706 4536,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="4607.015625" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">ContributesTo</text>
+<ellipse cx="4692.0" cy="2856.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="4612.0" y="2862.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">ContributionRole</text>
+<polygon points="4680.0,3930 4824,3996.0 4680.0,4062 4536,3996.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="4601.5" y="4003.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">RequiresMetric</text>
+<ellipse cx="4692.0" cy="4212.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="4640.5" y="4218.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">MetricRole</text>
+<polygon points="4680.0,3114 4824,3180.0 4680.0,3246 4536,3180.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4680.0,3121 4810,3180.0 4680.0,3239 4550,3180.0" fill="none" stroke="#243448"/>
+<text x="4615.0" y="3187.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">EvaluatedBy</text>
+<polygon points="4680.0,3654 4824,3720.0 4680.0,3786 4536,3720.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4680.0,3661 4810,3720.0 4680.0,3779 4550,3720.0" fill="none" stroke="#243448"/>
+<text x="4598.515625" y="3727.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AppliedToEvent</text>
+<polygon points="4680.0,4674 4824,4740.0 4680.0,4806 4536,4740.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4680.0,4681 4810,4740.0 4680.0,4799 4550,4740.0" fill="none" stroke="#243448"/>
+<text x="4615.5" y="4747.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AssessedBy</text>
+<polygon points="4680.0,4278 4824,4344.0 4680.0,4410 4536,4344.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="4680.0,4285 4810,4344.0 4680.0,4403 4550,4344.0" fill="none" stroke="#243448"/>
+<text x="4594.515625" y="4351.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AppliedToPeriod</text>
+<polygon points="5232.0,2574 5376,2640.0 5232.0,2706 5088,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="5161.5" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">UsedByEvent</text>
+<ellipse cx="5244.0" cy="2856.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="5177.5" y="2862.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">EvidenceRole</text>
+<polygon points="5640.0,3774 5784,3840.0 5640.0,3906 5496,3840.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="5565.5" y="3847.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">UsedByPeriod</text>
+<ellipse cx="5652.0" cy="4056.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="5585.5" y="4062.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">EvidenceRole</text>
+<polygon points="3480.0,3354 3624,3420.0 3480.0,3486 3336,3420.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="3410.0" y="3427.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">CitedByEvent</text>
+<ellipse cx="3492.0" cy="3636.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="3425.5" y="3642.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">EvidenceRole</text>
+<polygon points="3480.0,3894 3624,3960.0 3480.0,4026 3336,3960.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="3406.0" y="3967.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">CitedByPeriod</text>
+<ellipse cx="3492.0" cy="4176.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="3425.5" y="4182.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">EvidenceRole</text>
+<polygon points="2160.0,3474 2304,3540.0 2160.0,3606 2016,3540.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="2076.0" y="3547.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">IdentityForEvent</text>
+<ellipse cx="1932.0" cy="3816.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="1810.0078125" y="3822.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">VerificationOutcomeUsed</text>
+<ellipse cx="2244.0" cy="3816.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="2172.5078125" y="3822.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">VerifiedAtUsed</text>
+<ellipse cx="2556.0" cy="3816.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="2437.0" y="3822.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">EvidenceReferenceUsed</text>
+<polygon points="2760.0,4494 2904,4560.0 2760.0,4626 2616,4560.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="2672.0" y="4567.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">IdentityForPeriod</text>
+<ellipse cx="2172.0" cy="4836.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="2050.0078125" y="4842.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">VerificationOutcomeUsed</text>
+<ellipse cx="2484.0" cy="4836.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="2412.5078125" y="4842.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">VerifiedAtUsed</text>
+<ellipse cx="2796.0" cy="4836.0" rx="132.0" ry="36.0" fill="#edf2eb" stroke="#537057" stroke-width="2"/>
+<text x="2677.0" y="4842.5" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#243448">EvidenceReferenceUsed</text>
+<polygon points="5880.0,3114 6024,3180.0 5880.0,3246 5736,3180.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="5880.0,3121 6010,3180.0 5880.0,3239 5750,3180.0" fill="none" stroke="#243448"/>
+<text x="5787.0" y="3187.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">EarnsEventAward</text>
+<polygon points="5880.0,2754 6024,2820.0 5880.0,2886 5736,2820.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="5880.0,2761 6010,2820.0 5880.0,2879 5750,2820.0" fill="none" stroke="#243448"/>
+<text x="5806.0" y="2827.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">GovernsEvent</text>
+<polygon points="5880.0,3414 6024,3480.0 5880.0,3546 5736,3480.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="5784.5" y="3487.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AcceptedForEvent</text>
+<polygon points="5880.0,4674 6024,4740.0 5880.0,4806 5736,4740.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="5880.0,4681 6010,4740.0 5880.0,4799 5750,4740.0" fill="none" stroke="#243448"/>
+<text x="5783.0" y="4747.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">EarnsPeriodAward</text>
+<polygon points="5880.0,3894 6024,3960.0 5880.0,4026 5736,3960.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="5880.0,3901 6010,3960.0 5880.0,4019 5750,3960.0" fill="none" stroke="#243448"/>
+<text x="5802.0" y="3967.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">GovernsPeriod</text>
+<polygon points="5880.0,4374 6024,4440.0 5880.0,4506 5736,4440.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<text x="5780.5" y="4447.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">AcceptedForPeriod</text>
+<polygon points="6432.0,2574 6576,2640.0 6432.0,2706 6288,2640.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="6432.0,2581 6562,2640.0 6432.0,2699 6302,2640.0" fill="none" stroke="#243448"/>
+<text x="6346.0" y="2647.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">HasEventBenefit</text>
+<polygon points="6432.0,5094 6576,5160.0 6432.0,5226 6288,5160.0" fill="#faf9f6" stroke="#243448" stroke-width="2"/>
+<polygon points="6432.0,5101 6562,5160.0 6432.0,5219 6302,5160.0" fill="none" stroke="#243448"/>
+<text x="6342.0" y="5167.5" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#243448">HasPeriodBenefit</text>
+<polygon points="2688,4968 2976,4968 2832.0,5148" fill="#edf2eb" stroke="#243448"/>
+<text x="2809.0" y="5068.0" font-family="Arial,sans-serif" font-size="28" font-weight="400" fill="#243448">ISA</text>
+<g data-cardinality="0..N" data-entity="Vehicle" data-relationship="models">
+<path d="M2821,1797 L2832,1781" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2832,1781 L2843,1797" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="2832" cy="1772" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="ProgramEnrollment" data-relationship="enrollment_program">
+<path d="M4129,1797 L4140,1781" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4140,1781 L4151,1797" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4140" cy="1772" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PerformanceMeasurement" data-relationship="measure_definition">
+<path d="M5329,1797 L5340,1781" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5340,1781 L5351,1797" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5340" cy="1772" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="Outlet" data-relationship="operates">
+<path d="M421,2997 L432,2981" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M432,2981 L443,2997" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="432" cy="2972" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="IncentiveRule" data-relationship="rules">
+<path d="M4021,2997 L4032,2981" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4032,2981 L4043,2997" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4032" cy="2972" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="EventAward" data-relationship="event_components">
+<path d="M6529,2992 L6551,2992" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6529,2972 L6551,2972" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="RuleVersion" data-relationship="versions">
+<path d="M3865,4197 L3876,4181" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3876,4181 L3887,4197" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="3876" cy="4172" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventEvaluation" data-relationship="event_measure">
+<path d="M5221.314285714286,2997.0857142857144 L5232.0,2981.542857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5232.0,2981.542857142857 L5242.685714285714,2997.0857142857144" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5232.0" cy="2972.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CustomerIdentityLink" data-relationship="link_a">
+<path d="M1513,2997 L1524,2981" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1524,2981 L1535,2997" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1524" cy="2972" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="VehicleActivity" data-relationship="involves">
+<path d="M2929,2997 L2940,2981" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2940,2981 L2951,2997" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="2940" cy="2972" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..N" data-entity="PeriodAwardComponent" data-relationship="period_components">
+<path d="M6421,5517 L6432,5501" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6432,5501 L6443,5517" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6421,5492 L6443,5492" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="CustomerAccount" data-relationship="maintains_accounts">
+<path d="M1317,1955 L1301,1944" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1301,1944 L1317,1933" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1292" cy="1944" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="VehicleActivity" data-relationship="performs">
+<path d="M2517,3203 L2501,3192" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2501,3192 L2517,3181" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="2492" cy="3192" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventEvaluation" data-relationship="event_subject">
+<path d="M4917,3095 L4901,3084" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901,3084 L4917,3073" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892" cy="3084" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CapabilityAuthorization" data-relationship="outlet_capability">
+<path d="M1317,4307 L1301,4296" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1301,4296 L1317,4285" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1292" cy="4296" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CustomerIdentityLink" data-relationship="link_b">
+<path d="M1729,2997 L1740,2981" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1740,2981 L1751,2997" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1740" cy="2972" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodEvaluation" data-relationship="period_rule">
+<path d="M4917,4379 L4901,4368" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901,4368 L4917,4357" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892" cy="4368" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventAward" data-relationship="event_entitlement">
+<path d="M6117.085714285714,3130.6857142857143 L6101.542857142857,3120.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6101.542857142857,3120.0 L6117.085714285714,3109.3142857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="6092.8" cy="3120.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="ProviderAuthorization" data-relationship="authorizes_company">
+<path d="M1317.0857142857142,742.6857142857143 L1301.5428571428572,732.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1301.5428571428572,732.0 L1317.0857142857142,721.3142857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1292.8" cy="732.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..1" data-entity="PeriodAward" data-relationship="accepted_period">
+<path d="M6112.228571428572,4354.685714285714 L6112.228571428572,4333.314285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="6092.8" cy="4344.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CapabilityAuthorization" data-relationship="capability_kind">
+<path d="M1317.0857142857142,4414.685714285714 L1301.5428571428572,4404.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1301.5428571428572,4404.0 L1317.0857142857142,4393.314285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1292.8" cy="4404.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventAward" data-relationship="event_rule_award">
+<path d="M6313.314285714286,2997.0857142857144 L6324.0,2981.542857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6324.0,2981.542857142857 L6334.685714285714,2997.0857142857144" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="6324.0" cy="2972.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="IncentiveProgram" data-relationship="programs">
+<path d="M4021.3142857142857,597.0857142857143 L4032.0,581.5428571428572" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4032.0,581.5428571428572 L4042.6857142857143,597.0857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4032.0" cy="572.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="ProgramEnrollment" data-relationship="enrollment_provider">
+<path d="M3913.3142857142857,1797.0857142857142 L3924.0,1781.5428571428572" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3924.0,1781.5428571428572 L3934.6857142857143,1797.0857142857142" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="3924.0" cy="1772.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CapabilityAuthorization" data-relationship="grants">
+<path d="M1621,4197 L1632,4181" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1632,4181 L1643,4197" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1632" cy="4172" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="MetricDefinitionVersion" data-relationship="metric_definitions">
+<path d="M5221.314285714286,597.0857142857143 L5232.0,581.5428571428572" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5232.0,581.5428571428572 L5242.685714285714,597.0857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5232.0" cy="572.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PerformanceMeasurement" data-relationship="measure_provider">
+<path d="M5113.314285714286,1797.0857142857142 L5124.0,1781.5428571428572" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5124.0,1781.5428571428572 L5134.685714285714,1797.0857142857142" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5124.0" cy="1772.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CustomerIdentityLink" data-relationship="event_identity">
+<path d="M1535,3339 L1524,3355" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1524,3355 L1513,3339" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1524" cy="3364" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodEvaluation" data-relationship="period_subject">
+<path d="M4917.085714285714,4534.685714285714 L4901.542857142857,4524.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901.542857142857,4524.0 L4917.085714285714,4513.314285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892.8" cy="4524.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="RuleVersion" data-relationship="period_rule">
+<path d="M4352,4321 L4352,4343" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4372,4321 L4372,4343" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="PeriodEvaluation" data-relationship="accepted_period">
+<path d="M5552,4393 L5552,4415" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5572,4393 L5572,4415" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="maintains_accounts">
+<path d="M752,1933 L752,1955" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M772,1933 L772,1955" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..N" data-entity="EventAwardComponent" data-relationship="event_components">
+<path d="M6443,2175 L6432,2191" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6432,2191 L6421,2175" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6443,2200 L6421,2200" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="ParentCompany" data-relationship="authorizes_company">
+<path d="M752,733 L752,755" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M772,733 L772,755" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..1" data-entity="EventAward" data-relationship="accepted_event">
+<path d="M6442.685714285714,3235.7714285714287 L6421.314285714286,3235.7714285714287" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="6432.0" cy="3255.2" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodAward" data-relationship="period_entitlement">
+<path d="M6334.685714285714,4502.914285714286 L6324.0,4518.457142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6324.0,4518.457142857143 L6313.314285714286,4502.914285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="6324.0" cy="4527.2" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodAward" data-relationship="period_rule_award">
+<path d="M6421.314285714286,4197.085714285714 L6432.0,4181.542857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6432.0,4181.542857142857 L6442.685714285714,4197.085714285714" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="6432.0" cy="4172.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="VehicleActivity" data-relationship="event_evidence">
+<path d="M3147,3289 L3163,3300" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3163,3300 L3147,3311" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="3172" cy="3300" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PerformanceMeasurement" data-relationship="event_measure">
+<path d="M5243,2103 L5232,2119" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5232,2119 L5221,2103" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5232" cy="2128" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodEvaluation" data-relationship="period_measure">
+<path d="M5221,4197 L5232,4181" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5232,4181 L5243,4197" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5232" cy="4172" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="CustomerAccount" data-relationship="link_a">
+<path d="M1487,2108 L1465,2108" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1487,2128 L1465,2128" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Capability" data-relationship="capability_kind">
+<path d="M442.6857142857143,4363.771428571428 L421.3142857142857,4363.771428571428" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M442.6857142857143,4383.2 L421.3142857142857,4383.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="CustomerAccount" data-relationship="link_b">
+<path d="M1643,2108 L1621,2108" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1643,2128 L1621,2128" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="MetricDefinitionVersion" data-relationship="measure_definition">
+<path d="M5351,980 L5329,980" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5351,1000 L5329,1000" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="EventEvaluation" data-relationship="accepted_event">
+<path d="M5551.771428571428,3157.3142857142857 L5551.771428571428,3178.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5571.2,3157.3142857142857 L5571.2,3178.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="IncentiveRule" data-relationship="versions">
+<path d="M3935,3236 L3913,3236" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3935,3256 L3913,3256" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="RuleVersion" data-relationship="rule_metrics">
+<path d="M4021,4197 L4032,4181" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4032,4181 L4043,4197" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4032" cy="4172" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="IncentiveProgram" data-relationship="enrollment_program">
+<path d="M3935,944 L3913,944" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3935,964 L3913,964" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="operates">
+<path d="M287,2000 L265,2000" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M287,2020 L265,2020" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="Rental" data-relationship="replacement">
+<path d="M1513.3142857142857,5517.085714285714 L1524.0,5501.542857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1524.0,5501.542857142857 L1534.6857142857143,5517.085714285714" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1524.0" cy="5492.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="VehicleModel" data-relationship="models">
+<path d="M2843,908 L2821,908" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2843,928 L2821,928" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Vehicle" data-relationship="involves">
+<path d="M2843,1964 L2821,1964" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2843,1984 L2821,1984" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="VehicleActivity" data-relationship="participates">
+<path d="M2713.3142857142857,2997.0857142857144 L2724.0,2981.542857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2724.0,2981.542857142857 L2734.6857142857143,2997.0857142857144" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="2724.0" cy="2972.8" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventEvaluation" data-relationship="event_rule">
+<path d="M5242.685714285714,3338.9142857142856 L5232.0,3354.457142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5232.0,3354.457142857143 L5221.314285714286,3338.9142857142856" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5232.0" cy="3363.2" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="authorizes_provider">
+<path d="M421.3142857142857,1792.2285714285715 L442.6857142857143,1792.2285714285715" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M421.3142857142857,1772.8 L442.6857142857143,1772.8" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="PeriodAward" data-relationship="period_components">
+<path d="M6551,4508 L6529,4508" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M6551,4528 L6529,4528" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="PerformanceMeasurement" data-relationship="metric_evidence">
+<path d="M5087,2103 L5076,2119" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5076,2119 L5065,2103" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5076" cy="2128" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="RuleVersion" data-relationship="event_rule">
+<path d="M4177.314285714286,4192.228571428572 L4198.685714285714,4192.228571428572" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4177.314285714286,4172.8 L4198.685714285714,4172.8" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="ProviderAuthorization" data-relationship="authorizes_provider">
+<path d="M1534.6857142857143,866.9142857142857 L1524.0,882.4571428571428" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1524.0,882.4571428571428 L1513.3142857142857,866.9142857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1524.0" cy="891.2" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="CustomerAccount" data-relationship="participates">
+<path d="M1798.6857142857143,2107.7714285714287 L1777.3142857142857,2107.7714285714287" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1798.6857142857143,2127.2 L1777.3142857142857,2127.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="VehicleActivity" data-relationship="period_evidence">
+<path d="M2951,3375 L2940,3391" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M2940,3391 L2929,3375" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="2940" cy="3400" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="Outlet" data-relationship="outlet_capability">
+<path d="M442.6857142857143,3235.7714285714287 L421.3142857142857,3235.7714285714287" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M442.6857142857143,3255.2 L421.3142857142857,3255.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventEvaluation" data-relationship="event_evidence">
+<path d="M4917.085714285714,3178.6857142857143 L4901.542857142857,3168.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901.542857142857,3168.0 L4917.085714285714,3157.3142857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892.8" cy="3168.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..1" data-entity="Service" data-relationship="replacement">
+<path d="M3712.2285714285713,5650.685714285714 L3712.2285714285713,5629.314285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="3692.8" cy="5640.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="CustomerIdentityLink" data-relationship="period_identity">
+<path d="M1751,3339 L1740,3355" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1740,3355 L1729,3339" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="1740" cy="3364" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodEvaluation" data-relationship="period_evidence">
+<path d="M4917.085714285714,4294.685714285714 L4901.542857142857,4284.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901.542857142857,4284.0 L4917.085714285714,4273.314285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892.8" cy="4284.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="VehicleActivity" data-relationship="event_subject">
+<path d="M3152,3133 L3152,3155" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3172,3133 L3172,3155" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Outlet" data-relationship="performs">
+<path d="M751.7714285714286,3109.3142857142857 L751.7714285714286,3130.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M771.2,3109.3142857142857 L771.2,3130.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="IncentiveRule" data-relationship="event_rule_award">
+<path d="M4351.771428571428,3109.3142857142857 L4351.771428571428,3130.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4371.2,3109.3142857142857 L4371.2,3130.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="IncentiveProgram" data-relationship="rules">
+<path d="M4150.685714285714,943.7714285714286 L4129.314285714286,943.7714285714286" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4150.685714285714,963.2 L4129.314285714286,963.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="VehicleActivity" data-relationship="metric_evidence">
+<path d="M3146.9142857142856,3061.3142857142857 L3162.457142857143,3072.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3162.457142857143,3072.0 L3146.9142857142856,3082.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="3171.2" cy="3072.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="PerformanceMeasurement" data-relationship="period_measure">
+<path d="M5398.685714285714,2102.9142857142856 L5388.0,2118.457142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5388.0,2118.457142857143 L5377.314285714286,2102.9142857142856" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5388.0" cy="2127.2" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="IncentiveRule" data-relationship="period_rule_award">
+<path d="M4151,3236 L4129,3236" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4151,3256 L4129,3256" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="PeriodEvaluation" data-relationship="period_identity">
+<path d="M4917,4451 L4901,4440" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901,4440 L4917,4429" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892" cy="4440" r="6" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="ProviderAuthorization" data-relationship="grants">
+<path d="M1751,872 L1729,872" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1751,892 L1729,892" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="VehicleActivity" data-relationship="event_entitlement">
+<path d="M3152,3217 L3152,3239" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3172,3217 L3172,3239" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="ParentCompany" data-relationship="programs">
+<path d="M751.7714285714286,637.3142857142857 L751.7714285714286,658.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M771.2,637.3142857142857 L771.2,658.6857142857143" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="enrollment_provider">
+<path d="M752,1837 L752,1859" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M772,1837 L772,1859" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="0..N" data-entity="EventEvaluation" data-relationship="event_identity">
+<path d="M4917.085714285714,3262.6857142857143 L4901.542857142857,3252.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M4901.542857142857,3252.0 L4917.085714285714,3241.3142857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="4892.8" cy="3252.0" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="0..N" data-entity="MetricDefinitionVersion" data-relationship="rule_metrics">
+<path d="M5134.685714285714,974.9142857142857 L5124.0,990.4571428571428" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5124.0,990.4571428571428 L5113.314285714286,974.9142857142857" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="5124.0" cy="999.2" r="5.828571428571428" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+</g>
+<g data-cardinality="1..1" data-entity="ParentCompany" data-relationship="metric_definitions">
+<path d="M752,685 L752,707" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M772,685 L772,707" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="measure_provider">
+<path d="M752,1885 L752,1907" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M772,1885 L772,1907" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="period_subject">
+<path d="M443,2000 L421,2000" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M443,2020 L421,2020" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<g data-cardinality="1..1" data-entity="Provider" data-relationship="period_entitlement">
+<path d="M599,2000 L577,2000" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M599,2020 L577,2020" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
+<text x="3120" y="5240" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#243448">TOTAL, DISJOINT</text>
+<text x="3120" y="5282" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#243448">Every activity is exactly one subtype.</text>
+<text x="3120" y="5324" font-family="Arial,sans-serif" font-size="26" font-weight="400" fill="#243448">All three inherit the complete activity key.</text>
+<path d="M120,6120 L7176,6120" fill="none" stroke="#c7cdd4" stroke-width="2" stroke-linejoin="round"/>
+<text x="120" y="6171" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#243448">READ THE MAP  |  26 entities • 42 named relationships • each entity appears once • endpoint symbols replace numeric relationship labels.</text>
+<text x="120" y="6219" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Underlined = composite business identity; entity references contribute their complete key. Double borders denote dependent identity.</text>
+<path d="M220,6290 L540,6290" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M229.6,6276.8 L229.6,6303.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="253.6" cy="6290.0" r="7.199999999999999" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+<text x="590" y="6299" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#243448">0..1: zero or one</text>
+<path d="M1960,6290 L2280,6290" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1969.6,6276.8 L1969.6,6303.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1993.6,6276.8 L1993.6,6303.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="2330" y="6299" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#243448">1..1: exactly one</text>
+<path d="M3700,6290 L4020,6290" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M3703.6,6276.8 L3722.8,6290.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M3722.8,6290.0 L3703.6,6303.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="3733.6" cy="6290.0" r="7.199999999999999" fill="#faf9f6" stroke="#243448" stroke-width="2.6"/>
+<text x="4070" y="6299" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#243448">0..N: zero or many</text>
+<path d="M5440,6290 L5760,6290" fill="none" stroke="#627083" stroke-width="3" stroke-linejoin="round"/>
+<path d="M5443.6,6276.8 L5462.8,6290.0" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5462.8,6290.0 L5443.6,6303.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M5473.6,6276.8 L5473.6,6303.2" fill="none" stroke="#243448" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="5810" y="6299" font-family="Arial,sans-serif" font-size="29" font-weight="400" fill="#243448">1..N: one or many</text>
+<text x="120" y="6387" font-family="Arial,sans-serif" font-size="27" font-weight="400" fill="#243448">Circle = optional; bar = one; crow’s foot = many. For 1..N, the bar explicitly states the minimum of one. Green ovals are relationship attributes.</text>
+<metadata>Model SHA256: 53a2536814273d541c82970a694439bf52b8f1e4c65f3cda41bcb804fe02bd73</metadata>
+</svg>

@@ -1,0 +1,793 @@
+{
+  "counts": {
+    "warning": 53,
+    "information": 34,
+    "error": 23
+  },
+  "issue_codes": {
+    "outside_business_hours": 35,
+    "record_created_before_completion": 34,
+    "replacement_after_service_grace": 10,
+    "unsupported_ev_description": 1,
+    "qualification_precedes_evidence": 4,
+    "missing_identity_snapshot": 3,
+    "invalid_direct_identity": 1,
+    "award_policy_mismatch": 8,
+    "period_criteria_not_explicit": 7,
+    "irrelevant_period_identity": 7
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "1",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "1",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "2",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "2",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "3",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "3",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "4",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "4",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "5",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "5",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "6",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "6",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "7",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "7",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "8",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "8",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "9",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "9",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "10",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "10",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "11",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "11",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "12",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "12",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "13",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "13",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "14",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "14",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "15",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "15",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "16",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "16",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "17",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "17",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "18",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "18",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "19",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "19",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "20",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "20",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "21",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "21",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "22",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "22",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "23",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "23",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "24",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "24",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "25",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "25",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "26",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "26",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "27",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "27",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "28",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "28",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "29",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "29",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "30",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "30",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "31",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "31",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "32",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "32",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "33",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "33",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "34",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "information",
+      "code": "record_created_before_completion",
+      "table": "VehicleActivity",
+      "source_id": "34",
+      "detail": "RecordedAt may represent creation; the prepared revision will explicitly use final-record time."
+    },
+    {
+      "severity": "warning",
+      "code": "outside_business_hours",
+      "table": "VehicleActivity",
+      "source_id": "35",
+      "detail": "Start falls outside 08:00\u201318:00 America/Vancouver for this daytime sample."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "1",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "2",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "3",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "4",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "5",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "6",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "7",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "8",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "9",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "replacement_after_service_grace",
+      "table": "Rental",
+      "source_id": "10",
+      "detail": "Return exceeds a one-hour handover allowance after service; no extension reason is supplied."
+    },
+    {
+      "severity": "warning",
+      "code": "unsupported_ev_description",
+      "table": "Service",
+      "source_id": "10",
+      "detail": "EV-specific charging diagnosis is unsupported by this model label; use a powertrain-supported description."
+    },
+    {
+      "severity": "error",
+      "code": "qualification_precedes_evidence",
+      "table": "EventEvaluation",
+      "source_id": "1",
+      "detail": "Qualification precedes required completion, measurement or verified-identity evidence."
+    },
+    {
+      "severity": "error",
+      "code": "missing_identity_snapshot",
+      "table": "EventEvaluation",
+      "source_id": "1",
+      "detail": "Direct sale-to-Rental verification exists but is not cited in the decision snapshot."
+    },
+    {
+      "severity": "error",
+      "code": "qualification_precedes_evidence",
+      "table": "EventEvaluation",
+      "source_id": "2",
+      "detail": "Qualification precedes required completion, measurement or verified-identity evidence."
+    },
+    {
+      "severity": "error",
+      "code": "missing_identity_snapshot",
+      "table": "EventEvaluation",
+      "source_id": "2",
+      "detail": "Direct sale-to-Rental verification exists but is not cited in the decision snapshot."
+    },
+    {
+      "severity": "error",
+      "code": "qualification_precedes_evidence",
+      "table": "EventEvaluation",
+      "source_id": "3",
+      "detail": "Qualification precedes required completion, measurement or verified-identity evidence."
+    },
+    {
+      "severity": "error",
+      "code": "missing_identity_snapshot",
+      "table": "EventEvaluation",
+      "source_id": "3",
+      "detail": "Direct sale-to-Rental verification exists but is not cited in the decision snapshot."
+    },
+    {
+      "severity": "error",
+      "code": "qualification_precedes_evidence",
+      "table": "EventEvaluation",
+      "source_id": "4",
+      "detail": "Qualification precedes required completion, measurement or verified-identity evidence."
+    },
+    {
+      "severity": "error",
+      "code": "invalid_direct_identity",
+      "table": "EventEvaluation",
+      "source_id": "4",
+      "detail": "No valid direct sale-to-Rental account verification at decision time."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "EventAward",
+      "source_id": "1",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "EventAward",
+      "source_id": "3",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "EventAward",
+      "source_id": "4",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "PeriodAward",
+      "source_id": "1",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "PeriodAward",
+      "source_id": "2",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "PeriodAward",
+      "source_id": "3",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "PeriodAward",
+      "source_id": "4",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "error",
+      "code": "award_policy_mismatch",
+      "table": "PeriodAward",
+      "source_id": "5",
+      "detail": "Issued benefit components do not match the declared policy for this rule/capability."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "1",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "1",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "2",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "2",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "3",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "3",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "4",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "4",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "5",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "5",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "6",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "6",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    },
+    {
+      "severity": "warning",
+      "code": "period_criteria_not_explicit",
+      "table": "PeriodEvaluation",
+      "source_id": "7",
+      "detail": "Policy describes a manual review but has no reproducible numerical criteria for the outcome."
+    },
+    {
+      "severity": "error",
+      "code": "irrelevant_period_identity",
+      "table": "PeriodEvaluationIdentity",
+      "source_id": "7",
+      "detail": "Identity evidence is unrelated to this provider\u2019s cited activities in the review period."
+    }
+  ],
+  "source_rows": 559,
+  "metric_reconciliation_count": 105
+}
